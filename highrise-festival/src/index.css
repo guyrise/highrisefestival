@@ -1,3 +1,10 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -13,6 +20,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  margin: none;
+
+  --primary-color: hsl(353, 75%, 67%);
+  --primary-color-brighter: hsl(353, 100%, 76%);
+  --primary-color-brighter-transparent: hsl(353 100% 76% / 0.3);
+  --secondary-color: hsl(53, 100%, 54%);
+  --tertiary-color: hsl(23, 76%, 68%);
+  --primary-font: "Montserrat", sans-serif;
+  --special-font: "Nove";
+}
+
+/* REMOVE DEFAULT LINK TEXT DECORATION */
+
+a:-webkit-any-link,
+a:-webkit-any-link :link,
+a:-webkit-any-link :visited,
+a:-webkit-any-link :hover,
+a:-webkit-any-link :active {
+  text-decoration: none !important;
 }
 
 a {
@@ -24,17 +51,27 @@ a:hover {
   color: #535bf2;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
   min-width: 320px;
   min-height: 100vh;
+  overflow: auto;
+  height: 100%;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p {
+  font-family: var(--primary-font);
 }
 
 button {
@@ -56,6 +93,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* light mode */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,4 +105,31 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #ffffff;
+    --background-color: #000000;
+    --link-color: rgb(0, 188, 212);
+    --main-headline-color: rgb(233, 30, 99);
+    --accent-background-color: rgb(0, 188, 212);
+    --accent-color: #000000;
+  }
+
+  a:hover {
+    color: #74acff;
+  }
+  button {
+    background-color: #1f1f1f;
+  }
+}
+
+/* HOMEPAGE */
+
+.homepage-wrapper {
+  position: relative;
+  height: 100rem;
+  /* margin-top: 5.5vh; */
 }

@@ -1,0 +1,86 @@
+/* COVER START */
+
+div.imgBox {
+  /* margin-top: 100px; */
+  position: relative;
+  width: 100vw;
+  min-height: 800px;
+  height: 200vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(235, 114, 121);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 114, 121, 1) 0%,
+    rgba(249, 179, 118, 1) 50%,
+    rgba(235, 114, 121, 1) 100%
+  );
+}
+
+.parralaxBox {
+  position: relative;
+  display: flex;
+  /* width: 100vw;
+  min-height: 800px;
+  */
+  height: 100vh;
+}
+
+/* div.imgBox:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #eea057, transparent);
+  z-index: 10000;
+} */
+
+div.parralaxBox img {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* #mg {
+  opacity: 0;
+}
+
+#LS {
+  left: -40%;
+}
+#RS {
+  right: -40%;
+}
+#fg {
+  top: 30%;
+}
+#logo {
+  opacity: 0;
+} */
+
+/* #LS
+#RS
+#mg
+#fg
+#logo
+
+ */
+
+div.imgBox h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  bottom: 300px;
+  /* font-family: "Oi", cursive; */
+  font-weight: 100;
+  letter-spacing: 2rem;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 20px 0 #000,
+    5px 5px 0 #000;
+}
