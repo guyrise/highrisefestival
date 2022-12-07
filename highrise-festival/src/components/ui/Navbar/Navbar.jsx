@@ -45,7 +45,6 @@ const Navbar = (props) => {
               data-glitch={link.toUpperCase().replace("-", " ")}
             >
               {link.toUpperCase().replace("-", " ")}
-              <motion.span className="absolute left-0 top-full block h-[1px] w-full" />
             </Link>
           </li>
         ))}
