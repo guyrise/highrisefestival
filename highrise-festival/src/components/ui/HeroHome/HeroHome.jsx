@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { gsap, Power3, Power1, Circ } from "gsap";
+import { gsap, Power3, Power1, Elastic } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // import { Controls, PlayState, Tween, Timeline } from "react-gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import navLogo from "../../../assets/images/HighriseLogo(cropped).png";
+import navLogo from "../../../assets/images/HighriseLogoCropped.png";
 import CoverSkyBg from "../../../assets/images/coverSkyBg.png";
 import CoverBg from "../../../assets/images/coverBg.png";
 import LeftStack from "../../../assets/images/leftStack.png";
@@ -18,7 +18,24 @@ import CoverLogo from "../../../assets/images/highriseLogo.png";
 import "./HeroHome.css";
 
 const HeroHome = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  const triggerRef = useRef(null);
+  const otherRef = useRef(null);
+  useEffect(() => {
+    const trigger = triggerRef.current;
+    gsap.to("#LS", {
+      // left: "45vw",
+      scale: 2,
+      scrollTrigger: {
+        trigger: trigger,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        pin: ".parallax-box",
+        markers: true,
+      },
+    });
+  }, []);
+
   //   const t1 = gsap.timeline();
   //   useEffect(() => {
   //     // t1.from(
@@ -71,40 +88,38 @@ const HeroHome = () => {
   //     });
   //   });
 
-  const triggerRef = useRef(null);
-  const otherRef = useRef(null);
   // const [trigger, setTrigger] = useState(triggerRef.current);
 
-  useEffect(() => {
-    // setTrigger(triggerRef.current);
-    const element = triggerRef.current;
-    const other = otherRef.current;
-    gsap.fromTo(
-      other,
-      {
-        y: "-100px",
-        scale: 1,
-        duration: 2,
-      },
-      {
-        y: "200px",
-        scale: 1.8,
-        ease: Power3.easeOut,
-        scrollTrigger: {
-          trigger: element,
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true,
-          markers: true,
-          pin: true,
-        },
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   // setTrigger(triggerRef.current);
+  //   const element = triggerRef.current;
+  //   const other = otherRef.current;
+  //   gsap.fromTo(
+  //     other,
+  //     {
+  //       y: "50px",
+  //       scale: 1,
+  //       duration: 2,
+  //     },
+  //     {
+  //       y: "200px",
+  //       scale: 1.8,
+  //       ease: Power3.easeIn,
+  //       scrollTrigger: {
+  //         trigger: element,
+  //         start: "top bottom",
+  //         end: "bottom bottom",
+  //         scrub: true,
+  //         markers: true,
+  //         pin: false,
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
-    <>
-      <div className="parralaxBox" ref={triggerRef}>
+    <div className="hero-home-wrapper" data-scroll-section data-scroll>
+      <div className="parralax-box" triggerRef={triggerRef}>
         {/* <Timeline
           target={
             <>
@@ -131,15 +146,15 @@ const HeroHome = () => {
           className=".test1"
           alt="background2"
         />
-        <img src={CoverBg} id="bg" alt="background1" />
-        <img src={LeftStack} id="LS" alt="left speaker stack" />
-        <img src={RightStack} id="RS" alt="right speaker stack" />
-        <img src={TowerBlocksMg} id="mg" alt="towerblocks" />
-        <img src={TrumpetsFg} id="fg" alt="trumpet foreground" />
-        <img ref={otherRef} src={CoverLogo} id="logo" alt="highrise logo" />
-        <h2 className="festival">Festival</h2>
+        <img src={CoverBg} id="bg" alt="background1" data-scroll />
+        <img src={LeftStack} id="LS" alt="left speaker stack" data-scroll />
+        <img src={RightStack} id="RS" alt="right speaker stack" data-scroll />
+        <img src={TowerBlocksMg} id="mg" alt="towerblocks" data-scroll />
+        <img src={TrumpetsFg} id="fg" alt="trumpet foreground" data-scroll />
+        {/* <img ref={otherRef} src={CoverLogo} id="logo" alt="highrise logo" />
+        <h2 className="festival">Festival</h2> */}
       </div>
-    </>
+    </div>
   );
 };
 
