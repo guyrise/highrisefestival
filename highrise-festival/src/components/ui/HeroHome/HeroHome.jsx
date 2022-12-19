@@ -6,7 +6,7 @@ import { gsap, Power3, Power1, Circ } from "gsap";
 // import { Controls, PlayState, Tween, Timeline } from "react-gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import navLogo from "../../../assets/images/HighriseLogo(cropped).png";
+import navLogo from "../../../assets/images/HighriseLogoCropped.png";
 import CoverSkyBg from "../../../assets/images/coverSkyBg.png";
 import CoverBg from "../../../assets/images/coverBg.png";
 import LeftStack from "../../../assets/images/leftStack.png";
@@ -71,60 +71,9 @@ const HeroHome = () => {
   //     });
   //   });
 
-  const triggerRef = useRef(null);
-  const otherRef = useRef(null);
-  // const [trigger, setTrigger] = useState(triggerRef.current);
-
-  useEffect(() => {
-    // setTrigger(triggerRef.current);
-    const element = triggerRef.current;
-    const other = otherRef.current;
-    gsap.fromTo(
-      other,
-      {
-        y: "-100px",
-        scale: 1,
-        duration: 2,
-      },
-      {
-        y: "200px",
-        scale: 1.8,
-        ease: Power3.easeOut,
-        scrollTrigger: {
-          trigger: element,
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true,
-          markers: true,
-          pin: true,
-        },
-      }
-    );
-  }, []);
-
   return (
     <>
-      <div className="parralaxBox" ref={triggerRef}>
-        {/* <Timeline
-          target={
-            <>
-              <img src={CoverSkyBg} id="sky-bg" alt="background2" />
-              <img src={CoverBg} id="bg" alt="background1" />
-              <img src={LeftStack} id="LS" alt="left speaker stack" />
-              <img src={RightStack} id="RS" alt="right speaker stack" />
-              <img src={TowerBlocksMg} id="mg" alt="towerblocks" />
-              <img src={TrumpetsFg} id="fg" alt="trumpet foreground" />
-              <img src={CoverLogo} id="logo" alt="highrise logo" />
-              <h2 className="festival">Festival</h2>
-            </>
-          }
-        >
-          <Tween to={{ opacity: 1 }} target={1} />
-          <Tween to={{ x: "40%" }} target={2} />
-          <Tween to={{ x: "-40%" }} target={3} />
-          <Tween to={{ opacity: 1 }} target={4} position={3} stagger={1.7} />
-          <Tween to={{ y: "-30%" }} target={5} position={3} />
-        </Timeline> */}
+      <div className="parralaxBox">
         <img
           src={CoverSkyBg}
           id="sky-bg"
@@ -136,7 +85,7 @@ const HeroHome = () => {
         <img src={RightStack} id="RS" alt="right speaker stack" />
         <img src={TowerBlocksMg} id="mg" alt="towerblocks" />
         <img src={TrumpetsFg} id="fg" alt="trumpet foreground" />
-        <img ref={otherRef} src={CoverLogo} id="logo" alt="highrise logo" />
+        <img src={CoverLogo} id="logo" alt="highrise logo" />
         <h2 className="festival">Festival</h2>
       </div>
     </>
