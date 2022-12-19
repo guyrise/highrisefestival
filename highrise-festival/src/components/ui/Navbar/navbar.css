@@ -6,6 +6,7 @@
 /* NAVBAR */
 
 .nav-wrapper {
+  position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
@@ -14,10 +15,19 @@
   z-index: 1;
   background: var(--primary-color);
   /* TODO PICK A NAVBAR BACKGROUND */
-  background: linear-gradient(#f9b376, #ea6d7b);
-  background: linear-gradient(#f9b376, #eb7279);
-  position: relative;
+  /* background: linear-gradient(#f9b376, #ea6d7b);
+  background: linear-gradient(#f9b376, #eb7279); */
+  /* background: transparent;*/
+  background: rgb(238, 126, 115);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 126, 115, 1) 7%,
+    rgba(236, 118, 118, 1) 42%,
+    rgba(235, 114, 121, 1) 100%
+  );
+  /* position: relative; */
   padding: 0 6%;
+  box-shadow: 0 24px -6px var(light-gray);
   /* border-bottom: 0.5px solid var(--secondary-color); */
 }
 
@@ -25,11 +35,17 @@
 
 .brand-logo {
   position: absolute;
-  top: 25px;
+  z-index: 999999;
+  /* top: 25px; */
   width: 100px;
   aspect-ratio: 1 / 1;
   min-width: 100px;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
+  /* top: 1.563rem; */
+  top: 1.7vh;
+  /* top: 25px; */
+  left: 5vw;
+  /* transform: translate(-50%, -50%); */
 }
 
 #nav-logo {
@@ -43,20 +59,6 @@
 }
 
 /* NAV LOGO END */
-
-/* main a {
-  color: #ea6d7c !important;
-  text-decoration: none !important;
-}
-
-main a:hover {
-  text-decoration: underline !important;
-}
-
-main button {
-  background-color: #ea6d7c !important;
-  color: #ffe415 !important;
-} */
 
 nav.navbar {
   /* background: linear-gradient(#f9b16ef3, #e6898c, #ea6d7b); */
@@ -80,10 +82,12 @@ nav.navbar {
   transition: transform 0.5s ease-in-out;
 
   li {
+    /* display: block; */
+    padding: 15px 15px;
+    /* margin: 15px 15px; */
+    box-sizing: border-box;
+    /* transition: transform 0.1s ease; */
     display: block;
-    margin: 15px 15px;
-    transition: transform 0.1s ease;
-    display: inline-flex;
     white-space: nowrap;
 
     a {
@@ -93,7 +97,8 @@ nav.navbar {
       font-family: var(--special-font);
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
         1px 5px 0 #000;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      transition: opacity 0.2s ease;
 
       text-decoration: none;
       letter-spacing: 2px;
@@ -251,16 +256,13 @@ nav.navbar {
 @media (width <= 65em) {
   nav.navbar.nav-closed {
     position: fixed;
-    /* inset: 0 0 40% 40%; */
     transform: translateX(100%);
-    inset: 0 0% 40% 0%;
+    margin: 0 0 0 0%;
+    inset: 0 0% 0% 60%;
     flex-direction: column;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: min(15vh, 10rem) 1em;
-    /* width: 100%; */
-    aspect-ratio: 1/2;
-    /* white-space: nowrap; */
     overflow-wrap: break-word;
     /* background: hsl(0 0% 100% / 0, 1); */
     background: var(--primary-color-brighter-transparent);
@@ -271,20 +273,22 @@ nav.navbar {
     border-style: outset;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
       0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    li {
+      a {
+        opacity: 0;
+      }
+    }
   }
   nav.navbar.nav-open {
     position: fixed;
-    margin-left: 25px;
-    /* inset: 0 0 40% 40%; */
-    inset: 0 0% 40% 0%;
+    margin: 0 0 0 0%;
+    height: 100vh;
+    inset: 0 0 0 60%;
     flex-direction: column;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: min(15vh, 10rem) 1em;
-    /* min-width: 300px; */
-    /* white-space: nowrap; */
     overflow-wrap: break-word;
-    /* background: hsl(0 0% 100% / 0, 1); */
     background: var(--primary-color-brighter-transparent);
     backdrop-filter: blur(0.4rem);
     border-left: black solid 1px;
@@ -314,9 +318,12 @@ nav.navbar {
 }
 
 @media (width <= 48.25em) {
+  nav.navbar.nav-closed {
+    transform: translateY(-100%);
+  }
   nav.navbar.nav-open {
     /* inset: 0 0 40% 40%; */
-    inset: 0 0 40% 11%;
+    inset: 0 0 0 0;
     /* width: 100%; */
     white-space: nowrap;
   }

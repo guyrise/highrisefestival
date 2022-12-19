@@ -73,7 +73,7 @@ const HeroHome = () => {
 
   return (
     <>
-      <div className="parralaxBox">
+      <div className="parralax-box">
         <img
           src={CoverSkyBg}
           id="sky-bg"
@@ -86,7 +86,6 @@ const HeroHome = () => {
         <img src={TowerBlocksMg} id="mg" alt="towerblocks" />
         <img src={TrumpetsFg} id="fg" alt="trumpet foreground" />
         <img src={CoverLogo} id="logo" alt="highrise logo" />
-        <h2 className="festival">Festival</h2>
       </div>
     </>
   );
