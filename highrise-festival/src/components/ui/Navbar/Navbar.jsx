@@ -11,35 +11,15 @@ import "./navbar.css";
 
 const Navbar = (props) => {
   const [isNavOpen, setNavOpen] = useState(false);
-
-  // const triggerRef = useRef(null);
-  // const targetRef = useRef(null);
-  // useEffect(() => {
-  //   // setTrigger(triggerRef.current);
-  //   const element = triggerRef.current;
-  //   const target = targetRef.current;
-  //   gsap.to(".highrise-logo", {
-  //     x: "670px",
-  //     y: "350px",
-  //     scale: 5,
-  //     // ease: Power3.easeIn,
-  //     scrollTrigger: {
-  //       trigger: ".parallax-box",
-  //       start: "bottom center",
-  //       end: "500px",
-  //       scrub: true,
-  //       pin: true,
-  //       markers: true,
-  //     },
-  //   });
-  // }, []);
   return (
     <header className="nav-wrapper" ref={props.propref} data-scroll-section>
       <div className="brand-logo" data-scroll>
         <a href="/">
           <img
             src={navLogo}
-            className="highrise-logo"
+            className={
+              "highrise-logo" + (isNavOpen ? " nav-open" : " nav-closed")
+            }
             id="nav-logo"
             alt="highrise Logo"
             // ref={targetRef}
@@ -72,6 +52,11 @@ const Navbar = (props) => {
             </Link>
           </li>
         ))}
+        <button id="tickets-btn">
+          <a id="ticket-link">
+            <span>Buy Tickets</span>
+          </a>
+        </button>
       </nav>
     </header>
   );

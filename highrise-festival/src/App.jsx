@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./index.css";
 import Navbar from "./components/ui/Navbar/Navbar";
+import Footer from "./components/ui/Footer/Footer";
 import Home from "./pages/Home/Home";
 import { Route, Routes } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/" element={<Home />} /> */}
       </Routes>
+      <Footer />
     </>
   );
 }

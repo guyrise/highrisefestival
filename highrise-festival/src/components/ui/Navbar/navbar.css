@@ -50,12 +50,12 @@
 
 #nav-logo {
   height: 100%;
-  transition: all 0.5s ease-out;
+  transition: transform 0.5s ease-in-out;
   /* margin: 5px 10px; */
 }
 
 #nav-logo:hover {
-  transform: rotate3d(0, 0, 1, 360deg);
+  transform: rotate3d(0, 0, 1, 720deg);
 }
 
 /* NAV LOGO END */
@@ -137,12 +137,6 @@ nav.navbar {
       }
     }
 
-    /* @media only screen and (max-width: 400px) {
-      .glitch {
-        font-size: 3em;
-      }
-    } */
-
     @keyframes letters {
       0% {
         letter-spacing: 8px;
@@ -180,6 +174,18 @@ nav.navbar {
       }
     }
   }
+}
+
+nav.navbar button#tickets-btn {
+  background-color: var(--secondary-color);
+  padding: 0.6rem 1.2rem 0.6rem 2.5rem;
+  border: 0.2rem solid var(--secondary-color);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
 }
 
 /* navbar hambuger */
@@ -315,12 +321,30 @@ nav.navbar {
     align-items: center;
     justify-content: center;
   }
+
+  .brand-logo .nav-closed {
+    opacity: 0;
+  }
+
+  .brand-logo .nav-open {
+    opacity: 1;
+  }
 }
 
 @media (width <= 48.25em) {
   nav.navbar.nav-closed {
+    inset: 0 0 0 0;
     transform: translateY(-100%);
   }
+
+  .brand-logo .nav-closed {
+    opacity: 0;
+  }
+
+  .brand-logo .nav-open {
+    opacity: 1;
+  }
+
   nav.navbar.nav-open {
     /* inset: 0 0 40% 40%; */
     inset: 0 0 0 0;
