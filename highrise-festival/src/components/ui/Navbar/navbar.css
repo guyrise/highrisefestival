@@ -18,34 +18,25 @@
   /* background: linear-gradient(#f9b376, #ea6d7b);
   background: linear-gradient(#f9b376, #eb7279); */
   /* background: transparent;*/
-  background: rgb(238, 126, 115);
-  background: linear-gradient(
-    180deg,
-    rgba(238, 126, 115, 1) 7%,
-    rgba(236, 118, 118, 1) 42%,
-    rgba(235, 114, 121, 1) 100%
-  );
+  background: var(--nav-background);
+  background: var(--nav-background-gradient);
   /* position: relative; */
   padding: 0 6%;
   box-shadow: 0 24px -6px var(light-gray);
-  /* border-bottom: 0.5px solid var(--secondary-color); */
+  border-bottom: 0.5px solid black;
 }
 
 /* NAV LOGO */
 
 .brand-logo {
-  position: absolute;
+  /* position: absolute; */
   z-index: 999999;
-  /* top: 25px; */
-  width: 100px;
+  width: 10vh;
+  height: 10vh;
   aspect-ratio: 1 / 1;
-  min-width: 100px;
-  /* margin: 5px 10px; */
-  /* top: 1.563rem; */
-  top: 1.7vh;
-  /* top: 25px; */
-  left: 5vw;
-  /* transform: translate(-50%, -50%); */
+  margin-left: 1%;
+  /* top: 1.7vh;
+  left: 5vw; */
 }
 
 #nav-logo {
@@ -61,32 +52,20 @@
 /* NAV LOGO END */
 
 nav.navbar {
-  /* background: linear-gradient(#f9b16ef3, #e6898c, #ea6d7b); */
-  /* background: linear-gradient(#f9b16ef3, #ea6d7b); */
-
-  /* background: rgb(249, 177, 110); */
-  /* background: linear-gradient(
-    rgba(249, 177, 110, 1) 50%,
-    rgba(234, 109, 123, 1) 99%
-  ); */
   display: inline-flex;
   flex: 1;
-  justify-content: space-between;
-  align-items: flex-end;
+  /* max-width: 60vw; */
+  justify-content: space-evenly;
+  align-items: center;
   min-height: 5.5rem;
-  /* min-width: 750px; */
-  /* width: clamp(750px, 75%, 1080px); */
-  margin: 0 0 0 25%;
+  margin: 0 0 0 1%;
   z-index: 1000;
   list-style: none;
   transition: transform 0.5s ease-in-out;
 
   li {
-    /* display: block; */
-    padding: 15px 15px;
-    /* margin: 15px 15px; */
+    margin: 0.9rem 0.9rem;
     box-sizing: border-box;
-    /* transition: transform 0.1s ease; */
     display: block;
     white-space: nowrap;
 
@@ -123,9 +102,6 @@ nav.navbar {
         z-index: -1;
       }
       &:hover {
-        /* letter-spacing: 16px; */
-
-        animation: letters 2s infinite;
         &:before {
           animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
             infinite;
@@ -134,15 +110,6 @@ nav.navbar {
           animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
             both infinite;
         }
-      }
-    }
-
-    @keyframes letters {
-      0% {
-        letter-spacing: 8px;
-      }
-      100% {
-        letter-spacing: 8px;
       }
     }
 
@@ -176,39 +143,117 @@ nav.navbar {
   }
 }
 
-nav.navbar button#tickets-btn {
-  background-color: var(--secondary-color);
-  padding: 0.6rem 1.2rem 0.6rem 2.5rem;
-  border: 0.2rem solid var(--secondary-color);
-  border-radius: 2rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin-bottom: 0.1rem;
+/* RIGHT NAV */
+
+.right-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 16rem;
+  height: 10vh;
+}
+
+a#ticket-link {
+  color: var(--secondary-color);
   font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-family: var(--special-font);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+  min-width: 50%;
+  height: calc(100% / 3);
+
+  /* position: absolute;
+  bottom: calc(10vh / 3);
+  left: 0; */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+
   white-space: nowrap;
+  /* border: 1px outset black; */
+  padding: 1.4rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--navbar-background-gradient);
+
+  transition: all 0.3s ease-out;
+
+  perspective: 100px;
+  /* transform: translateZ(40px); */
+  /* transform: translate3d(-0px, 0px, -0px); */
+  transform: translateZ(0px) translateX(5px) translateY(-2px);
+
+  -webkit-box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  span {
+    &:before,
+    &:after {
+      display: block;
+      content: attr(data-glitch);
+      position: absolute;
+      top: 0.65rem;
+      left: 1rem;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+    }
+    &:after {
+      color: #f0f;
+      z-index: -2;
+    }
+    &:before {
+      color: #0ff;
+      z-index: -1;
+    }
+    &:hover {
+      /* letter-spacing: 16px; */
+
+      /* animation: letters 2s infinite; */
+      &:before {
+        animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+          infinite;
+      }
+      &:after {
+        animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+          infinite;
+      }
+    }
+  }
+}
+
+a#ticket-link:hover,
+a#ticket-link:focus {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+
+  transform: translateZ(0px) translateX(0px) translateY(0px);
 }
 
 /* navbar hambuger */
 
 .nav-wrapper input.nav-toggle {
-  position: absolute;
-  top: 37px;
-  right: 38px;
+  display: none;
+  position: relative;
+  /*
+  top: calc(3.24rem / 2);
+  right: 0; */
   z-index: 9999;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   opacity: 0;
 }
 
 .nav-wrapper .hamburger {
   display: none;
   position: absolute;
-  top: 37px;
-  right: 38px;
+  top: calc(3.24rem / 2);
+  right: 0;
   z-index: 9998;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0.5rem;
   background: var(--secondary-color);
   border-radius: 10%;
@@ -259,7 +304,11 @@ nav.navbar button#tickets-btn {
 
 /* NAVBAR MEDIA QUERIES */
 
-@media (width <= 65em) {
+@media (width <= 70em) {
+  .nav-wrapper input.nav-toggle {
+    display: block;
+  }
+
   nav.navbar.nav-closed {
     position: fixed;
     transform: translateX(100%);
@@ -332,6 +381,10 @@ nav.navbar button#tickets-btn {
 }
 
 @media (width <= 48.25em) {
+  .nav-wrapper input.nav-toggle {
+    display: block;
+  }
+
   nav.navbar.nav-closed {
     inset: 0 0 0 0;
     transform: translateY(-100%);

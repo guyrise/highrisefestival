@@ -5,7 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 // import { motion } from "framer-motion";
 
+// images
 import navLogo from "../../../assets/images/HighriseLogoCropped.png";
+import arrow from "../../../assets/images/arrow-right.svg";
 
 import "./navbar.css";
 
@@ -28,18 +30,6 @@ const Navbar = (props) => {
         </a>
       </div>
 
-      <input
-        aria-controls="navbar"
-        aria-expanded="false"
-        type="checkbox"
-        defaultChecked={isNavOpen}
-        className="nav-toggle"
-        onClick={() => setNavOpen(!isNavOpen)}
-      />
-      <div className="hamburger">
-        <div></div>
-      </div>
-
       <nav className={"navbar" + (isNavOpen ? " nav-open" : " nav-closed")}>
         {props.links.map((link, index) => (
           <li key={index}>
@@ -52,12 +42,25 @@ const Navbar = (props) => {
             </Link>
           </li>
         ))}
-        <button id="tickets-btn">
-          <a id="ticket-link">
-            <span>Buy Tickets</span>
-          </a>
-        </button>
       </nav>
+      <div className="right-nav">
+        <a id="ticket-link">
+          <span data-glitch={"Get Tickets"}>Get Tickets</span>
+        </a>
+        <div>
+          <input
+            aria-controls="navbar"
+            aria-expanded="false"
+            type="checkbox"
+            defaultChecked={isNavOpen}
+            className="nav-toggle"
+            onClick={() => setNavOpen(!isNavOpen)}
+          />
+          <div className="hamburger">
+            <div></div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };

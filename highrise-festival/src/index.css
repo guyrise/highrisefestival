@@ -30,6 +30,13 @@
   --tertiary-color: hsl(23, 76%, 68%);
   --primary-font: "Montserrat", sans-serif;
   --special-font: "Nove";
+  --nav-background: rgb(238, 126, 115);
+  --nav-background-gradient: linear-gradient(
+    180deg,
+    rgba(238, 126, 115, 1) 7%,
+    rgba(236, 118, 118, 1) 42%,
+    rgba(235, 114, 121, 1) 100%
+  );
 }
 
 /* REMOVE DEFAULT LINK TEXT DECORATION */
@@ -42,14 +49,14 @@ a:-webkit-any-link :active {
   text-decoration: none !important;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
 html {
   overflow: hidden;
@@ -75,7 +82,7 @@ p {
   font-family: var(--primary-font);
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -85,27 +92,27 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
+} */
+/* button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 /* light mode */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    /* color: #213547; */
     background-color: #ffffff;
   }
-  a:hover {
+  /* a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
-  }
+  } */
 }
 
 /* dark mode */
@@ -113,7 +120,7 @@ button:focus-visible {
   :root {
     --color: #ffffff;
     --background-color: #000000;
-    --link-color: rgb(0, 188, 212);
+    /* --link-color: rgb(0, 188, 212); */
     --main-headline-color: rgb(233, 30, 99);
     --accent-background-color: rgb(0, 188, 212);
     --accent-color: #000000;

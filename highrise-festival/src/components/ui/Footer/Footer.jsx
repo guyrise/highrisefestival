@@ -10,20 +10,23 @@ export default function Footer() {
   return (
     <footer className="highrise-footer">
       <div className="container mx-auto">
-        <ul class="social-icons">
+        <ul className="social-icons">
           <li>
-            <a class="facebook" href="https://www.facebook.com/HighRiseEvents/">
+            <a
+              className="facebook"
+              href="https://www.facebook.com/HighRiseEvents/"
+            >
               <CgFacebook />
             </a>
           </li>
           <li>
-            <a class="twitter" href="#">
+            <a className="twitter" href="#">
               <AiOutlineTwitter />
             </a>
           </li>
           <li>
             <a
-              class="instagram"
+              className="instagram"
               href="https://www.instagram.com/highrise.uk/?hl=en"
             >
               <IoLogoInstagram />
@@ -34,7 +37,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-flow-col">
         <div className="column">
           <h6>Festival</h6>
-          <ul class="footer-links">
+          <ul className="footer-links">
             <li>
               <a href="#">Abouts</a>
             </li>
@@ -48,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="column">
           <h6>Communities</h6>
-          <ul class="footer-links">
+          <ul className="footer-links">
             <li>
               <a href="#">For Artists</a>
             </li>
@@ -62,7 +65,7 @@ export default function Footer() {
         </div>
         <div className="column">
           <h6>Quick Links</h6>
-          <ul class="footer-links">
+          <ul className="footer-links">
             <li>
               <a href="#">Support</a>
             </li>
@@ -78,17 +81,17 @@ export default function Footer() {
       <hr />
       <div className="container mx-auto grid grid-flow-col">
         <div className="column">
-          <p class="copyright-text">
+          <p className="copyright-text">
             Copyright &copy; 2021. All Rights Reserved by
             <a href="https://www.instagram.com/highrise.uk/?hl=en"> Highrise</a>
             .
           </p>
         </div>
         {/* <Col sm={12} md={6} xs={12}>
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><CgFacebook /></a></li>
-                <li><a class="twitter" href="#"><AiOutlineTwitter /></a></li>
-                <li><a class="instagram" href="#"><IoLogoInstagram /></a></li> 
+              <ul className="social-icons">
+                <li><a className="facebook" href="#"><CgFacebook /></a></li>
+                <li><a className="twitter" href="#"><AiOutlineTwitter /></a></li>
+                <li><a className="instagram" href="#"><IoLogoInstagram /></a></li> 
               </ul>
             </Col> */}
       </div>
