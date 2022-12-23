@@ -43,11 +43,13 @@ const Navbar = (props) => {
           </li>
         ))}
       </nav>
+
       <div className="right-nav">
         <a id="ticket-link">
           <span data-glitch={"Get Tickets"}>Get Tickets</span>
         </a>
-        <div>
+
+        <div className="hamburger-wrapper">
           <input
             aria-controls="navbar"
             aria-expanded="false"
@@ -56,6 +58,7 @@ const Navbar = (props) => {
             className="nav-toggle"
             onClick={() => setNavOpen(!isNavOpen)}
           />
+
           <div className="hamburger">
             <div></div>
           </div>
