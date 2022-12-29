@@ -1,0 +1,42 @@
+.photo-btn-container {
+}
+
+.photo-btn-box {
+  overflow: hidden;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  /* width: 50%; */
+}
+
+/* .photo-btn-box::after {
+  content: "";
+  width: 100%;
+  height: 120%;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 15px;
+} */
+
+/* .photo-btn-box:hover ~ .photo-btn {
+} */
+
+.photo-btn {
+  /* width: 100%; */
+  position: relative;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.photo-btn:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}

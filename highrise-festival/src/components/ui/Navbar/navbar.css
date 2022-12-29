@@ -31,8 +31,8 @@
 .brand-logo {
   /* position: absolute; */
   z-index: 999999;
-  width: 10vh;
-  height: 10vh;
+  width: 97.59px;
+  height: 97.59px;
   aspect-ratio: 1 / 1;
   margin-left: 1%;
   /* top: 1.7vh;
@@ -152,7 +152,7 @@ nav.navbar {
   align-items: center;
   justify-content: space-between;
   width: 16rem;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 a#ticket-link {

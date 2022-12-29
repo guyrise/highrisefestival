@@ -4,7 +4,7 @@ import HeroHome from "../../components/ui/HeroHome/HeroHome.jsx";
 
 const Home = () => {
   return (
-    <div className="homepage-wrapper">
+    <div className="homepage-wrapper page">
       <HeroHome />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus

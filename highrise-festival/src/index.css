@@ -1,19 +1,41 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "nove";
+  src: url(../../../fonts/Nove.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "InformaPro.ttf";
+  src: url(../../../fonts/InformaPro.ttf);
+  /* src: local("Informa Pro"), local("InformaPro"),
+    url("InformaPro.eot?#iefix") format("embedded-opentype"),
+    url("InformaPro.woff2") format("woff2"),
+    url("InformaPro.woff") format("woff"),
+    url("InformaPro.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenPro-VariableFont_wght.ttf";
+  src: url(../../../fonts/MavenPro/MavenPro-VariableFont_wght);
+  font-weight: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Nove";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #000;
+  background-color: rgb(227, 227, 227);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -82,62 +104,21 @@ p {
   font-family: var(--primary-font);
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-} */
-/* button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-/* light mode */
-@media (prefers-color-scheme: light) {
-  :root {
-    /* color: #213547; */
-    background-color: #ffffff;
-  }
-  /* a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  } */
-}
-
-/* dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color: #ffffff;
-    --background-color: #000000;
-    /* --link-color: rgb(0, 188, 212); */
-    --main-headline-color: rgb(233, 30, 99);
-    --accent-background-color: rgb(0, 188, 212);
-    --accent-color: #000000;
-  }
-
-  a:hover {
-    color: #74acff;
-  }
-  button {
-    background-color: #1f1f1f;
-  }
-}
-
 /* PAGES */
+
+.page {
+  margin: 1rem 12% 3rem 12%;
+}
 
 /* HOMEPAGE */
 
 .homepage-wrapper {
   position: relative;
+}
+
+/* PROGRAMME */
+
+.programme-wrapper {
+  position: relative;
+  height: 100%;
 }
