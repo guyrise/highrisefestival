@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap, Power3, Power1, Circ } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 // import { motion } from "framer-motion";
 
 // images
@@ -33,19 +33,25 @@ const Navbar = (props) => {
       <nav className={"navbar" + (isNavOpen ? " nav-open" : " nav-closed")}>
         {props.links.map((link, index) => (
           <li key={index}>
-            <Link
+            <NavLink
+              style={({ isActive }) => {
+                return isActive ? { color: "hsl(53, 100%, 54%)" } : {};
+              }}
               to={"/" + link}
               className="relative"
               data-glitch={link.toUpperCase().replace("-", " ")}
             >
               {link.toUpperCase().replace("-", " ")}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </nav>
 
       <div className="right-nav">
-        <a id="ticket-link">
+        <a
+          href="https://fixr.co/event/highrise-festival-2023-tickets-811270693"
+          id="ticket-link"
+        >
           <span data-glitch={"Get Tickets"}>Get Tickets</span>
         </a>
 

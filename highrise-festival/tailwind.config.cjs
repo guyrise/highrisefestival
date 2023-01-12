@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./index.html", "./*.{js,ts,jsx,tsx}", "./src/**/*.{html,js,jsx}"],
   theme: {
+    colors: {
+      highrisePink: "#EC7676",
+      highriseYellow: "#ffe414",
+      highrisePeach: "#eb9f6f",
+    },
     extend: {},
   },
   plugins: [],

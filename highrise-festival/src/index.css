@@ -19,6 +19,19 @@
 }
 
 @font-face {
+  font-family: "Mazeletter.ttf";
+  src: url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.eot")
+      /* IE9 Compat Modes */
+      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.woff2"),
+    /* Super Modern Browsers woff2 */
+      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */
+      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
   font-family: "MavenPro-VariableFont_wght.ttf";
   src: url(../../../fonts/MavenPro/MavenPro-VariableFont_wght);
   font-weight: normal;
@@ -33,9 +46,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  height: 100%;
 
   color: #000;
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/746001/concrete-wall.png);
+  background-position: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -91,24 +107,125 @@ body {
   /* display: flex; */
   min-width: 320px;
   min-height: 100vh;
-  overflow: auto;
+  /* overflow: auto; this was fine until I put in mazeletter bg, with its overflow to hidden. */
+  overflow-y: auto;
+  /* overflow-x: hidden; */
   height: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--special-font);
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(16px, 6vw, 2.5em);
+  line-height: 0.8;
 }
 
 p {
   font-family: var(--primary-font);
 }
 
+/* APP + BG LAYER */
+
+.app-wrapper {
+  position: relative;
+  width: 100vw;
+}
+.mazeletter-bg {
+  z-index: -1;
+  position: fixed;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+.mazeletter {
+  font-family: "Mazeletter";
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  /* color: var(--tertiary-color);
+  background-color: var(--primary-color); */
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 66px;
+  line-height: 66px;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 /* PAGES */
 
 .page {
   margin: 1rem 12% 3rem 12%;
+  padding: 3rem 0 0;
+  min-height: 50vh;
+  /* border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 1rem; */
 }
+
+.programme-wrapper {
+  position: relative;
+}
+
+.concrete-wall {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/746001/concrete-wall.png);
+}
+
+/* custom border css 
+.onhovermakesquareborder {
+ transition: all .25s;
+ &:hover {
+  clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0 100%
+  );
+ }
+}
+
+.customborder1 {
+ clip-path: polygon(
+  0.25rem 0.75rem,
+  100% 0.5rem,
+  calc(100% - 0.5rem) calc(100% - 0.25rem),
+  0.8587897rem calc(100% - 1rem)
+ );
+}
+
+.customerborder2 {
+ clip-path: polygon(
+  1rem 0.75rem,
+  calc(100% - 0.5rem) 0.5rem,
+  calc(100% - 0.15rem) calc(100% - 0.25rem),
+  0.25rem calc(100% - 1rem)
+ );
+} */
 
 /* HOMEPAGE */
 

@@ -9,6 +9,12 @@
   background-color: #ea6d7c;
   font-family: var(--primary-font);
   text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  margin-top: auto;
 }
 
 .highrise-footer hr {
