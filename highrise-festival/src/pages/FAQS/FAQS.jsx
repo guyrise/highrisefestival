@@ -1,11 +1,46 @@
 import React from "react";
+import FAQDropdown from "../../components/ui/FAQDropdown/FAQDropdown";
 
-const FAQ = () => {
+import "./FAQS.css";
+
+const FAQS = (props) => {
+  const getQuestions = () => {
+    return props.faqData.map((obj, index, faqData) => {
+      if (faqData.length - 1 === index) {
+        return (
+          <FAQDropdown
+            key={`question ${index}`}
+            question={obj.question}
+            answer={obj.answer}
+            index={index}
+            last={true}
+          />
+        );
+      } else {
+        return (
+          <FAQDropdown
+            key={`question ${index}`}
+            question={obj.question}
+            answer={obj.answer}
+            index={index}
+            last={false}
+          />
+        );
+      }
+    });
+  };
+
   return (
-    <div>
-      <h1 style={{ color: "red" }}>FAQS</h1>
-    </div>
+    <>
+      <div className="page-wrapper page">
+        <div className="faq-wrapper border-y-8 rounded-2xl border-rose-300/90 ">
+          <h3 className="h3-title">FAQ's</h3>
+
+          {getQuestions()}
+        </div>
+      </div>
+    </>
   );
 };
 
-export default FAQ;
+export default FAQS;

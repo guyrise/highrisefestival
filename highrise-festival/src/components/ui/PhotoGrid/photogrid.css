@@ -1,21 +1,15 @@
+.photo-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
 .photo-btn-box {
   overflow: hidden;
   max-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   position: relative;
-  /* width: 50%; */
+  justify-self: center;
 }
 
-/* .photo-btn-box:nth-child(even) {
-  border-radius: 0 0.4rem 0.4rem 0;
-}
-
-.photo-btn-box:nth-child(odd) {
-  border-radius: 0.4rem 0 0 0.4rem;
-} */
 .photogrid-wrapper {
   position: relative;
   border-top: 1rem solid black;
@@ -26,10 +20,12 @@
 .photo-btn {
   position: relative;
   aspect-ratio: 2/1;
+  min-height: 25vh;
   object-fit: cover;
   transition: all 0.2s ease;
   cursor: pointer;
   filter: brightness(80%);
+  justify-self: center;
 }
 
 .photo-btn:hover {

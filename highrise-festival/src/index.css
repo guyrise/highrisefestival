@@ -1,14 +1,15 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @font-face {
   font-family: "nove";
-  src: url(../../../fonts/Nove.ttf);
+  src: url(./fonts/Nove.ttf);
   font-style: normal;
 }
 @font-face {
   font-family: "InformaPro.ttf";
-  src: url(../../../fonts/InformaPro.ttf);
+
+  src: url(./fonts/InformaPro.ttf);
   /* src: local("Informa Pro"), local("InformaPro"),
     url("InformaPro.eot?#iefix") format("embedded-opentype"),
     url("InformaPro.woff2") format("woff2"),
@@ -20,21 +21,18 @@
 
 @font-face {
   font-family: "Mazeletter.ttf";
-  src: url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.eot")
+  src: url(./fonts/Mazeletter-Utopia/mazeletter-utopia.eot)
       /* IE9 Compat Modes */
-      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.woff2"),
+      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.woff2),
     /* Super Modern Browsers woff2 */
-      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.woff")
-      format("woff"),
+      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.woff) format("woff"),
     /* Pretty Modern Browsers */
-      url("../../../fonts/Mazeletter-Utopia/mazeletter-utopia.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.ttf) format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: "MavenPro-VariableFont_wght.ttf";
-  src: url(../../../fonts/MavenPro/MavenPro-VariableFont_wght);
-  font-weight: normal;
+  font-family: "Roboto Mono.ttf";
+  src: url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
 }
 
 @tailwind base;
@@ -42,7 +40,8 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Roboto Mono", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -66,7 +65,7 @@
   --primary-color-brighter-transparent: hsl(353 100% 76% / 0.3);
   --secondary-color: hsl(53, 100%, 54%);
   --tertiary-color: hsl(23, 76%, 68%);
-  --primary-font: "Montserrat", sans-serif;
+  --primary-font: "Roboto Mono", sans-serif;
   --special-font: "Nove";
   --nav-background: rgb(238, 126, 115);
   --nav-background-gradient: linear-gradient(
@@ -137,7 +136,7 @@ h1 {
 }
 
 h3 {
-  font-size: clamp(16px, 6vw, 2.5em);
+  font-size: clamp(30px, 4vw, 2.5em);
   line-height: 0.8;
 }
 
@@ -182,7 +181,8 @@ p {
 .page {
   margin: 1rem 12% 3rem 12%;
   padding: 3rem 0 0;
-  min-height: 50vh;
+  /* min-height: 50vh; */
+
   /* border-top: 5px solid black;
   border-bottom: 5px solid black;
   border-radius: 1rem; */

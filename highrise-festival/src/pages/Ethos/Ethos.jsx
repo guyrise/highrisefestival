@@ -1,9 +1,10 @@
 import React from "react";
+import PhotoGrid from "../../components/ui/PhotoGrid/PhotoGrid";
 
-const Ethos = () => {
+const Ethos = (props) => {
   return (
-    <div>
-      <h1 style={{ color: "red" }}>Ethos and Sustainability</h1>
+    <div className="ethos-wrapper page">
+      <PhotoGrid photoGrid={props.ethosData.photoGrid} heading="Ethos" />
     </div>
   );
 };

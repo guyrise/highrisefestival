@@ -4,12 +4,19 @@
   font-style: normal;
 }
 /* NAVBAR */
-
-.nav-wrapper {
+.master-nav {
   position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 9999;
+}
+.nav-wrapper {
+  /* position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw; */
+
   display: flex;
   justify-content: space-between;
   z-index: 9999;
@@ -23,7 +30,7 @@
   /* position: relative; */
   padding: 0 6%;
   box-shadow: 0 24px -6px var(light-gray);
-  border-bottom: 0.5px solid black;
+  /* border-bottom: 0.5px solid black; */
 }
 
 /* NAV LOGO */
@@ -41,7 +48,8 @@
 
 #nav-logo {
   height: 100%;
-  transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
+  transition: transform 0.8s cubic-bezier(0.49, -0.05, 0.5, 1.09),
+    opacity 0.4s ease-in;
   /* margin: 5px 10px; */
 }
 
@@ -51,7 +59,7 @@
 
 /* NAV LOGO END */
 
-nav.navbar {
+nav.navbar1 {
   display: inline-flex;
   flex: 1;
   /* max-width: 60vw; */
@@ -224,6 +232,10 @@ a#ticket-link {
   }
 }
 
+a#ticket-link span {
+  font-family: var(--special-font);
+}
+
 a#ticket-link:hover,
 a#ticket-link:focus {
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
@@ -315,7 +327,7 @@ a#ticket-link:focus {
     display: block;
   }
 
-  nav.navbar.nav-closed {
+  nav.navbar1.nav-closed {
     position: fixed;
     transform: translateX(100%);
     margin: 0 0 0 0%;
@@ -329,7 +341,7 @@ a#ticket-link:focus {
     background: var(--primary-color-brighter-transparent);
     backdrop-filter: blur(0.4rem);
     border-left: black solid 1px;
-    border-bottom: black solid 1px;
+    /* border-bottom: black solid 1px; */
     border-radius: 0 0 0 5%;
     border-style: outset;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
@@ -340,7 +352,7 @@ a#ticket-link:focus {
       }
     }
   }
-  nav.navbar.nav-open {
+  nav.navbar1.nav-open {
     position: fixed;
     margin: 0 0 0 0%;
     height: 100vh;
@@ -360,7 +372,7 @@ a#ticket-link:focus {
       0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   }
 
-  nav.navbar li {
+  nav.navbar1 li {
     padding: 0 2rem 0 2rem;
     width: fit-content;
     white-space: normal;
@@ -377,13 +389,13 @@ a#ticket-link:focus {
     justify-content: center;
   }
 
-  .brand-logo .nav-closed {
+  /* .brand-logo .nav-closed {
     opacity: 0;
   }
 
   .brand-logo .nav-open {
     opacity: 1;
-  }
+  } */
 }
 
 @media (width <= 48.25em) {
@@ -391,27 +403,27 @@ a#ticket-link:focus {
     display: block;
   }
 
-  nav.navbar.nav-closed {
+  nav.navbar1.nav-closed {
     inset: 0 0 0 0;
     transform: translateY(-100%);
   }
 
-  .brand-logo .nav-closed {
+  /* .brand-logo .nav-closed {
     opacity: 0;
   }
 
   .brand-logo .nav-open {
     opacity: 1;
-  }
+  } */
 
-  nav.navbar.nav-open {
+  nav.navbar1.nav-open {
     /* inset: 0 0 40% 40%; */
     inset: 0 0 0 0;
     /* width: 100%; */
     white-space: nowrap;
   }
 
-  nav.navbar.nav-open li a {
+  nav.navbar1.nav-open li a {
     overflow-wrap: break-word;
   }
 }

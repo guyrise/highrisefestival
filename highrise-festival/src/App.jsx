@@ -9,7 +9,7 @@ import Footer from "./components/ui/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Programme from "./pages/Programme/Programme";
 import FAQS from "./pages/FAQS/FAQS";
-import SiteInfo from "./pages/SiteInfo/SiteInfo";
+import Info from "./pages/Info/Info";
 import Ethos from "./pages/Ethos/Ethos";
 import GetInvolved from "./pages/Get-Involved/GetInvolved";
 // CHILD PAGES
@@ -20,6 +20,7 @@ import Wellness from "./pages/Wellness";
 
 // DATA
 import ProgrammePageData from "./data/ProgrammePage.json";
+import FAQData from "./data/FAQPage.json";
 
 // IMAGES
 import beautifulForest1 from "./assets/images/deepAi festival images/beautiful-forest.jpeg";
@@ -27,20 +28,46 @@ import camping1 from "./assets/images/deepAi festival images/camping1.jpeg";
 import camping2 from "./assets/images/deepAi festival images/camping2.jpeg";
 import galaxyJungle from "./assets/images/deepAi festival images/galaxy-jungle1.jpeg";
 
-// ProgrammePage
+import cartoonFestival from "./assets/images/midjourney/cartoon-festival1.png";
+import mushroomStage1 from "./assets/images/midjourney/mushroom-stage.png";
+import mushroomStage2 from "./assets/images/midjourney/mushroom-stage2.png";
+
+// Programme Page
 const programmeData = {
   photoGrid: [
     { image: beautifulForest1, label: "Line Up" },
-    { image: camping1, label: "Venues" },
-    { image: camping2, label: "Soundsystems" },
+    { image: mushroomStage1, label: "Venues" },
+    { image: mushroomStage2, label: "Soundsystems" },
     { image: galaxyJungle, label: "Wellness" },
   ],
 };
-const programmeData2 = ProgrammePageData;
+
+// Info Page
+const infoData = {
+  photoGrid: [
+    { image: beautifulForest1, label: "Location" },
+    { image: camping1, label: "Travel" },
+    { image: cartoonFestival, label: "Accomodation" },
+    { image: camping2, label: "Accessibility" },
+  ],
+};
+
+// Ethos Page
+const ethosData = {
+  photoGrid: [
+    { image: beautifulForest1, label: "Vision" },
+    { image: beautifulForest1, label: "Environment" },
+    { image: camping1, label: "Principles" },
+    { image: camping2, label: "Waste & Compost" },
+    { image: camping2, label: "Compost Toilets" },
+  ],
+};
+
+// FAQ PAGE
+const faqData = FAQData;
 
 function App() {
-  const links = ["programme", "site-info", "ethos", "faqs", "get-involved"];
-
+  const links = ["programme", "info", "ethos", "faqs", "get-involved"];
   return (
     <div className="app-wrapper">
       <div className="mazeletter-bg">
@@ -87,9 +114,9 @@ function App() {
           path="/programme"
           element={<Programme programmeData={programmeData} />}
         ></Route>
-        <Route path="site-info" element={<SiteInfo />} />
-        <Route path="ethos" element={<Ethos />} />
-        <Route path="faqs" element={<FAQS />} />
+        <Route path="info" element={<Info infoData={infoData} />} />
+        <Route path="ethos" element={<Ethos ethosData={ethosData} />} />
+        <Route path="faqs" element={<FAQS faqData={faqData} />} />
         <Route path="get-involved" element={<GetInvolved />} />
 
         <Route path="/programme/line-up" element={<LineUp />} />
