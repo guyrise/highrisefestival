@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoGrid from "../../components/ui/PhotoGrid/PhotoGrid";
+import PhotoGrid from "../../components/ui/PhotoGrids/PhotoGrid";
 
 const Info = (props) => {
   return (

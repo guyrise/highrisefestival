@@ -3,18 +3,42 @@
   justify-content: center;
 }
 
+.photogrid-wrapper {
+  position: relative;
+
+  /* TODO MAX WIDTH - THIS NEEDS TO BE SET TO THE LENGTH OF SHORTEST IMAGE IN PHOTOGRID, IDEALLY LARGER THAN 1024px */
+  /* max-width: 1024px; */
+
+  border-top: 1rem solid black;
+  border-bottom: 1rem solid black;
+  border-radius: 1rem;
+
+  border-radius: 1rem 1rem 0 0;
+}
+
+.photogrid-wrapper-hero {
+  position: relative;
+
+  /* TODO MAX WIDTH - THIS NEEDS TO BE SET TO THE LENGTH OF SHORTEST IMAGE IN PHOTOGRID, IDEALLY LARGER THAN 1024px */
+  /* max-width: 1024px; */
+
+  border-top: 1rem solid black;
+  border-bottom: 1rem solid black;
+  border-radius: 1rem 1rem 0 0;
+}
+
 .photo-btn-box {
   overflow: hidden;
-  max-height: 70vh;
+  max-height: 40vh;
   position: relative;
   justify-self: center;
 }
 
-.photogrid-wrapper {
+.photo-btn-box-HERO {
+  overflow: hidden;
+  /* max-height: 40vh; */
   position: relative;
-  border-top: 1rem solid black;
-  border-bottom: 1rem solid black;
-  border-radius: 1rem;
+  justify-self: center;
 }
 
 .photo-btn {
@@ -44,7 +68,6 @@
   transform: translate3d(-50%, -50%, 0);
   padding: 4px 15px 10px;
   width: auto;
-  /* text-align: center; */
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 0.7rem;
@@ -52,27 +75,12 @@
   outline-style: ridge;
 }
 
-/* .h3-title::before {
-  background-color: #ec7676;
-  content: "";
-  position: absolute;
-  display: block;
-  z-index: -1;
-  top: 0;
-  -webkit-clip-path: url(#border-mask);
-  clip-path: url(#border-mask);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-} */
-
 .h3-overlay {
   position: absolute;
   color: white;
   bottom: 0;
-
   left: 50%;
-  /* top: 50%; */
-  transform: translate(-50%, -50%);
+
+  transform: translate(-50%, -20%);
+  white-space: nowrap;
 }

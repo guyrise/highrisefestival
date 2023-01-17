@@ -17,22 +17,26 @@ const PhotoGrid = (props) => {
 
   return (
     <>
-      <div className="photo-btn-container">
+      <div className="photo-btn-container mb-2">
         <div
-          className={`photogrid-wrapper grid ${
+          className={`photogrid-wrapper max-w-5xl grid grid-column-end: -1  ${
             divBy2 === 2
               ? "md:grid-cols-2"
               : divBy2 === 3
               ? "md:grid-cols-3"
               : divBy2 === 4
               ? "md:grid-cols-2" + " 2xl:grid-cols-3"
-              : "auto-cols-auto"
+              : "md:grid-cols-2"
           }`}
         >
           <h3 className="h3-title">{props.heading}</h3>
-          {photoGrid.map((data, index) => {
+          {photoGrid.map((data, index, grid) => {
+            let last = "";
+            if (index === grid.length - 1 && divBy2 == 1) {
+              last = "col-span-full";
+            }
             return (
-              <div className="photo-btn-box">
+              <div className={`photo-btn-box ${last}`} key={index}>
                 <Link
                   to={
                     "/programme/" + data.label.toLowerCase().replace(" ", "-")

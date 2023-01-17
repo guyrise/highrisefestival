@@ -1,0 +1,10 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(234, 109, 124, 0.7);
+
+  border-bottom: 1rem solid black;
+  border-radius: 0 0 1rem 1rem;
+}

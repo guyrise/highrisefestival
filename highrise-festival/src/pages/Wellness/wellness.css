@@ -1,0 +1,12 @@
+.wellness-container {
+  display: flex;
+  justify-content: center;
+  border-top: 1rem solid black;
+  border-bottom: 1rem solid black;
+  border-radius: 1rem;
+}
+
+section {
+  border-bottom: 1rem solid black;
+  border-radius: 0 0 1rem 1rem;
+}

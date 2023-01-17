@@ -3,12 +3,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const FAQDropdown = (props) => {
-  // const [expanded, setExpanded] = React.useState(false);
-
-  // const handleChange = (panel) => (event, isExpanded) => {
-  //   setExpanded(isExpanded ? panel : false);
-  // };
-  console.log(props.last);
   const [isFAQOpen, setFAQOpen] = useState(false);
 
   return (

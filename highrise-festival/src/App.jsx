@@ -16,7 +16,7 @@ import GetInvolved from "./pages/Get-Involved/GetInvolved";
 import LineUp from "./pages/LineUp";
 import Soundsystems from "./pages/SoundSystems";
 import Venues from "./pages/Venues";
-import Wellness from "./pages/Wellness";
+import Wellness from "./pages/Wellness/Wellness";
 
 // DATA
 import ProgrammePageData from "./data/ProgrammePage.json";
@@ -32,6 +32,8 @@ import cartoonFestival from "./assets/images/midjourney/cartoon-festival1.png";
 import mushroomStage1 from "./assets/images/midjourney/mushroom-stage.png";
 import mushroomStage2 from "./assets/images/midjourney/mushroom-stage2.png";
 
+import campervan from "./assets/images/campervan.png";
+
 // Programme Page
 const programmeData = {
   photoGrid: [
@@ -45,8 +47,8 @@ const programmeData = {
 // Info Page
 const infoData = {
   photoGrid: [
-    { image: beautifulForest1, label: "Location" },
-    { image: camping1, label: "Travel" },
+    { image: camping1, label: "Location" },
+    { image: campervan, label: "Travel" },
     { image: cartoonFestival, label: "Accomodation" },
     { image: camping2, label: "Accessibility" },
   ],
@@ -55,7 +57,7 @@ const infoData = {
 // Ethos Page
 const ethosData = {
   photoGrid: [
-    { image: beautifulForest1, label: "Vision" },
+    { image: beautifulForest1, label: "Our Vision" },
     { image: beautifulForest1, label: "Environment" },
     { image: camping1, label: "Principles" },
     { image: camping2, label: "Waste & Compost" },

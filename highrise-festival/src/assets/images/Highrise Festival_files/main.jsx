@@ -1,0 +1,31 @@
+var _jsxFileName = "/Users/flynn/My Documents/Highrise Website/highrise-festival/src/main.jsx";
+import __vite__cjsImport0_react from "/node_modules/.vite/deps/react.js?v=b60bdd02"; const React = __vite__cjsImport0_react.__esModule ? __vite__cjsImport0_react.default : __vite__cjsImport0_react; const useLayoutEffect = __vite__cjsImport0_react["useLayoutEffect"];
+import __vite__cjsImport1_reactDom_client from "/node_modules/.vite/deps/react-dom_client.js?v=b60bdd02"; const ReactDOM = __vite__cjsImport1_reactDom_client.__esModule ? __vite__cjsImport1_reactDom_client.default : __vite__cjsImport1_reactDom_client;
+import { BrowserRouter, useLocation } from "/node_modules/.vite/deps/react-router-dom.js?v=b60bdd02";
+import App from "/src/App.jsx?t=1673907797179";
+import ScrollToTop from "/src/components/ui/ScrollToTop/ScrollToTop.jsx?t=1673895871013";
+import "/src/index.css?t=1673907797179";
+import { jsxDEV as _jsxDEV } from "/@id/__x00__react/jsx-dev-runtime";
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ _jsxDEV(React.StrictMode, {
+  children: /* @__PURE__ */ _jsxDEV(BrowserRouter, {
+    children: [/* @__PURE__ */ _jsxDEV(ScrollToTop, {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }, this), /* @__PURE__ */ _jsxDEV(App, {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 5
+  }, this)
+}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 19,
+  columnNumber: 3
+}, this));
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU9BLFNBQVNDLHVCQUF1QjtBQUN2QyxPQUFPQyxjQUFjO0FBQ3JCLFNBQVNDLGVBQWVDLG1CQUFtQjtBQUMzQyxPQUFPQyxTQUFTO0FBQ2hCLE9BQU9DLGlCQUFpQjtBQUN4QixPQUFPO0FBVVA7QUFFQUosU0FBU0ssV0FBV0MsU0FBU0MsZUFBZSxNQUFNLENBQUMsRUFBRUMsT0FDbkQsd0JBQUMsTUFBTSxZQUFVO0FBQUEsWUFDZix3QkFBQyxlQUFhO0FBQUEsZUFDWix3QkFBQyxhQUFXO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FDWix3QkFBQyxLQUFHO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFBRztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDTztBQUFBO0FBQUE7QUFBQTtBQUFBLFFBQ0MiLCJuYW1lcyI6WyJSZWFjdCIsInVzZUxheW91dEVmZmVjdCIsIlJlYWN0RE9NIiwiQnJvd3NlclJvdXRlciIsInVzZUxvY2F0aW9uIiwiQXBwIiwiU2Nyb2xsVG9Ub3AiLCJjcmVhdGVSb290IiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsInJlbmRlciJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9mbHlubi9NeSBEb2N1bWVudHMvSGlnaHJpc2UgV2Vic2l0ZS9oaWdocmlzZS1mZXN0aXZhbC9zcmMvbWFpbi5qc3giXSwiZmlsZSI6Ii9Vc2Vycy9mbHlubi9NeSBEb2N1bWVudHMvSGlnaHJpc2UgV2Vic2l0ZS9oaWdocmlzZS1mZXN0aXZhbC9zcmMvbWFpbi5qc3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlTGF5b3V0RWZmZWN0IH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgUmVhY3RET00gZnJvbSBcInJlYWN0LWRvbS9jbGllbnRcIjtcbmltcG9ydCB7IEJyb3dzZXJSb3V0ZXIsIHVzZUxvY2F0aW9uIH0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCBBcHAgZnJvbSBcIi4vQXBwXCI7XG5pbXBvcnQgU2Nyb2xsVG9Ub3AgZnJvbSBcIi4vY29tcG9uZW50cy91aS9TY3JvbGxUb1RvcC9TY3JvbGxUb1RvcFwiO1xuaW1wb3J0IFwiLi9pbmRleC5jc3NcIjtcblxuLy8gY29uc3QgV3JhcHBlciA9ICh7IGNoaWxkcmVuIH0pID0+IHtcbi8vICAgY29uc3QgbG9jYXRpb24gPSB1c2VMb2NhdGlvbigpO1xuLy8gICBjb25zb2xlLmxvZyhsb2NhdGlvbik7XG4vLyAgIHVzZUxheW91dEVmZmVjdCgoKSA9PiB7XG4vLyAgICAgY29uc29sZS5sb2coZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50KTtcbi8vICAgICBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuc2Nyb2xsVG8oMCwgMCk7XG4vLyAgIH0sIFtsb2NhdGlvbi5wYXRobmFtZV0pO1xuLy8gICByZXR1cm4gY2hpbGRyZW47XG4vLyB9O1xuXG5SZWFjdERPTS5jcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwicm9vdFwiKSkucmVuZGVyKFxuICA8UmVhY3QuU3RyaWN0TW9kZT5cbiAgICA8QnJvd3NlclJvdXRlcj5cbiAgICAgIDxTY3JvbGxUb1RvcCAvPlxuICAgICAgPEFwcCAvPlxuICAgIDwvQnJvd3NlclJvdXRlcj5cbiAgPC9SZWFjdC5TdHJpY3RNb2RlPlxuKTtcblxuLy8gaW1wb3J0IHsgdXNlTG9jYXRpb24gfSBmcm9tIFwicmVhY3Qtcm91dGVyLWRvbVwiO1xuXG4vLyBleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTY3JvbGxUb1RvcCgpIHtcbi8vICAgY29uc3QgeyBwYXRobmFtZSB9ID0gdXNlTG9jYXRpb24oKTtcblxuLy8gICB1c2VFZmZlY3QoKCkgPT4ge1xuLy8gICAgIC8vIFwiZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LnNjcm9sbFRvXCIgaXMgdGhlIG1hZ2ljIGZvciBSZWFjdCBSb3V0ZXIgRG9tIHY2XG4vLyAgICAgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LnNjcm9sbFRvKHtcbi8vICAgICAgIHRvcDogMCxcbi8vICAgICAgIGxlZnQ6IDAsXG4vLyAgICAgICBiZWhhdmlvcjogXCJpbnN0YW50XCIsIC8vIE9wdGlvbmFsIGlmIHlvdSB3YW50IHRvIHNraXAgdGhlIHNjcm9sbGluZyBhbmltYXRpb25cbi8vICAgICB9KTtcbi8vICAgfSwgW3BhdGhuYW1lXSk7XG5cbi8vICAgcmV0dXJuIG51bGw7XG4vLyB9XG4iXX0=
