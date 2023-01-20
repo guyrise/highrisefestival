@@ -14,13 +14,23 @@ import "./navbar.css";
 
 const Navbar = (props) => {
   const [isNavOpen, setNavOpen] = useState(false);
-  const [pathname, setPathname] = useState(`${useLocation().pathname}`);
+  // const [pathname, setPathname] = useState(`${useLocation().pathname}`);
+  const [mousePos, setMousePos] = useState({ x: "", y: "" });
+
+  function mouseTrack(e) {
+    const x = `${e.clientX - 100}px`;
+    const y = `${e.clientY + 20}px`;
+    setMousePos({
+      x: x,
+      y: y,
+    });
+  }
 
   return (
     <>
       <div className="master-nav">
         <header className="nav-wrapper" ref={props.propref} data-scroll-section>
-          <div className="brand-logo" data-scroll>
+          <div className="brand-logo" data-scroll onMouseMove={mouseTrack}>
             <a href="/">
               <img
                 src={navLogo}
@@ -29,10 +39,16 @@ const Navbar = (props) => {
                 }
                 id="nav-logo"
                 alt="highrise Logo"
-                // ref={targetRef}
                 style={{ width: "100px" }}
               />
             </a>
+
+            <span
+              className="tooltip"
+              style={{ left: mousePos.x, top: mousePos.y }}
+            >
+              Home
+            </span>
           </div>
 
           <nav
@@ -45,6 +61,7 @@ const Navbar = (props) => {
                     return isActive ? { color: "hsl(53, 100%, 54%)" } : {};
                   }}
                   to={"/" + link}
+                  onClick={() => setNavOpen(!isNavOpen)}
                   className="relative"
                   data-glitch={link.toUpperCase().replace("-", " ")}
                 >
@@ -69,9 +86,10 @@ const Navbar = (props) => {
                 aria-controls="navbar"
                 aria-expanded="false"
                 type="checkbox"
-                defaultChecked={isNavOpen}
                 className="nav-toggle"
                 onClick={() => setNavOpen(!isNavOpen)}
+                defaultChecked={isNavOpen}
+                checked={isNavOpen}
               />
 
               <div className="hamburger">
@@ -81,31 +99,6 @@ const Navbar = (props) => {
           </div>
         </header>
         {location.pathname !== "/" && (
-          // <svg id="visual" viewBox="0 0 2400 112.09">
-          //   <defs>
-          //     <linearGradient id="grad1" x1="7%" y1="0%" x3="100%" y3="0%">
-          //       <stop
-          //         offset="7%"
-          //         style={{ stopColor: "rgb(235,115,120)", stopOpacity: "1" }}
-          //       />
-
-          //       <stop
-          //         offset="100%"
-          //         style={{
-          //           stopColor: "rgb(235, 114, 121)",
-          //           stopOpacity: "1",
-          //         }}
-          //       />
-          //     </linearGradient>
-          //   </defs>
-          //   <path
-          //     d="M0 3L12.8 18.2C25.7 33.3 51.3 63.7 77.2 67.3C103 71 129 48 154.8 34.3C180.7 20.7 206.3 16.3 232.2 31.5C258 46.7 284 81.3 309.8 98.2C335.7 115 361.3 114 387.2 108.5C413 103 439 93 464.8 88C490.7 83 516.3 83 542 88.2C567.7 93.3 593.3 103.7 619.2 90C645 76.3 671 38.7 696.8 25.8C722.7 13 748.3 25 774.2 38.3C800 51.7 826 66.3 851.8 60.7C877.7 55 903.3 29 929 33C954.7 37 980.3 71 1006.2 80C1032 89 1058 73 1083.8 57.2C1109.7 41.3 1135.3 25.7 1161.2 28.5C1187 31.3 1213 52.7 1238.8 54.7C1264.7 56.7 1290.3 39.3 1316.2 31.3C1342 23.3 1368 24.7 1393.8 35C1419.7 45.3 1445.3 64.7 1471 64C1496.7 63.3 1522.3 42.7 1548.2 42.3C1574 42 1600 62 1625.8 72.5C1651.7 83 1677.3 84 1703.2 88.8C1729 93.7 1755 102.3 1780.8 89C1806.7 75.7 1832.3 40.3 1858 27.8C1883.7 15.3 1909.3 25.7 1935.2 39.5C1961 53.3 1987 70.7 2012.8 84C2038.7 97.3 2064.3 106.7 2090.2 101.2C2116 95.7 2142 75.3 2167.8 70C2193.7 64.7 2219.3 74.3 2245.2 73.3C2271 72.3 2297 60.7 2322.8 49.8C2348.7 39 2374.3 29 2387.2 24L2400 19L2400 0L2387.2 0C2374.3 0 2348.7 0 2322.8 0C2297 0 2271 0 2245.2 0C2219.3 0 2193.7 0 2167.8 0C2142 0 2116 0 2090.2 0C2064.3 0 2038.7 0 2012.8 0C1987 0 1961 0 1935.2 0C1909.3 0 1883.7 0 1858 0C1832.3 0 1806.7 0 1780.8 0C1755 0 1729 0 1703.2 0C1677.3 0 1651.7 0 1625.8 0C1600 0 1574 0 1548.2 0C1522.3 0 1496.7 0 1471 0C1445.3 0 1419.7 0 1393.8 0C1368 0 1342 0 1316.2 0C1290.3 0 1264.7 0 1238.8 0C1213 0 1187 0 1161.2 0C1135.3 0 1109.7 0 1083.8 0C1058 0 1032 0 1006.2 0C980.3 0 954.7 0 929 0C903.3 0 877.7 0 851.8 0C826 0 800 0 774.2 0C748.3 0 722.7 0 696.8 0C671 0 645 0 619.2 0C593.3 0 567.7 0 542 0C516.3 0 490.7 0 464.8 0C439 0 413 0 387.2 0C361.3 0 335.7 0 309.8 0C284 0 258 0 232.2 0C206.3 0 180.7 0 154.8 0C129 0 103 0 77.2 0C51.3 0 25.7 0 12.8 0L0 0Z"
-          //     fill="url(#grad1)"
-          //     strokeLinecap="round"
-          //     strokeLinejoin="miter"
-          //   ></path>
-          // </svg>
-
           <svg id="visual" viewBox="0 0 2400 50">
             <defs>
               <linearGradient id="grad1" x1="7%" y1="0%" x3="100%" y3="0%">

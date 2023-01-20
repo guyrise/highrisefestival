@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./photogrid.css";
+
 const PhotoGrid = (props) => {
+  const { pathname } = useLocation();
   const photoGrid = props.photoGrid;
   const length = photoGrid.length;
   const divBy2 =
@@ -14,7 +16,7 @@ const PhotoGrid = (props) => {
       : length % 2 === 0
       ? 2
       : 1;
-
+  console.log(pathname);
   return (
     <>
       <div className="photo-btn-container mb-2">
@@ -29,7 +31,7 @@ const PhotoGrid = (props) => {
               : "md:grid-cols-2"
           }`}
         >
-          <h3 className="h3-title">{props.heading}</h3>
+          <h4 className="h4-title">{props.heading}</h4>
           {photoGrid.map((data, index, grid) => {
             let last = "";
             if (index === grid.length - 1 && divBy2 == 1) {
@@ -38,9 +40,9 @@ const PhotoGrid = (props) => {
             return (
               <div className={`photo-btn-box ${last}`} key={index}>
                 <Link
-                  to={
-                    "/programme/" + data.label.toLowerCase().replace(" ", "-")
-                  }
+                  to={`${pathname}/${data.label
+                    .toLowerCase()
+                    .replace(" ", "-")}`}
                 >
                   <img className="photo-btn " src={`${data.image}`}></img>
                   <h3 className="h3-overlay">{data.label}</h3>

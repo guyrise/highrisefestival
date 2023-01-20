@@ -6,27 +6,27 @@ import "./FAQS.css";
 const FAQScomp = (props) => {
   const getQuestions = () => {
     return props.faqData.map((obj, index, faqData) => {
-      if (faqData.length - 1 === index) {
-        return (
-          <FAQDropdown
-            key={`question ${index}`}
-            question={obj.question}
-            answer={obj.answer}
-            index={index}
-            last={true}
-          />
-        );
-      } else {
-        return (
-          <FAQDropdown
-            key={`question ${index}`}
-            question={obj.question}
-            answer={obj.answer}
-            index={index}
-            last={false}
-          />
-        );
-      }
+      // if (faqData.length - 1 === index) {
+      return (
+        <FAQDropdown
+          key={`question ${index}`}
+          question={obj.question}
+          answer={obj.answer}
+          index={index}
+          last={faqData.length - 1 === index ? true : false}
+        />
+      );
+      // } else {
+      //   return (
+      //     <FAQDropdown
+      //       key={`question ${index}`}
+      //       question={obj.question}
+      //       answer={obj.answer}
+      //       index={index}
+      //       last={false}
+      //     />
+      //   );
+      // }
     });
   };
 

@@ -6,18 +6,6 @@
   src: url(./fonts/Nove.ttf);
   font-style: normal;
 }
-@font-face {
-  font-family: "InformaPro.ttf";
-
-  src: url(./fonts/InformaPro.ttf);
-  /* src: local("Informa Pro"), local("InformaPro"),
-    url("InformaPro.eot?#iefix") format("embedded-opentype"),
-    url("InformaPro.woff2") format("woff2"),
-    url("InformaPro.woff") format("woff"),
-    url("InformaPro.ttf") format("truetype"); */
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "Mazeletter.ttf";
@@ -49,7 +37,7 @@
 
   color: #000;
   background-color: rgb(255, 255, 255);
-  /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/746001/concrete-wall.png); */
+
   background-position: cover;
 
   font-synthesis: none;
@@ -66,6 +54,7 @@
   --secondary-color: hsl(53, 100%, 54%);
   --tertiary-color: hsl(23, 76%, 68%);
   --primary-font: "Roboto Mono", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
   --special-font: "Nove";
   --nav-background: rgb(238, 126, 115);
   --nav-background-gradient: linear-gradient(
@@ -122,6 +111,8 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+/* TEXT */
+
 h1,
 h2,
 h3,
@@ -138,6 +129,11 @@ h1 {
 h3 {
   font-size: clamp(30px, 4vw, 3em);
   line-height: 0.8;
+}
+
+h4 {
+  font-size: 2.5em;
+  line-height: 1.1;
 }
 
 p {
@@ -186,48 +182,8 @@ p {
 
 .page {
   margin: 1rem 12% 3rem 12%;
-  padding: 3rem 0 0;
+  padding: 4rem 0 4rem 0;
 }
-
-/* .sectionMP {
-  margin: 1rem 12% 3rem 12%;
-  padding: 3rem 0 0;
-} */
-
-/* .concrete-wall {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/746001/concrete-wall.png);
-} */
-
-/* custom border css 
-.onhovermakesquareborder {
- transition: all .25s;
- &:hover {
-  clip-path: polygon(
-		0 0,
-		100% 0,
-		100% 100%,
-		0 100%
-  );
- }
-}
-
-.customborder1 {
- clip-path: polygon(
-  0.25rem 0.75rem,
-  100% 0.5rem,
-  calc(100% - 0.5rem) calc(100% - 0.25rem),
-  0.8587897rem calc(100% - 1rem)
- );
-}
-
-.customerborder2 {
- clip-path: polygon(
-  1rem 0.75rem,
-  calc(100% - 0.5rem) 0.5rem,
-  calc(100% - 0.15rem) calc(100% - 0.25rem),
-  0.25rem calc(100% - 1rem)
- );
-} */
 
 /* HOMEPAGE */
 

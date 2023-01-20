@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { CgFacebook } from "react-icons/cg";
 import { IoLogoInstagram } from "react-icons/io";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -18,18 +20,25 @@ export default function Footer() {
         ></path>
       </svg>
       <footer className="highrise-footer">
-        <div className="container mx-auto">
+        <div className="mx-auto">
           <ul className="social-icons">
             <li>
               <a
                 className="facebook"
                 href="https://www.facebook.com/HighRiseEvents/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <CgFacebook />
               </a>
             </li>
             <li>
-              <a className="twitter" href="#">
+              <a
+                className="twitter"
+                href="https://www.twitter.com/HighRise_Events"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineTwitter />
               </a>
             </li>
@@ -37,24 +46,26 @@ export default function Footer() {
               <a
                 className="instagram"
                 href="https://www.instagram.com/highrise.uk/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <IoLogoInstagram />
               </a>
             </li>
           </ul>
         </div>
-        <div className="container mx-auto grid grid-flow-col">
+        <div className="container grid grid-flow-col grid-col-3">
           <div className="column">
             <h6>Festival</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">Abouts</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="#">Volunteer</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <a href="#">Jobs</a>
+                <Link to="/faqs">FAQs</Link>
               </li>
             </ul>{" "}
           </div>
@@ -62,50 +73,46 @@ export default function Footer() {
             <h6>Communities</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">For Artists</a>
+                <Link to="/get-involved">Volunteer</Link>
               </li>
               <li>
-                <a href="#">Advertising</a>
+                <Link to="/info/accessibility">Accessibility</Link>
               </li>
               <li>
-                <a href="#">Vendors</a>
+                <Link to="/get-involved">Vendors</Link>
               </li>
-            </ul>{" "}
+            </ul>
           </div>
           <div className="column">
-            <h6>Quick Links</h6>
+            <h6>Legals</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">Support</a>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#">Contribute</a>
+                <Link to="/terms-and-conditions">Terms & Conditions</Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link to="/credits">Credits</Link>
               </li>
             </ul>
           </div>
         </div>
         <hr />
-        <div className="container mx-auto grid grid-flow-col">
-          <div className="column">
+        <div className="mx-auto grid grid-flow-col">
+          <div className="flex justify-evenly">
             <p className="copyright-text">
-              Copyright &copy; 2021. All Rights Reserved by
-              <a href="https://www.instagram.com/highrise.uk/?hl=en">
-                {" "}
+              Copyright &copy; 2021. All Rights Reserved by&nbsp;
+              <a
+                href="https://www.instagram.com/highrise.uk/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Highrise
               </a>
               .
             </p>
           </div>
-          {/* <Col sm={12} md={6} xs={12}>
-              <ul className="social-icons">
-                <li><a className="facebook" href="#"><CgFacebook /></a></li>
-                <li><a className="twitter" href="#"><AiOutlineTwitter /></a></li>
-                <li><a className="instagram" href="#"><IoLogoInstagram /></a></li> 
-              </ul>
-            </Col> */}
         </div>
       </footer>
     </>

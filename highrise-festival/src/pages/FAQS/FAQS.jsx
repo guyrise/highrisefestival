@@ -34,7 +34,7 @@ const FAQS = (props) => {
     <>
       <div className="page-wrapper page">
         <div className="faq-wrapper border-y-8 rounded-2xl border-rose-300/90 ">
-          <h3 className="h3-title">FAQ's</h3>
+          <h4 className="h4-title">FAQ's</h4>
 
           {getQuestions()}
         </div>

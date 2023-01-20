@@ -8,13 +8,13 @@ const FAQDropdown = (props) => {
   return (
     <div
       className={
-        "accordion-group border-y-4 border-rose-300/90 rounded-md " +
-        (props.last ? "" : "mb-1")
+        "accordion-group border-y-4 border-rose-300/90 " +
+        (props.last ? "" : "mb-1 rounded-md")
       }
     >
       <div
         className={
-          "accordion px-6 py-6 bg-rose-300/90 border-rose-300/90" +
+          "accordion bg-rose-300/90 border-rose-300/90" +
           (isFAQOpen ? " border-b-2 " : "")
         }
       >
@@ -27,19 +27,21 @@ const FAQDropdown = (props) => {
           defaultChecked={isFAQOpen}
           onClick={() => setFAQOpen(!isFAQOpen)}
         />
-        <label htmlFor={"toggle-" + props.index} className="accordion-title ">
+        <label htmlFor={"toggle-" + props.index} className="accordion-title">
           {props.question}
+          <span className={"accordion-icon " + (isFAQOpen ? "icon-open" : "")}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g transform="rotate(-90 12 12)">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+              </g>
+            </svg>
+          </span>
         </label>
-        <span className={"accordion-icon " + (isFAQOpen ? "icon-open" : "")}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
-          </svg>
-        </span>
       </div>
       <motion.div
         className="accordion-content-wrapper"

@@ -3,15 +3,18 @@ import React from "react";
 import lazers from "../../assets/images/highrise-lazers.jpeg";
 import PhotoGridHero from "../ui/PhotoGrids/PhotoGridHero";
 
+import FAQScomp from "../../pages/FAQS/FAQScomp";
+
 import "./pageFormat.css";
 
-const photoGrid = [{ image: lazers, label: "" }];
-// TODO MAKE THIS ADAPTABLE AT THE APP LEVEL SO WE CAN ENTER PROPS AND CHANGE IMAGE AND HEADINGS DYNAMICALLY
 const PageFormat = (props) => {
   return (
-    <div>
+    <div className="page-wrapper">
       <div className="hero-wrapper">
-        <PhotoGridHero photoGrid={photoGrid} heading="Wellness" />
+        <PhotoGridHero
+          photoGrid={props.pageData.photoGrid}
+          heading={props.pageData.pageContent.heading}
+        />
       </div>
       <div className="page-content py-6">
         <p className="px-24 py-12">
@@ -47,6 +50,9 @@ const PageFormat = (props) => {
           smell ya later" I looked at my kingdom I was finally there To sit on
           my throne as the prince of Bel-Air
         </p>
+      </div>
+      <div className="page-faqs section">
+        <FAQScomp faqData={props.pageData.faqData} />
       </div>
     </div>
   );

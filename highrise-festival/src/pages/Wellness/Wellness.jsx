@@ -1,20 +1,11 @@
 import React from "react";
 import PageFormat from "../../components/PageFormat/PageFormat";
 
-import FAQScomp from "../../pages/FAQS/FAQScomp";
-import FAQData from "../../data/FAQPage.json";
-
-const faqData = FAQData;
-const Wellness = () => {
+const Wellness = (props) => {
   return (
     <>
       <div className="page">
-        <section>
-          <PageFormat />
-        </section>
-        <section>
-          <FAQScomp faqData={FAQData} />
-        </section>
+        <PageFormat pageData={props.wellnessData} />
       </div>
     </>
   );

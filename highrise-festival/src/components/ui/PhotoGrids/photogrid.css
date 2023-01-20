@@ -5,23 +5,13 @@
 
 .photogrid-wrapper {
   position: relative;
-
-  /* TODO MAX WIDTH - THIS NEEDS TO BE SET TO THE LENGTH OF SHORTEST IMAGE IN PHOTOGRID, IDEALLY LARGER THAN 1024px */
-  /* max-width: 1024px; */
-
   border-top: 1rem solid black;
   border-bottom: 1rem solid black;
-  border-radius: 1rem;
-
   border-radius: 1rem 1rem 0 0;
 }
 
 .photogrid-wrapper-hero {
   position: relative;
-
-  /* TODO MAX WIDTH - THIS NEEDS TO BE SET TO THE LENGTH OF SHORTEST IMAGE IN PHOTOGRID, IDEALLY LARGER THAN 1024px */
-  /* max-width: 1024px; */
-
   border-top: 1rem solid black;
   border-bottom: 1rem solid black;
   border-radius: 1rem 1rem 0 0;
@@ -53,11 +43,13 @@
 }
 
 .photo-btn:hover {
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
   transform: scale(1.1);
   filter: brightness(100%);
 }
 
-.h3-title {
+.h4-title {
   color: white;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 5px 0 black;
@@ -66,9 +58,10 @@
   top: -5px;
   z-index: 2;
   transform: translate3d(-50%, -50%, 0);
-  padding: 4px 15px 10px;
+  padding: 4px 25px 7px;
   width: auto;
   background-color: var(--primary-color);
+
   border: 1px solid var(--primary-color);
   border-radius: 0.7rem;
   outline: 2px solid black;

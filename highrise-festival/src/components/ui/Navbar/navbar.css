@@ -41,9 +41,9 @@
   width: 97.59px;
   height: 97.59px;
   aspect-ratio: 1 / 1;
-  margin-left: 1%;
   /* top: 1.7vh;
   left: 5vw; */
+  position: relative;
 }
 
 #nav-logo {
@@ -57,15 +57,40 @@
   transform: rotate3d(0, 0, 1, 720deg);
 }
 
+/* TOOL TIP */
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  color: var(--secondary-color);
+  font-family: var(--special-font);
+  font-size: 1rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in 0.8s;
+}
+
+.brand-logo:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* NAV LOGO END */
+
+/* NAV MID END */
 
 nav.navbar1 {
   display: inline-flex;
   flex: 1;
   /* max-width: 60vw; */
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   min-height: 5.5rem;
+
   margin: 0 0 0 1%;
   z-index: 1000;
   list-style: none;
@@ -76,6 +101,7 @@ nav.navbar1 {
     box-sizing: border-box;
     display: block;
     white-space: nowrap;
+    margin: 0 2rem;
 
     a {
       color: #fff;
@@ -156,8 +182,8 @@ nav.navbar1 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 16rem;
+  justify-content: flex-end;
+  width: 12rem;
   /* height: 10vh; */
 }
 
@@ -322,7 +348,7 @@ a#ticket-link:focus {
 
 /* NAVBAR MEDIA QUERIES */
 
-@media (width <= 70em) {
+@media (width <= 75em) {
   .nav-wrapper input.nav-toggle {
     display: block;
   }
@@ -389,6 +415,10 @@ a#ticket-link:focus {
     justify-content: center;
   }
 
+  .right-nav {
+    justify-content: space-between;
+    width: 16rem;
+  }
   /* .brand-logo .nav-closed {
     opacity: 0;
   }
