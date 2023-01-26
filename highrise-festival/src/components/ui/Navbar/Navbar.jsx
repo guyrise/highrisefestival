@@ -87,8 +87,7 @@ const Navbar = (props) => {
                 aria-expanded="false"
                 type="checkbox"
                 className="nav-toggle"
-                onClick={() => setNavOpen(!isNavOpen)}
-                defaultChecked={isNavOpen}
+                onChange={() => setNavOpen(!isNavOpen)}
                 checked={isNavOpen}
               />
 

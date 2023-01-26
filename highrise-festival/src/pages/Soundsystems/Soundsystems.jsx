@@ -6,7 +6,7 @@ import PageFormat2 from "../../components/PageFormat/PageFormat2";
 const Soundsystems = (props) => {
   return (
     <>
-      <div className="my-8 mx-32 py-3">
+      <div className="page">
         <PageFormat2 pageData={props.soundsystemData} />
       </div>
     </>

@@ -1,5 +1,4 @@
 import React from "react";
-import Divider from "../../components/ui/Divider/Divider.jsx";
 import PhotoGrid from "../../components/ui/PhotoGrids/PhotoGrid.jsx";
 
 const Programme = (props) => {
@@ -11,8 +10,6 @@ const Programme = (props) => {
           heading="Programme"
         />
       </div>
-
-      <Divider />
     </div>
   );
 };

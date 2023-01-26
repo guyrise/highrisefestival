@@ -63,6 +63,7 @@
     rgba(236, 118, 118, 1) 42%,
     rgba(235, 114, 121, 1) 100%
   );
+  --card-background: #ebe7ce;
 }
 
 /* REMOVE DEFAULT LINK TEXT DECORATION */
@@ -127,17 +128,19 @@ h1 {
 }
 
 h3 {
-  font-size: clamp(30px, 4vw, 3em);
+  font-size: clamp(30px, 4vw, 3.2em);
   line-height: 0.8;
 }
 
 h4 {
-  font-size: 2.5em;
+  font-size: clamp(30px, 5vw, 3em);
   line-height: 1.1;
 }
 
 p {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+  line-height: 1.9rem;
+  letter-spacing: 0.8px;
 }
 
 /* APP + BG LAYER */

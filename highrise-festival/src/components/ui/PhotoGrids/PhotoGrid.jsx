@@ -21,7 +21,7 @@ const PhotoGrid = (props) => {
     <>
       <div className="photo-btn-container mb-2">
         <div
-          className={`photogrid-wrapper max-w-5xl grid grid-column-end: -1  ${
+          className={`photogrid-wrapper grid grid-column-end:-1  ${
             divBy2 === 2
               ? "md:grid-cols-2"
               : divBy2 === 3
@@ -47,7 +47,6 @@ const PhotoGrid = (props) => {
                   <img className="photo-btn " src={`${data.image}`}></img>
                   <h3 className="h3-overlay">{data.label}</h3>
                 </Link>
-                <a></a>
               </div>
             );
           })}

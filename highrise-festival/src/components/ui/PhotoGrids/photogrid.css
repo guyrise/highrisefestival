@@ -19,22 +19,20 @@
 
 .photo-btn-box {
   overflow: hidden;
-  max-height: 40vh;
   position: relative;
-  justify-self: center;
 }
 
 .photo-btn-box-HERO {
   overflow: hidden;
-  /* max-height: 40vh; */
+  max-height: 650px;
   position: relative;
-  justify-self: center;
 }
 
 .photo-btn {
   position: relative;
   aspect-ratio: 2/1;
   min-height: 25vh;
+
   object-fit: cover;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -43,9 +41,28 @@
 }
 
 .photo-btn:hover {
-  -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
   transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.photo-hero {
+  position: relative;
+  aspect-ratio: 2/1;
+  min-height: 25vh;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  filter: brightness(80%);
+  justify-self: center;
+  object-position: center bottom;
+}
+
+.photo-hero:hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+
   filter: brightness(100%);
 }
 
