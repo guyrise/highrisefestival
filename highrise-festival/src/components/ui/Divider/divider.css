@@ -1,8 +1,9 @@
-/* .custom-shape-divider-bottom-1673885300 {
+.custom-shape-divider-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-} */
+  padding: 0rem 0;
+}

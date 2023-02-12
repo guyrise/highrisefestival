@@ -5,8 +5,8 @@
 }
 /* NAVBAR */
 .master-nav {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0vh;
   left: 0;
   width: 100vw;
   z-index: 9999;
@@ -15,17 +15,9 @@
   display: flex;
   justify-content: space-between;
   z-index: 9999;
-  background: var(--primary-color);
-  /* TODO PICK A NAVBAR BACKGROUND */
-  /* background: linear-gradient(#f9b376, #ea6d7b);
-  background: linear-gradient(#f9b376, #eb7279); */
-  /* background: transparent;*/
-  background: var(--nav-background);
-  background: var(--nav-background-gradient);
-  /* position: relative; */
   padding: 0 6%;
   box-shadow: 0 24px -6px var(light-gray);
-  /* border-bottom: 0.5px solid black; */
+  transition: background-color 0.1s ease-in-out;
 }
 
 /* NAV LOGO */
@@ -76,6 +68,28 @@
 
 /* NAV LOGO END */
 
+/* NAV DATES */
+.nav-date-box {
+  margin-left: 1rem;
+  width: 160px;
+  z-index: 999999;
+}
+.nav-date {
+  font-family: var(--special-font);
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 4px 0 #000;
+}
+.nav-location {
+  font-family: var(--special-font);
+  color: var(--sky-color);
+  font-size: 1.2rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 4px 0 #000;
+}
+/* NAV DATES END */
+
 /* NAV MID END */
 
 nav.navbar1 {
@@ -86,18 +100,17 @@ nav.navbar1 {
   align-items: center;
   min-height: 5.5rem;
 
-  margin: 0 0 0 1%;
   z-index: 1000;
   list-style: none;
   /* transition: transform 0.5s ease-in-out; */
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 nav.navbar1 li {
-  margin: 0.9rem 0.9rem;
+  margin: 0 2rem;
   box-sizing: border-box;
   display: block;
   white-space: nowrap;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
   transition: transform 0.4s ease-in-out, opacity 0.2s ease;
 }
 nav.navbar1 li a {
@@ -142,10 +155,6 @@ nav.navbar1 li:hover {
   transform: scale(1.05);
 }
 
-/* nav.navbar1 li:hover a {
-  color: var(--secondary-color);
-} */
-
 @keyframes glitch {
   0% {
     transform: translate(0);
@@ -175,7 +184,7 @@ nav.navbar1 li:hover {
   align-items: center;
   justify-content: flex-end;
   width: 12rem;
-  /* height: 10vh; */
+  /* margin-right: 1rem; */
 }
 
 a#ticket-link {
@@ -196,7 +205,7 @@ a#ticket-link {
   white-space: nowrap;
   padding: 1.4rem 1rem;
   border-radius: 0.5rem;
-  background-color: var(--navbar-background-gradient);
+  background-color: var(--sky-color);
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   /* perspective: 100px; */
   transform: translateZ(0px) translateX(5px) translateY(-2px);
@@ -212,8 +221,6 @@ a#ticket-link > span::after {
   position: absolute;
   top: 0.65rem;
   left: 1rem;
-  height: 100%;
-  width: 100%;
   opacity: 0.8;
 }
 a#ticket-link > span::after {
@@ -240,8 +247,8 @@ a#ticket-link:hover,
 a#ticket-link:focus {
   box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, 1);
   transform: translateZ(0px) translateX(3px) translateY(0px);
-  background: var(--tertiary-color);
-  background: #f8cee85a;
+  /* background: var(--tertiary-color);
+  background: #f8cee85a; */
 
   /* border: none; */
 }
@@ -254,7 +261,7 @@ a#ticket-link::before {
   height: 100%;
   width: 0;
   border-radius: 0.4rem;
-  background-color: #66a3b6;
+  background-color: var(--primary-color);
   z-index: -4;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -347,8 +354,23 @@ a#ticket-link:hover::before {
 }
 
 /* NAVBAR MEDIA QUERIES */
+@media (width <= 1350px) {
+  .nav-wrapper {
+    padding: 0 1%;
+  }
+  nav.navbar1 {
+    justify-content: space-between;
+  }
+
+  nav.navbar1 li {
+    margin: 0 0.2rem;
+  }
+}
 
 @media (width <= 75em) {
+  .nav-wrapper {
+    padding: 0 6%;
+  }
   .nav-wrapper input.nav-toggle {
     display: block;
   }
@@ -428,6 +450,10 @@ a#ticket-link:hover::before {
 }
 
 @media (width <= 48.25em) {
+  /* .nav-date-box {
+    display: none;
+  } */
+
   .nav-wrapper input.nav-toggle {
     display: block;
   }
@@ -457,4 +483,14 @@ a#ticket-link:hover::before {
   }
 }
 
+@media (width <= 40em) {
+  .nav-date-box {
+    display: none;
+  }
+}
+
 /* NAVBAR END */
+
+/* path {
+  transition: all 3s ease;
+} */

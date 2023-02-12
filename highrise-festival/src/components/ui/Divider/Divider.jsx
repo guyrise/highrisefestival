@@ -7,8 +7,8 @@ import "./divider.css";
 
 const Divider = () => {
   return (
-    <div className="w-screen">
-      <div className="custom-shape-divider-bottom-1673885300">
+    <div className="w-screen m-0 p-0">
+      <div className="custom-shape-divider-bottom">
         <svg
           data-name="Layer 1"
           viewBox="0 0 1200 120"

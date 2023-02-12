@@ -8,13 +8,13 @@ const FAQDropdown = (props) => {
   return (
     <div
       className={
-        "accordion-group border-y-4 border-rose-300/90 " +
+        "accordion-group border-y-4 border-rose-300 " +
         (props.last ? "" : "mb-1 rounded-md")
       }
     >
       <div
         className={
-          "accordion bg-rose-300/90 border-rose-300/90" +
+          "accordion bg-rose-300 border-rose-300" +
           (isFAQOpen ? " border-b-2 " : "")
         }
       >
@@ -58,7 +58,7 @@ const FAQDropdown = (props) => {
               }
         }
       >
-        <div className="accordion-content bg-rose-200/80 p-6">
+        <div className="accordion-content bg-rose-200 p-6">
           <motion.p
             animate={isFAQOpen ? { opacity: 1 } : { opacity: 0 }}
             transition={{ opacity: { duration: 1, ease: "easeInOut" } }}

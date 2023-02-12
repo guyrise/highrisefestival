@@ -32,11 +32,13 @@ const FAQS = (props) => {
 
   return (
     <>
-      <div className="page-wrapper page">
-        <div className="faq-wrapper border-y-8 rounded-2xl border-rose-300/90 ">
-          <h4 className="h4-title">FAQ's</h4>
+      <div className="page-wrapper">
+        <div className="page">
+          <div className="faq-wrapper border-y-8 rounded-2xl border-rose-300 ">
+            <h4 className="h4-title">FAQ's</h4>
 
-          {getQuestions()}
+            {getQuestions()}
+          </div>
         </div>
       </div>
     </>

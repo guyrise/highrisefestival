@@ -1,10 +1,22 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* lancelot */
+@import url("https://fonts.googleapis.com/css2?family=Lancelot&display=swap");
+
+/* cooper black adobe */
+@import url("https://use.typekit.net/blc5uza.css");
+
 @font-face {
   font-family: "nove";
   src: url(./fonts/Nove.ttf);
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Headlined";
+  src: url(./fonts/Headlined.otf);
 }
 
 @font-face {
@@ -29,13 +41,13 @@
 
 :root {
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "cooper-black-std", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  height: 100%;
+  /* height: 100%; */
 
-  color: #000;
+  color: rgb(26, 26, 26);
   background-color: rgb(255, 255, 255);
 
   background-position: cover;
@@ -48,22 +60,18 @@
 
   margin: none;
 
-  --primary-color: hsl(353, 75%, 67%);
+  --primary-color: #ea6d7c;
   --primary-color-brighter: hsl(353, 100%, 76%);
   --primary-color-brighter-transparent: hsl(353 100% 76% / 0.3);
   --secondary-color: hsl(53, 100%, 54%);
   --tertiary-color: hsl(23, 76%, 68%);
-  --primary-font: "Roboto Mono", sans-serif;
-  --secondary-font: "Montserrat", sans-serif;
+  --sky-color: #55b7ea;
+  --primary-font: "cooper-black-std", sans-serif;
+  --secondary-font: "cooper-black-std", sans-serif;
   --special-font: "Nove";
-  --nav-background: rgb(238, 126, 115);
-  --nav-background-gradient: linear-gradient(
-    180deg,
-    rgba(238, 126, 115, 1) 7%,
-    rgba(236, 118, 118, 1) 42%,
-    rgba(235, 114, 121, 1) 100%
-  );
-  --card-background: #ebe7ce;
+  --nav-background: #ea6d7c;
+  /* --card-background: #ebe7ce; */
+  --card-background: none;
 }
 
 /* REMOVE DEFAULT LINK TEXT DECORATION */
@@ -86,20 +94,24 @@ a:hover {
 } */
 
 html {
-  overflow: hidden;
-  height: 100%;
+  /* overflow: hidden; */
+  /* height: 100%; */
+  /* min-height: 100vh; */
   scroll-behavior: smooth;
+
+  /* width: 100vw;
+    height: 260vh; */
 }
 
 body {
   margin: 0;
   /* display: flex; */
   min-width: 320px;
-  min-height: 100vh;
+  width: 100vw;
+  /* min-height: 100vh; */
   /* overflow: auto; this was fine until I put in mazeletter bg, with its overflow to hidden. */
   overflow-y: auto;
   /* overflow-x: hidden; */
-  height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -120,7 +132,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--special-font);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
 }
 h1 {
   font-size: 3.5em;
@@ -138,65 +151,67 @@ h4 {
 }
 
 p {
-  font-family: var(--secondary-font);
-  line-height: 1.9rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  line-height: 2.5rem;
   letter-spacing: 0.8px;
+  font-size: 1.4rem;
 }
 
 /* APP + BG LAYER */
 
 .app-wrapper {
-  position: relative;
   width: 100vw;
+  background-color: linear-gradient(to bottom, #a4e5eb, #62bfeb);
+  background: url(./assets/images/borders/highrise-borders-both.png),
+    linear-gradient(to bottom, #a4e5eb, #62bfeb);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.mazeletter-bg {
-  z-index: -1;
+
+.app-background {
+  height: auto;
+  width: 100vw;
   position: fixed;
-  overflow-y: hidden;
-  pointer-events: none;
-}
-.mazeletter {
-  font-family: "Mazeletter";
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-  /* color: var(--tertiary-color);
-  background-color: var(--primary-color); */
-  z-index: 1;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font-size: 66px;
-  line-height: 66px;
-  overflow: hidden;
-  white-space: nowrap;
-  pointer-events: none;
+}
+
+.app-background img {
+  width: 25%;
 }
 
 /* WRAPPERS */
 
-.programme-wrapper {
+.page-wrapper {
   position: relative;
+  padding-top: 5rem;
 }
 
 /* PAGES */
 
 .page {
-  margin: 1rem 12% 3rem 12%;
-  padding: 4rem 0 4rem 0;
+  margin: 0 9vw 0 9vw;
+  padding: 3rem 0 4rem 0;
+}
+
+@media (width <= 745px) {
+  .page {
+    margin: 0;
+  }
 }
 
 /* HOMEPAGE */
-
+/* 
 .homepage-wrapper {
   position: relative;
-}
+} */
 
 /* PROGRAMME */
 
-.programme-wrapper {
+/* .programme-wrapper {
   position: relative;
   height: 100%;
-}
+} */

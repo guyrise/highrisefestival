@@ -1,17 +1,22 @@
-/* FOOTER */
+/* SVG */
 
+/* FOOTER */
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9995;
+}
 .highrise-footer {
   /* background-color:#26272b; */
-  padding: 2rem 0 2rem;
+  padding-bottom: 2rem;
   font-size: 14px;
   line-height: 24px;
   color: #fff;
   background-color: #ea6d7c;
   font-family: var(--secondary-font);
   text-align: center;
-  position: relative;
-  bottom: 0;
-  left: 0;
   width: 100%;
   z-index: 10;
   margin-top: auto;

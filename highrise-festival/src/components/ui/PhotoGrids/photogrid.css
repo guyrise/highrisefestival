@@ -1,6 +1,7 @@
 .photo-btn-container {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .photogrid-wrapper {
@@ -24,7 +25,7 @@
 
 .photo-btn-box-HERO {
   overflow: hidden;
-  max-height: 650px;
+
   position: relative;
 }
 
@@ -32,7 +33,6 @@
   position: relative;
   aspect-ratio: 2/1;
   min-height: 25vh;
-
   object-fit: cover;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -50,18 +50,20 @@
 .photo-hero {
   position: relative;
   aspect-ratio: 2/1;
-  min-height: 25vh;
+
+  height: clamp(200px, 600px, 80vh);
+
   object-fit: cover;
-  transition: all 0.2s ease;
-  filter: brightness(80%);
+  transition: all 3s ease;
+
   justify-self: center;
   object-position: center bottom;
 }
 
 .photo-hero:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  transform: scale(1.03);
+  -webkit-transform: scale(1.13);
+  -moz-transform: scale(1.13);
+  transform: scale(1.13);
 
   filter: brightness(100%);
 }
@@ -72,17 +74,16 @@
     1px 5px 0 black;
   position: absolute;
   left: 50%;
-  top: -5px;
+  top: -20px;
   z-index: 2;
   transform: translate3d(-50%, -50%, 0);
   padding: 4px 25px 7px;
   width: auto;
-  background-color: var(--primary-color);
-
-  border: 1px solid var(--primary-color);
+  background-color: var(--nav-background);
   border-radius: 0.7rem;
   outline: 2px solid black;
   outline-style: ridge;
+  white-space: nowrap;
 }
 
 .h3-overlay {

@@ -1,89 +1,83 @@
 /* COVER START */
 
-div.imgBox {
-  /* margin-top: 100px; */
+.home-hero-box {
   position: relative;
   width: 100vw;
-  min-height: 800px;
-  height: 200vh;
-  overflow: hidden;
+
+  max-width: 100vw;
+  max-height: 100vh;
+  aspect-ratio: 1.7/1;
+  z-index: 1;
+  background: url(../../../assets/images/festival-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.divider {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto 6rem auto;
+  height: 3px;
+  /* margin: 2% 0%; */
+}
+
+.divider-heading {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: var(--special-font);
+
+  padding: 2% 1%;
+}
+
+@media (max-width: 900px) {
+  .home-hero-box {
+    aspect-ratio: 1.4/1;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-hero-box {
+    aspect-ratio: 1.2/1;
+  }
+}
+
+.headings-box {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: rgb(235, 114, 121);
-  background: linear-gradient(
-    180deg,
-    rgba(235, 114, 121, 1) 0%,
-    rgba(249, 179, 118, 1) 50%,
-    rgba(235, 114, 121, 1) 100%
-  );
+  justify-content: center;
+  margin: 1rem auto;
+  /* padding-top: 2rem; */
 }
 
-.parralax-box {
-  position: relative;
-  display: flex;
-  width: 100vw;
-  min-height: 50vh;
-  /* width: 100vw;
-  min-height: 800px;
-  */
-  /* aspect-ratio: 1/1; */
-  height: 100vh;
+.home-hero-box .headings-box h1 {
+  font-size: 7rem;
+  letter-spacing: -3px;
+  color: white;
+  /* text-shadow: -10px -5px 0 #000, -5px -2px 0 #000, -10px 10px 0 #000,
+    -5px 10px 0 #000; */
+  text-shadow: -15px -5px 0 #000, -5px 8px 0 #000, -15px 10px 0 #000,
+    -5px 10px 0 #000;
+  margin-bottom: 1rem;
 }
 
-/* div.imgBox:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, #eea057, transparent);
-  z-index: 10000;
-} */
-
-div.parralax-box img {
-  position: absolute;
-  top: 0;
-  /* left: 0; */
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
+.home-hero-box .headings-box h3 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: -3px -2px 0 #000, -5px 3px 0 #000, -5px 1px 0 #000,
+    -5px 1px 0 #000;
+  margin-bottom: 1rem;
 }
 
-/* #mg {
-  opacity: 0;
-}
-
-#LS {
-  left: -40%;
-}
-#RS {
-  right: -40%;
-}
-#fg {
-  top: 30%;
-}
-#logo {
-  opacity: 0;
-} */
-
-/* #LS
-#RS
-#mg
-#fg
-#logo
-
- */
-
-div.imgBox h2 {
-  position: absolute;
-  color: #fff;
-  font-size: 80px;
-  bottom: 300px;
-  /* font-family: "Oi", cursive; */
-  font-weight: 100;
-  letter-spacing: 2rem;
-  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 20px 0 #000,
-    5px 5px 0 #000;
+.home-hero-box .headings-box h6 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: -3px -2px 0 #000, -2px 1px 0 #000, -1px 1px 0 #000,
+    -2px 1px 0 #000;
+  margin-bottom: 1rem;
 }

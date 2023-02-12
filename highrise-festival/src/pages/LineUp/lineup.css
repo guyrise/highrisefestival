@@ -1,0 +1,47 @@
+.lineup-img {
+  margin-bottom: -5rem;
+  padding-top: 1rem;
+}
+
+@media (width <= 40em) {
+  .lineup-img {
+    margin-bottom: -2rem;
+  }
+}
+
+.lineup-content h1 {
+  font-family: var(--special-font);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+  font-size: 6em;
+  white-space: nowrap;
+}
+
+.lineup-content h3 {
+  font-family: var(--special-font);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+  font-size: 3em;
+}
+
+.lineup-content p {
+  /* display: inline-block; */
+  /* white-space: nowrap; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0 10rem;
+}
+
+.lineup-content p span {
+  display: inline-block;
+  /* white-space: nowrap; */
+  margin: 10px 15px;
+  font-size: 2.4rem;
+}
+
+.lineup-content p span svg {
+  font-size: 0.7rem;
+}

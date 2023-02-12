@@ -3,7 +3,7 @@ import PhotoGrid from "../../components/ui/PhotoGrids/PhotoGrid.jsx";
 
 const Programme = (props) => {
   return (
-    <div className="programme-wrapper">
+    <div className="page-wrapper">
       <div className="page ">
         <PhotoGrid
           photoGrid={props.programmeData.photoGrid}

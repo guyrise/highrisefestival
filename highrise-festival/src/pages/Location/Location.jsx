@@ -1,11 +1,13 @@
 import React from "react";
-import PageFormat from "../../components/PageFormat/PageFormat";
+import PageFormat from "../../components/ui/PageFormat/PageFormat";
 
 const Location = (props) => {
   return (
     <>
-      <div className="page">
-        <PageFormat pageData={props.locationData} />
+      <div className="page-wrapper">
+        <div className="page">
+          <PageFormat pageData={props.locationData} />
+        </div>
       </div>
     </>
   );

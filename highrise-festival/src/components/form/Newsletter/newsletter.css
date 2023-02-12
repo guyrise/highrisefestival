@@ -1,0 +1,237 @@
+.newsletter-wrapper {
+  /* font-family: "basis-grotesque-regular", helvetica, sans-serif; */
+  letter-spacing: 0.5px;
+  color: #000;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  position: relative;
+
+  background-color: var(--tertiary-color);
+  transform: translateY(120px);
+  border-radius: 1rem;
+  min-height: 30vh;
+}
+
+.newsletter-content {
+  margin: 0 4vw 0 4vw;
+  /* padding-top: 30px;
+  padding-bottom: 60px; */
+
+  position: relative;
+  z-index: 1;
+}
+.newsletter-content h4 {
+  /* margin: 0 6% 0 6%; */
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+  /* line-height: 42px; */
+}
+
+.newsletter-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* margin: 0 6% 0 6%; */
+}
+
+.newsletter-image-box {
+  overflow: hidden;
+  /* position: relative; */
+  width: 50vw;
+  /* max-height: 80vh; */
+  min-height: 50vh;
+  background-image: url(../../../assets/images/highrise-firebreather.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 0 1rem 0 0;
+}
+
+.newsletter-image {
+  position: relative;
+  /* aspect-ratio: 1.1/1; */
+  /* max-height: 70vh; */
+  /* width: 50vw;
+  max-height: 70vh; */
+
+  object-fit: cover;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  filter: brightness(80%);
+  justify-self: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  /* margin-bottom: 1rem; */
+  line-height: 2.3rem;
+  padding: 0rem 1.3rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: var(--tertiary-color);
+  width: 100%;
+  transition: 0.2s ease;
+}
+
+input:focus-visible {
+  border: none;
+  outline: 2px solid #1a76d2;
+  border-radius: 1rem;
+  /* box-shadow: 0 0 5px #1a76d2; */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--tertiary-color) inset !important;
+}
+
+.input-label {
+  position: absolute;
+  top: 8px;
+  left: 1.5rem;
+  padding: 0px 2px;
+  border-radius: 1rem;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  cursor: text;
+  color: grey;
+  transition: 0.3s ease;
+  background-color: var(--tertiary-color);
+}
+
+.newsletter-input:focus + .input-label,
+.newsletter-input:active + .input-label,
+.newsletter-input:focus-visible + .input-label,
+.newsletter-input:not(:placeholder-shown) + .input-label {
+  font-size: 0.75em;
+  top: -7px;
+  line-height: 0.7rem;
+  pointer-events: none;
+}
+
+.newsletter-input:focus + .input-label,
+.newsletter-input:active + .input-label,
+.newsletter-input:focus-visible + .input-label {
+  color: #1a76d2;
+}
+
+.checkbox-label {
+  font-size: 0.8rem;
+  line-height: 12px;
+  padding: 0 1rem;
+}
+
+#contacted-check {
+  width: 2rem;
+  height: 2rem;
+}
+
+.privacy-policy-link {
+  text-decoration: underline;
+  color: #0000ee;
+}
+
+.submit-box {
+  min-width: 10rem;
+}
+
+button#subscribe-button {
+  cursor: pointer;
+  /* color: var(--secondary-color); */
+  color: #e8e8e8;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-family: var(--special-font);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+  min-width: 50%;
+  height: calc(100% / 3);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  white-space: nowrap;
+  padding: 1.4rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--sky-color);
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  /* perspective: 100px; */
+  transform: translateZ(0px) translateX(5px) translateY(-2px);
+  -webkit-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+button#subscribe-button > span::before,
+button#subscribe-button > span::after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0.65rem;
+  left: 1rem;
+  opacity: 0.8;
+}
+button#subscribe-button > span::after {
+  color: #f0f;
+  z-index: -2;
+}
+button#subscribe-button > span::before {
+  color: #0ff;
+  z-index: -1;
+}
+button#subscribe-button:hover > span::before {
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+button#subscribe-button:hover > span::after {
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+}
+
+button#subscribe-button span {
+  font-family: var(--special-font);
+}
+
+button#subscribe-button:hover,
+button#subscribe-button:focus {
+  box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, 1);
+  transform: translateZ(0px) translateX(3px) translateY(0px);
+  /* background: var(--tertiary-color);
+    background: #f8cee85a; */
+
+  /* border: none; */
+}
+
+button#subscribe-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.4rem;
+  background-color: var(--primary-color);
+  z-index: -4;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.5s ease-in-out;
+}
+
+button#subscribe-button:hover {
+  color: var(--secondary-color);
+}
+
+button#subscribe-button:hover::before {
+  width: 100%;
+}
+
+.subscribe-confirmation {
+  transition: all 0.3s ease-in-out;
+}
