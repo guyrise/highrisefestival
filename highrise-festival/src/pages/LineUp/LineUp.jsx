@@ -1,8 +1,6 @@
 import React from "react";
 import lineup1 from "../../assets/images/highrise-lineup-1st.png";
 
-import { BsCircleFill } from "react-icons/bs";
-
 import "./lineup.css";
 
 const LineUp = (props) => {
