@@ -96,7 +96,7 @@ nav.navbar1 {
   display: inline-flex;
   flex: 1;
   /* max-width: 60vw; */
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 5.5rem;
 

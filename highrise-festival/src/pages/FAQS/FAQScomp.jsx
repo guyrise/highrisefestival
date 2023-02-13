@@ -16,17 +16,6 @@ const FAQScomp = (props) => {
           last={faqData.length - 1 === index ? true : false}
         />
       );
-      // } else {
-      //   return (
-      //     <FAQDropdown
-      //       key={`question ${index}`}
-      //       question={obj.question}
-      //       answer={obj.answer}
-      //       index={index}
-      //       last={false}
-      //     />
-      //   );
-      // }
     });
   };
 

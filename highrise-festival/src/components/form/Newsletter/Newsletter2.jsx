@@ -19,6 +19,7 @@ const Newsletter = () => {
     /* Optional options */
     threshold: 0,
     rootMargin: "-150px",
+    fallbackInView: true,
   });
 
   const [contacted, setContacted] = useState(false);

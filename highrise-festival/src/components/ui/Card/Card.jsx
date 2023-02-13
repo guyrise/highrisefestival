@@ -35,7 +35,7 @@ const Card = (props) => {
         tiltMaxAngleY={0.3}
       >
         <div
-          className={`card-wrapper lg:gap-12 xl:gap-24 my-16 md:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
+          className={`card-wrapper lg:gap-12 xl:gap-12 my-36 lg:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
         >
           <div
             className={`info page-content pt-8 pb-0  text-start
@@ -58,7 +58,7 @@ const Card = (props) => {
           </div>
 
           <div
-            className={`img-wrapper pt-8 pb-0 pt-8 md:py-8  ${
+            className={`img-wrapper pt-8 pb-0 pt-8 lg:py-8  ${
               left ? "order-last lg:order-first" : ""
             }`}
           >
