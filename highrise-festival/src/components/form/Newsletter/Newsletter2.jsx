@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import axios from "axios";
 
+import { useInView } from "react-intersection-observer";
+
 import LoadingLogo from "../../helpers/LoadingLogo/LoadingLogo";
 
 // images
@@ -12,6 +14,12 @@ import "./newsletter.css";
 
 const Newsletter = () => {
   const form = useRef();
+
+  const { ref: newsletterRef, inView: visible } = useInView({
+    /* Optional options */
+    threshold: 0,
+    rootMargin: "-150px",
+  });
 
   const [contacted, setContacted] = useState(false);
 
@@ -67,7 +75,10 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="newsletter-wrapper">
+    <div
+      ref={newsletterRef}
+      className={`${visible ? "show-newsletter" : ""} newsletter-wrapper`}
+    >
       <div className="newsletter-grid grid grid-cols-1 md:grid-cols-2">
         {!subscribed && (
           <div className="newsletter-content pt-12 pb-32">

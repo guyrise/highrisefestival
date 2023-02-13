@@ -84,6 +84,7 @@
   outline: 2px solid black;
   outline-style: ridge;
   white-space: nowrap;
+  font-family: var(--special-font);
 }
 
 .h3-overlay {

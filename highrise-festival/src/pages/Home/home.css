@@ -1,0 +1,9 @@
+.home-para {
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(100px);
+}
+.home-para.para-show {
+  opacity: 1;
+  transform: translateY(0);
+}

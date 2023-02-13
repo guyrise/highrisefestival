@@ -28,7 +28,7 @@ const Navbar = (props) => {
 
   useEffect(() => {
     const COLOR_CHANGE_THRESHOLD =
-      location.pathname == "/programme/line-up" ? 0 : 100;
+      location.pathname == "/programme/line-up" ? 0 : 60;
 
     if (window.scrollY >= COLOR_CHANGE_THRESHOLD && navColor !== true) {
       setNavColor(true);

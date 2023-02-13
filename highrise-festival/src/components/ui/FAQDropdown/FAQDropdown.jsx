@@ -1,22 +1,31 @@
 import React, { useState } from "react";
 
+import { useInView } from "react-intersection-observer";
+
 import { motion } from "framer-motion";
 
 const FAQDropdown = (props) => {
+  const { ref: faqRef, inView: visible } = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-30px",
+    fallbackInView: true,
+  });
+
   const [isFAQOpen, setFAQOpen] = useState(false);
 
   return (
     <div
-      className={
-        "accordion-group border-y-4 border-rose-300 " +
-        (props.last ? "" : "mb-1 rounded-md")
-      }
+      ref={faqRef}
+      className={`${
+        visible ? "show-faq" : ""
+      } accordion-group  border-rose-300 mb-1 rounded-2xl `}
     >
       <div
-        className={
-          "accordion bg-rose-300 border-rose-300" +
-          (isFAQOpen ? " border-b-2 " : "")
-        }
+        className={`accordion bg-rose-300 border-rose-300 ${
+          isFAQOpen ? " border-b-2 " : ""
+        }`}
       >
         <input
           type="checkbox"
