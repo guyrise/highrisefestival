@@ -381,7 +381,7 @@ const locationData = {
   photoGrid: [{ image: lazers, label: "" }],
   pageContent: {
     heading: "Location",
-    pageIntro: [
+    description: [
       "We are hugely excited to have secured, Grange Farm, one of our favourite festival sites in the uk for our first year of Highrise!",
       "Sentence 2",
       " Sentence 3",

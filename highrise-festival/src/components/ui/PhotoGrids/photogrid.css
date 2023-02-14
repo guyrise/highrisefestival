@@ -34,9 +34,9 @@
   aspect-ratio: 2/1;
   min-height: 25vh;
   object-fit: cover;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
-  filter: brightness(80%);
+  /* filter: brightness(80%); */
   justify-self: center;
 }
 
@@ -44,7 +44,8 @@
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   transform: scale(1.1);
-  filter: brightness(100%);
+
+  /* filter: brightness(100%); */
 }
 
 .photo-hero {
@@ -64,8 +65,6 @@
   -webkit-transform: scale(1.13);
   -moz-transform: scale(1.13);
   transform: scale(1.13);
-
-  filter: brightness(100%);
 }
 
 .h4-title {
