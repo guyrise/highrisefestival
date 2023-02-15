@@ -4,7 +4,6 @@ import PageFormat from "../../components/ui/PageFormat/PageFormat";
 import PageFormat2 from "../../components/ui/PageFormat/PageFormat2";
 
 const GetInvolved = (props) => {
-  console.log(props.getInvolvedData);
   return (
     <div className="page-wrapper">
       <div className="page">

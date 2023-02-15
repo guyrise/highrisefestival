@@ -4,7 +4,6 @@ import PhotoGridHero from "../../components/ui/PhotoGrids/PhotoGridHero";
 import FAQScomp from "../FAQS/FAQScomp";
 
 const Accomodation = (props) => {
-  console.log(props.accomodationData);
   return (
     <>
       <div className="page-wrapper">

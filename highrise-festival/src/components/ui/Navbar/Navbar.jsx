@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -10,8 +10,10 @@ import navLogo from "../../../assets/images/HighriseLogoCropped.webp";
 import "./navbar.css";
 
 const Navbar = (props) => {
+  const { pathname } = useLocation();
   const [isNavOpen, setNavOpen] = useState(false);
   const [navColor, setNavColor] = useState(false);
+  const [threshold, setThreshold] = useState(60);
   // const [pathname, setPathname] = useState(`${useLocation().pathname}`);
   const [mousePos, setMousePos] = useState({ x: "", y: "" });
   const [offset, setOffset] = useState(0);
@@ -26,13 +28,20 @@ const Navbar = (props) => {
   }
 
   useEffect(() => {
-    const COLOR_CHANGE_THRESHOLD =
-      location.pathname == "/programme/line-up" ? 0 : 60;
+    if (pathname === "/programme/line-up") {
+      setNavColor(true);
+      setThreshold(0);
+    } else {
+      setNavColor(false);
+      setThreshold(60);
+    }
+  }, [pathname]);
 
-    if (window.scrollY >= COLOR_CHANGE_THRESHOLD && navColor !== true) {
+  useEffect(() => {
+    if (window.scrollY >= threshold && navColor !== true) {
       setNavColor(true);
     }
-    if (window.scrollY < COLOR_CHANGE_THRESHOLD && navColor !== false) {
+    if (window.scrollY < threshold && navColor !== false) {
       setNavColor(false);
     }
   }, [window.scrollY]);

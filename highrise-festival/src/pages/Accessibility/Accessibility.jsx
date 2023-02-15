@@ -2,6 +2,7 @@ import React from "react";
 
 import PhotoGridHero from "../../components/ui/PhotoGrids/PhotoGridHero";
 import PageFormat from "../../components/ui/PageFormat/PageFormat";
+import FAQScomp from "../FAQS/FAQScomp";
 
 const Accessibility = (props) => {
   return (
@@ -14,6 +15,9 @@ const Accessibility = (props) => {
           />
 
           <PageFormat pageData={props.accessibilityData} />
+          <div className="page-faqs section">
+            <FAQScomp faqData={props.accessibilityData.faqData} />
+          </div>
         </div>
       </div>
     </>

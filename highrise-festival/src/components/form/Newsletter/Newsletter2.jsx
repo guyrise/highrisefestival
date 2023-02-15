@@ -60,14 +60,10 @@ const Newsletter = () => {
       .then((response) => {
         //handle success
         if (response.status == 200 && response.data.success) {
-          console.log("user was successfully subscribed");
           setSubscribed(true);
         } else if (response.status == 200 && !response.data.success) {
-          console.log("error");
-          console.log(response.data.errors);
           setError(true);
         }
-        console.log(response);
       })
       .catch((error) => {
         //handle error

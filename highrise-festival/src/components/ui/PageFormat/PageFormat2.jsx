@@ -5,15 +5,6 @@ import Card from "../Card/Card";
 import "./pageFormat.css";
 
 const PageFormat = (props) => {
-  // useEffect(() => {
-  //   const observer = new IntersectionalObserver((entries) => {
-  //     const entry = entries[0];
-  //     console.log(entry);
-
-  //     observer.observe.cardRef.current;
-  //   });
-  // }, []);
-
   const wellnessPage = props.pageData.wellnessPage;
   return (
     <div className="page-format-wrapper mt-8 pt-8">

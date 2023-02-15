@@ -221,50 +221,56 @@ const soundsystemData = {
 // SoundSystem Page
 const venuesData = {
   title: "Stages & Venues",
-  pageContent: [
-    {
-      image: Electrikal,
-      color: "text-white",
-      label: "Elektrical",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-    {
-      image: Iration,
-      color: "text-white",
-      label: "Iration Steppas",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-    {
-      image: FirmlyRooted,
-      color: "text-white",
-      label: "Firmly Rooted",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-    {
-      image: Channel1,
-      color: "text-white",
-      label: "Channel One",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-    {
-      image: Sinai,
-      color: "text-white",
-      label: "Sinai",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-    {
-      image: ChaiW,
-      color: "text-white",
-      label: "Chai Wallah",
-      description:
-        "Some description about this soundsystem saying what its done and who they are.",
-    },
-  ],
+
+  pageContent: {
+    pageIntro: [
+      "We are bringing some of the best UK soundsystems to Highrise Festival 2023.",
+    ],
+    cards: [
+      {
+        image: Electrikal,
+        color: "",
+        label: "Elektrical Soundsystem",
+        description:
+          "Some description about this soundsystem saying what its done and who they are.",
+      },
+      {
+        image: Iration,
+        color: "",
+        label: "Iration Steppas Soundsystem",
+        description:
+          "Iration Steppas are a Leeds institution, active for over 23 years as a sound system and production unit composed of Mark Iration and Dennis Rootical.",
+      },
+      {
+        image: FirmlyRooted1,
+        color: "",
+        label: "Firmly Rooted",
+        description:
+          "Firmly Rooted is a Soundsystem/Record label pushing the finest roots inspired sounds to the people. Run by a young crew of engineers, producers and selecta's who have been submerged within the bristol sound for ten years. Playing a heavyweight selection of modern day roots, dub and steppas. Firmly rooted perform with a focus on a conscious message, and providing soundsystem music for all.",
+      },
+      {
+        image: Channel1,
+        color: "",
+        label: "Channel One Soundsystem",
+        description:
+          "Some description about this soundsystem saying what its done and who they are.",
+      },
+      {
+        image: Sinai,
+        color: "",
+        label: "Sinai Soundsystem",
+        description:
+          "Some description about this soundsystem saying what its done and who they are.",
+      },
+      {
+        image: ChaiW,
+        color: "",
+        label: "Chai Wallah Soundsystem",
+        description:
+          "Some description about this soundsystem saying what its done and who they are.",
+      },
+    ],
+  },
 };
 
 // Info Page

@@ -16,7 +16,7 @@ const PhotoGrid = (props) => {
       : length % 2 === 0
       ? 2
       : 1;
-  console.log(pathname);
+
   return (
     <>
       <div className="photo-btn-container mb-2">
