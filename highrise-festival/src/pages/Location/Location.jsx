@@ -6,7 +6,8 @@ import PhotoGridHero from "../../components/ui/PhotoGrids/PhotoGridHero";
 
 const Location = (props) => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBXQweV-QuuHuC-zsTyfvoGYR4HRxP3cAY",
+    // googleMapsApiKey: "AIzaSyBXQweV-QuuHuC-zsTyfvoGYR4HRxP3cAY",
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
   });
 
   return (
