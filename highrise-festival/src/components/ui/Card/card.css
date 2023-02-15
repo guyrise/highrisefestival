@@ -72,7 +72,6 @@
 }
 
 .info p {
-  /* font-size: 1.1rem; */
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -82,4 +81,9 @@
   text-transform: none;
 
   /* color: white; */
+}
+
+.info p.sanctury {
+  font-family: "lancelot", sans-serif;
+  font-size: 1.8rem;
 }
