@@ -5,8 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 // import { motion } from "framer-motion";
 
 // images
-import navLogo from "../../../assets/images/HighriseLogoCropped.png";
-import arrow from "../../../assets/images/arrow-right.svg";
+import navLogo from "../../../assets/images/HighriseLogoCropped.webp";
 
 import "./navbar.css";
 

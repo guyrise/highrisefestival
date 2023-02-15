@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import Tilt from "react-parallax-tilt";
-import Divider from "../Divider/Divider";
 
 import { useInView } from "react-intersection-observer";
 

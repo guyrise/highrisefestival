@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../assets/images/HighriseLogoCropped.png";
+import Logo from "../../../assets/images/HighriseLogoCropped.webp";
 
 const LoadingLogo = () => {
   return (

@@ -163,7 +163,7 @@ p {
 .app-wrapper {
   width: 100vw;
   background-color: linear-gradient(to bottom, #a4e5eb, #62bfeb);
-  background: url(./assets/images/borders/highrise-borders-both.png),
+  background: url(./assets/images/borders/highrise-borders-both.webp),
     linear-gradient(to bottom, #a4e5eb, #62bfeb);
   background-size: cover;
   background-position: center top;

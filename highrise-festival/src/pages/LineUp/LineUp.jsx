@@ -1,5 +1,5 @@
 import React from "react";
-import lineup1 from "../../assets/images/highrise-lineup-1st.png";
+import lineup1 from "../../assets/images/highrise-lineup-1st.webp";
 
 import "./lineup.css";
 

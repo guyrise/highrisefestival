@@ -37,24 +37,18 @@ import FAQData from "./data/FAQPage.json";
 // IMAGES
 
 // BACKGROUND
-import highriseSidesBottom from "./assets/images/highrise-background-sides-bottom.png";
-import highriseBorderLeft from "./assets/images/borders/highrise-border-left.svg";
-import highriseBorderRight from "./assets/images/borders/highrise-border-right.svg";
-
-import highriseBorderLeft1 from "./assets/images/borders/highrise-border-left1.png";
-import highriseBorderRight1 from "./assets/images/borders/highrise-border-right1.png";
 
 // PROGRAMME PHOTOGRID IMAGES
 import beautifulForest1 from "./assets/images/deepAi festival images/beautiful-forest.jpeg";
-import mushroomStage1 from "./assets/images/midjourney/mushroom-stage.png";
-import mushroomStage2 from "./assets/images/midjourney/mushroom-stage2.png";
+import mushroomStage1 from "./assets/images/midjourney/mushroom-stage.webp";
+import mushroomStage2 from "./assets/images/midjourney/mushroom-stage2.webp";
 import galaxyJungle from "./assets/images/deepAi festival images/galaxy-jungle1.jpeg";
 
 // INFO PHOTOGRID IMAGES
 import camping1 from "./assets/images/deepAi festival images/camping1.jpeg";
 import camping2 from "./assets/images/deepAi festival images/camping2.jpeg";
-import cartoonFestival from "./assets/images/midjourney/cartoon-festival1.png";
-import campervan from "./assets/images/campervan.png";
+import cartoonFestival from "./assets/images/midjourney/cartoon-festival1.webp";
+import campervan from "./assets/images/Highrise Festival Website/campervan.webp";
 
 // TRAVEL IMAGES
 import campervan1 from "./assets/images/Highrise Festival Website/campervan.jpg";
@@ -66,11 +60,11 @@ import cargirls from "./assets/images/Highrise Festival Website/car-girls.jpg";
 // ACCOMODATION IMAGES
 import girlCamping from "./assets/images/Highrise Festival Website/girl-camping.jpg";
 import belltent1 from "./assets/images/Highrise Festival Website/bell-tent-night.jpg";
-import belltent2 from "./assets/images/Highrise Festival Website/bell-tent1.jpg";
-import airstream1 from "./assets/images/Highrise Festival Website/airstream1.jpg";
-import airstream2 from "./assets/images/Highrise Festival Website/airstream2.jpg";
-import airstream3 from "./assets/images/Highrise Festival Website/airstream3.jpg";
-import bwCamping from "./assets/images/Highrise Festival Website/b&w-camping.jpg";
+import belltent2 from "./assets/images/Highrise Festival Website/bell-tent1.webp";
+import airstream1 from "./assets/images/Highrise Festival Website/airstream1.webp";
+import airstream2 from "./assets/images/Highrise Festival Website/airstream2.webp";
+import airstream3 from "./assets/images/Highrise Festival Website/airstream3.webp";
+import bwCamping from "./assets/images/Highrise Festival Website/bw-camping.webp";
 
 // GET INVOLVED IMAGES
 import hands from "./assets/images/Highrise Festival Website/hands.jpg";
@@ -84,11 +78,11 @@ import lazers from "./assets/images/highrise-lazers.jpeg";
 // SOUNDSYSTEM IMAGES
 import Electrikal from "./assets/images/Highrise Festival Website/ELECTRIKAL.jpg";
 import Iration from "./assets/images/Highrise Festival Website/IRATION-STEPPAS.jpg";
-import FirmlyRooted1 from "./assets/images/Highrise Festival Website/firmly-rooted-soundsystem1.png";
+import FirmlyRooted1 from "./assets/images/Highrise Festival Website/firmly-rooted-soundsystem1.webp";
 import FirmlyRooted from "./assets/images/Highrise Festival Website/FirmlyRooted.jpg";
-import Sinai from "./assets/images/Highrise Festival Website/Sinai.png";
-import ChaiW from "./assets/images/Highrise Festival Website/ChaiWallah.png";
-import Channel1 from "./assets/images/Highrise Festival Website/ChannelOne.png";
+import Sinai from "./assets/images/Highrise Festival Website/sinai-soundsystem-crew.webp";
+import ChaiW from "./assets/images/Highrise Festival Website/ChaiWallah.webp";
+import Channel1 from "./assets/images/Highrise Festival Website/ChannelOne.webp";
 
 // WELLNESS IMAGES
 import hottub from "./assets/images/Highrise Festival Website/hot-tub.jpg";
