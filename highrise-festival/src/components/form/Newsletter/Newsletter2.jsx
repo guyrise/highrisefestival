@@ -82,7 +82,7 @@ const Newsletter = () => {
     >
       <div className="newsletter-grid grid grid-cols-1 md:grid-cols-2">
         {!subscribed && (
-          <div className="newsletter-content pt-12 pb-32">
+          <div className="newsletter-content pt-12 pb-32 xl:px-12">
             <h4>Join our mailing list!</h4>
             <p>
               Keep up to speed with the latest announcements, news and ticket
@@ -166,7 +166,10 @@ const Newsletter = () => {
                 <input type="hidden" name="anticsrf" value="true" />
 
                 <div className="checkbox-box col-span-4 lg:col-span-5 flex justify-between items-center">
-                  <label htmlFor="gdpr_check" className="checkbox-label">
+                  <label
+                    htmlFor="gdpr_check"
+                    className="checkbox-label md:pr-12 md:pl-2"
+                  >
                     I agree to receive the latest updates from Highrise Festival
                     and have read our{" "}
                     <Link to="/privacy-policy" className="privacy-policy-link">
@@ -174,7 +177,7 @@ const Newsletter = () => {
                     </Link>
                   </label>
                   <input
-                    className="newsletter-input"
+                    className="newsletter-input md:mr-3"
                     type="checkbox"
                     id="contacted-check"
                     name="gdpr_check"

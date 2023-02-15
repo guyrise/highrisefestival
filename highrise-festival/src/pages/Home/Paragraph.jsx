@@ -22,7 +22,7 @@ const Paragraph = (props) => {
       ref={paragraphRef}
       className={`${
         visible ? "para-show" : ""
-      } home-para px-52 text-center mb-8`}
+      } home-para px-6 md:px-24 xl:px-52 text-center mb-8`}
     >
       {props.paragraph}
     </p>

@@ -11,11 +11,12 @@
   /* transform: translateY(120px); */
   margin-top: -120px;
   border-radius: 1rem;
-  min-height: 30vh;
+  min-height: 70vh;
   border-top: 1rem solid black;
   opacity: 0;
   transform: translateY(240px);
   transition: all 0.3s ease;
+  border: 20px solid black;
 }
 
 .newsletter-wrapper.show-newsletter {
@@ -33,15 +34,18 @@
 }
 .newsletter-content h4 {
   /* margin: 0 6% 0 6%; */
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
 
   margin-bottom: 1rem;
   /* line-height: 42px; */
 }
 
 .newsletter-content p {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
   line-height: 1.5rem;
+
   /* margin: 0 6% 0 6%; */
 }
 
@@ -50,10 +54,11 @@
   /* position: relative; */
   width: 50vw;
   /* max-height: 80vh; */
-  min-height: 50vh;
+  min-height: 70vh;
   background-image: url(../../../assets/images/highrise-firebreather.jpeg);
   background-position: center 60%;
   background-size: cover;
+  border-right: 20px solid black;
 }
 
 .newsletter-image {
@@ -84,6 +89,7 @@ input {
   background-color: var(--tertiary-color);
   width: 100%;
   transition: 0.2s ease;
+  margin-bottom: 8px;
 }
 
 input:focus-visible {
@@ -135,12 +141,15 @@ input:-webkit-autofill:active {
 .checkbox-label {
   font-size: 0.8rem;
   line-height: 12px;
-  padding: 0 1rem;
+  /* padding-left: 0.7rem;
+  padding-right: 4rem; */
+  text-align: start;
 }
 
 #contacted-check {
   width: 2rem;
   height: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .privacy-policy-link {

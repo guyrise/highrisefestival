@@ -9,6 +9,8 @@ import Newsletter from "./components/form/Newsletter/Newsletter";
 import Newsletter2 from "./components/form/Newsletter/Newsletter2";
 
 // NAV PAGES
+import Page404 from "./pages/Page404/Page404";
+
 import Home from "./pages/Home/Home";
 import Programme from "./pages/Programme/Programme";
 import FAQS from "./pages/FAQS/FAQS";
@@ -376,10 +378,9 @@ const locationData = {
   pageContent: {
     heading: "Location",
     description: [
-      "We are hugely excited to have secured, Grange Farm, one of our favourite festival sites in the uk for our first year of Highrise!",
-      "Sentence 2",
-      " Sentence 3",
-      "Sentence 4",
+      "We are hugely excited to have secured, Grange Farm, for our first year of Highrise Festival!",
+      "Previously home to Secret Garden Party and also We Out Here festival this is truly our favourite festival site in the uk and we know you're going to love it too",
+      "Home to 2 swimming lakes and a woodland, we will be building over 20+ immersive stages & venues throughout the site, along with incredible art and light installations, we want you to both explore and get lost in this magical location.",
     ],
   },
   faqData: [
@@ -568,14 +569,6 @@ const accomodationData = {
     },
   ],
 };
-
-// Location Page
-// const locationData = {
-//   photoGrid: [{image: "hello", label: ""}],
-//   pageContent: {
-
-//   }
-// }
 
 // Accessibility Page
 const accessibilityData = {
@@ -777,6 +770,7 @@ function App() {
           // <Route element={<Newsletter />} />
         />
         <Route path="privacy-policy" element={<Privacy />} />
+        <Route path="/*" element={<Page404 />} />
       </Routes>
       {pathname !== "/programme" &&
         pathname !== "/info" &&
