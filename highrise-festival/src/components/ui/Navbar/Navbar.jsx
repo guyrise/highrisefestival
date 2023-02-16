@@ -67,9 +67,10 @@ const Navbar = (props) => {
               <a href="/">
                 <img
                   src={navLogo}
-                  className={
-                    "highrise-logo" + (isNavOpen ? " nav-open" : " nav-closed")
+                  className={`highrise-logo ${
+                    isNavOpen ? "nav-open" : "nav-closed"
                   }
+              `}
                   id="nav-logo"
                   alt="highrise Logo"
                   style={{ width: "100px" }}

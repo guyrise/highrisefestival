@@ -354,7 +354,8 @@ a#ticket-link:hover::before {
 }
 
 /* NAVBAR MEDIA QUERIES */
-@media (width <= 1350px) {
+
+@media (max-width: 1350px) {
   .nav-wrapper {
     padding: 0 1%;
   }
@@ -367,7 +368,7 @@ a#ticket-link:hover::before {
   }
 }
 
-@media (width <= 75em) {
+@media (max-width: 75em) {
   .nav-wrapper {
     padding: 0 6%;
   }
@@ -385,11 +386,10 @@ a#ticket-link:hover::before {
     justify-content: space-evenly;
     padding: min(15vh, 10rem) 1em;
     overflow-wrap: break-word;
-    /* background: hsl(0 0% 100% / 0, 1); */
+
     background: var(--primary-color-brighter-transparent);
     backdrop-filter: blur(0.4rem);
-    border-left: black solid 1px;
-    /* border-bottom: black solid 1px; */
+    border-left: 1px solid black;
     border-radius: 0 0 0 5%;
     border-style: outset;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
@@ -449,7 +449,7 @@ a#ticket-link:hover::before {
   } */
 }
 
-@media (width <= 48.25em) {
+@media (max-width: 48.25em) {
   /* .nav-date-box {
     display: none;
   } */
