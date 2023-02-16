@@ -29,7 +29,8 @@
   /* 
   aspect-ratio: 1.7/1; */
   /* min-height: 25vh; */
-
+  /* aspect-ratio: 1.7/1; */
+  min-height: 80vh;
   object-fit: cover;
   object-position: top center;
 }
@@ -61,14 +62,14 @@
 }
 
 @media (max-width: 900px) {
-  .home-hero-box {
-    aspect-ratio: 1.4/1;
+  .home-hero-img {
+    min-height: 50vh;
   }
 }
 
 @media (max-width: 700px) {
-  .home-hero-box {
-    aspect-ratio: 1.2/1;
+  .home-hero-img {
+    min-height: 50vh;
   }
 }
 
