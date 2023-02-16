@@ -16,7 +16,7 @@
   opacity: 0;
   transform: translateY(240px);
   transition: all 0.3s ease;
-  border: 20px solid black;
+  border: 0.7rem solid black;
 }
 
 .newsletter-wrapper.show-newsletter {
@@ -58,7 +58,7 @@
   background-image: url(../../../assets/images/highrise-firebreather.jpeg);
   background-position: center 60%;
   background-size: cover;
-  border-right: 20px solid black;
+  border-right: 0.7rem solid black;
 }
 
 .newsletter-image {
