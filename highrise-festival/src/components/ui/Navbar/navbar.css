@@ -482,8 +482,13 @@ a#ticket-link:hover::before {
     white-space: nowrap;
   }
 
-  nav.navbar1.nav-open li a {
+  /* nav.navbar1.nav-open li a {
     overflow-wrap: break-word;
+  } */
+
+  nav.navbar1.nav-open li {
+    width: 100%;
+    padding: 2rem 2rem;
   }
 }
 
