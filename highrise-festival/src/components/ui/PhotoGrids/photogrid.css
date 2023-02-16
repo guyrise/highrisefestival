@@ -34,6 +34,7 @@
   aspect-ratio: 2/1;
   /* min-height: 25vh; */
   object-fit: cover;
+  object-position: center 60%;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   /* filter: brightness(80%); */
@@ -42,7 +43,7 @@
 
 @media (max-width: 48.25em) {
   .photo-btn-box {
-    max-height: 25vh;
+    max-height: 40vh;
   }
 }
 
