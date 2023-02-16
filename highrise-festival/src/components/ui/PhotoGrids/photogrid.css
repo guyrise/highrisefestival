@@ -42,7 +42,7 @@
 
 @media (max-width: 48.25em) {
   .photo-btn {
-    max-height: 25vh;
+    /* max-height: 25vh; */
   }
 }
 
