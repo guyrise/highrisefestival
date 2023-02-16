@@ -203,6 +203,14 @@ p {
   }
 }
 
+@media (max-width: 745px) {
+  p {
+    line-height: 2.2rem;
+    letter-spacing: 0.8px;
+    font-size: 1rem;
+  }
+}
+
 /* HOMEPAGE */
 /* 
 .homepage-wrapper {

@@ -40,6 +40,12 @@
   justify-self: center;
 }
 
+@media (max-width: 48.25em) {
+  .photo-btn {
+    max-height: 25vh;
+  }
+}
+
 .photo-btn:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -80,8 +86,9 @@
   width: auto;
   background-color: var(--nav-background);
   border-radius: 0.7rem;
-  outline: 2px solid black;
-  outline-style: ridge;
+  border: 2px solid black;
+  /* outline: 2px solid black; */
+
   white-space: nowrap;
   font-family: var(--special-font);
 }

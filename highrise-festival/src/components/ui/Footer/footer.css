@@ -8,6 +8,11 @@
   width: 100%;
   z-index: 9995;
 }
+
+#footer-border {
+  transform: translateY(2px);
+}
+
 .highrise-footer {
   /* background-color:#26272b; */
   padding-bottom: 2rem;

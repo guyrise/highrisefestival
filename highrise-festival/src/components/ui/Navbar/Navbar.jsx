@@ -138,7 +138,7 @@ const Navbar = (props) => {
           </div>
         </header>
         {location.pathname !== "/" && (
-          <svg id="visual" viewBox="0 0 2400 50">
+          <svg id="nav-border" viewBox="0 0 2400 50">
             <defs>
               <linearGradient id="grad1" x1="7%" y1="0%" x3="100%" y3="0%">
                 <stop
