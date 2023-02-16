@@ -412,7 +412,7 @@ a#ticket-link:hover::before {
     align-items: start;
     justify-content: space-evenly;
     padding: min(15vh, 10rem) 1em;
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     background: var(--primary-color-brighter-transparent);
     backdrop-filter: blur(0.4rem);
     border-left: black solid 1px;
