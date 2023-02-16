@@ -49,7 +49,11 @@
 
 @media (max-width: 48.25em) {
   .photo-btn-box {
-    max-height: 25vh;
+    max-height: 30vh;
+  }
+
+  .photo-btn {
+    object-position: center 80%;
   }
 }
 
