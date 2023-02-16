@@ -32,7 +32,7 @@
 .photo-btn {
   position: relative;
   aspect-ratio: 2/1;
-  min-height: 25vh;
+  /* min-height: 25vh; */
   object-fit: cover;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
