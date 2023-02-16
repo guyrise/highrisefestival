@@ -483,7 +483,7 @@ a#ticket-link:hover::before {
   }
 }
 
-@media (width <= 40em) {
+@media (max-width: 40em) {
   .nav-date-box {
     display: none;
   }

@@ -3,7 +3,7 @@
   padding-top: 1rem;
 }
 
-@media (width <= 40em) {
+@media (max-width: 40em) {
   .lineup-img {
     margin-bottom: -2rem;
   }

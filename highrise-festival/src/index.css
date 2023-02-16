@@ -197,7 +197,7 @@ p {
   padding: 3rem 0 4rem 0;
 }
 
-@media (width <= 745px) {
+@media (max-width: 745px) {
   .page {
     margin: 0;
   }
