@@ -41,14 +41,15 @@
   justify-self: center;
 }
 
-@media (max-width: 48.25em) {
+@media (max-width: 767px) {
   .photo-btn-box {
-    min-height: 40vh;
     max-height: 40vh;
   }
+}
 
-  .photo-btn {
-    aspect-ratio: 1.2/1;
+@media (max-width: 48.25em) {
+  .photo-btn-box {
+    max-height: 25vh;
   }
 }
 
