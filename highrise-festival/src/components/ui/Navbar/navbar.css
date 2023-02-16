@@ -127,17 +127,19 @@ nav.navbar1 li a {
   transition: transform 0.4s ease-in-out, opacity 0.2s ease;
   text-decoration: none;
   letter-spacing: 2px;
+  line-height: 26px;
 }
 nav.navbar1 li a::before,
 nav.navbar1 li a::after {
-  display: block;
+  display: inline-block;
   content: attr(data-glitch);
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0px;
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   opacity: 0.8;
+  letter-spacing: 2px;
 }
 nav.navbar1 li a::after {
   color: #f0f;
@@ -211,7 +213,6 @@ a#ticket-link {
   border-radius: 0.5rem;
   background-color: var(--sky-color);
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  /* perspective: 100px; */
   transform: translateZ(0px) translateX(5px) translateY(-2px);
   -webkit-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
   -moz-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
@@ -425,9 +426,8 @@ a#ticket-link:hover::before {
 
   nav.navbar1 li {
     padding: 0 2rem 0 2rem;
-    width: fit-content;
+    /* width: fit-content; */
     white-space: normal;
-    width: fit-content;
   }
 
   /* .nav-wrapper input.nav-toggle {
@@ -482,9 +482,9 @@ a#ticket-link:hover::before {
     white-space: nowrap;
   }
 
-  nav.navbar1.nav-open li a {
+  /* nav.navbar1.nav-open li a {
     overflow-wrap: break-word;
-  }
+  } */
 
   nav.navbar1.nav-open li {
     width: 100%;
