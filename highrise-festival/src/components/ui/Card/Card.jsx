@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import Tilt from "react-parallax-tilt";
 
 import { useInView } from "react-intersection-observer";
@@ -17,7 +17,6 @@ const Card = (props) => {
   const left = props.left;
   const color = props.cardData.color;
   const borderColor = props.cardData.borderColor;
-  const first = props.index === 0 ? true : false;
 
   return (
     <div
@@ -50,7 +49,7 @@ const Card = (props) => {
             <p
               className={`mb-3 pt-6 px-6 px-6 xl:px-0 ${
                 color ? color : "text-black"
-              } ${props.wellnessPage ? "sanctury" : ""}`}
+              } ${props.isWellnessPage ? "sanctury" : ""}`}
             >
               {props.cardData ? props.cardData.description : "Missing Data"}
             </p>

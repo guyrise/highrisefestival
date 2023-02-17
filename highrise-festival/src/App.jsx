@@ -707,7 +707,7 @@ const homeData = {
     description: [
       "After 10 years running multi-genre events across the country and opening our own club in Bristol, we are ready to take our next step into the festival world.",
       "Our festival will be set within the woodlands, fields and lakes of the legendary Secret Garden Party site. We are proud to be a fully independent and grassroots festival which is environmentally conscious and sustainability focused. We are a predominately vegetarian and vegan festival with all of our food & drink being locally sourced. There will be no single use plastic on-site and the majority of our power will come directly from the sun.",
-      "We've hosting a weekend of live music, sound system culture, wellness and healing. Set across 20+ immersive medium, small and micro venues for your to explore. There will be no huge stages, instead we are focusing on intimate and immersive spaces with big sounds.",
+      "We're hosting a weekend of live music, sound system culture, wellness and healing. Set across 20+ immersive medium, small and micro venues for you to explore. There will be no huge stages, instead we are focusing on intimate and immersive spaces with big sounds.",
     ],
   },
 };

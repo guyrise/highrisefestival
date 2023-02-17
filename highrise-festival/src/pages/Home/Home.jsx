@@ -21,7 +21,7 @@ const Home = (props) => {
       <hr className="divider"></hr>
 
       {!loading && (
-        <>
+        <div id="about-section">
           <h3 className="my-8 text-center">
             {props.homeData.pageContent.heading}
           </h3>
@@ -30,7 +30,7 @@ const Home = (props) => {
               return <Paragraph key={`para-${index}`} paragraph={paragraph} />;
             })}
           </div>
-        </>
+        </div>
       )}
     </div>
   );

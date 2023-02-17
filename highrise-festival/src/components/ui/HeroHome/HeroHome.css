@@ -1,5 +1,8 @@
-/* COVER START */
+#about-section {
+  scroll-margin-top: 50px;
+}
 
+/* HOME HERO */
 .home-hero-box {
   position: relative;
   width: 100vw;

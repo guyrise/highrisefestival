@@ -47,7 +47,7 @@ const PageFormat = (props) => {
                 key={"Card:" + index}
                 left={left}
                 index={index}
-                wellnessPage={wellnessPage}
+                isWellnessPage={wellnessPage}
               />
             </>
           );

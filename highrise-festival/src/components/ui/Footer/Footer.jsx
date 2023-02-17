@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { CgFacebook } from "react-icons/cg";
 import { IoLogoInstagram } from "react-icons/io";
@@ -21,7 +22,7 @@ export default function Footer() {
           ></path>
         </svg>
         <footer className="highrise-footer">
-          <div className="mx-auto">
+          <div className="mx-auto social-icons-box">
             <ul className="social-icons">
               <li>
                 <a
@@ -55,36 +56,39 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="container grid grid-flow-col grid-col-3">
-            <div className="column">
+
+          <div className="grid md:grid-cols-3">
+            <div className="link-box mb-6">
               <h6>Festival</h6>
               <ul className="footer-links">
                 <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
+                  <HashLink smooth to="/#about-section">
+                    About
+                  </HashLink>
                 </li>
                 <li>
                   <Link to="/faqs">FAQs</Link>
                 </li>
+                <li>
+                  <a href="mailto:info@highrisehq.com">Contact</a>
+                </li>
               </ul>{" "}
             </div>
-            <div className="column">
+            <div className="link-box mb-6">
               <h6>Communities</h6>
               <ul className="footer-links">
                 <li>
                   <Link to="/get-involved">Volunteer</Link>
                 </li>
                 <li>
-                  <Link to="/info/accessibility">Accessibility</Link>
+                  <Link to="/Ethos">Ethos</Link>
                 </li>
                 <li>
-                  <Link to="/get-involved">Vendors</Link>
+                  <Link to="/info/accessibility">Accessibility</Link>
                 </li>
               </ul>
             </div>
-            <div className="column">
+            <div className="link-box mb-6">
               <h6>Legals</h6>
               <ul className="footer-links">
                 <li>
@@ -103,13 +107,13 @@ export default function Footer() {
           <div className="mx-auto grid grid-flow-col">
             <div className="flex justify-evenly">
               <p className="copyright-text">
-                Copyright &copy; 2021. All Rights Reserved by&nbsp;
+                Copyright &copy; 2023 All Rights Reserved by&nbsp;
                 <a
                   href="https://www.instagram.com/highrise.uk/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Highrise
+                  Highrise Festival
                 </a>
                 .
               </p>

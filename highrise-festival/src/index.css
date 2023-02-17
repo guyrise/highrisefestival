@@ -107,7 +107,7 @@ body {
   margin: 0;
   /* display: flex; */
   min-width: 320px;
-  width: 100vw;
+  /* width: 100vw; */
   /* min-height: 100vh; */
   /* overflow: auto; this was fine until I put in mazeletter bg, with its overflow to hidden. */
   overflow-y: auto;
