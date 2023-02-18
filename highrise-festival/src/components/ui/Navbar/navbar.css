@@ -136,7 +136,7 @@ nav.navbar1 li a::after {
   content: attr(data-glitch);
   position: absolute;
   white-space: nowrap;
-  top: 0;
+  top: -1px;
   left: 0;
   opacity: 0.8;
   letter-spacing: 2px;
