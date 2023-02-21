@@ -14,6 +14,8 @@ const Home = (props) => {
     setLoading(false);
     return;
   };
+
+  console.log(loading);
   return (
     <div className="page-wrapper">
       <HeroHome loading={imageLoad} />

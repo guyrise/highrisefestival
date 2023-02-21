@@ -1,0 +1,67 @@
+{
+  "photoGrid": [{ "image": "girlCamping", "label": "" }],
+  "pageContent": {
+    "heading": "Accomodation",
+    "pageIntro": [
+      "There are tons of ways to get to Highrise Festival this year and below we have listed some details on the best ways to reach us here at Grange Farm, Huntingdon."
+    ],
+    "cards": [
+      {
+        "image": "belltent1",
+        "borderColor": "red",
+        "label": "Bell Tents",
+        "description": "Return coaches are available from Bristol, Brighton, London, Birmingham, Manchester and Sheffield. All coaches and coach tickets are for departures on the Thursday of the event. All tickets include return travel on the Monday after the show. Please check all the information below carefully it is your responsibility to comply with terms of Shambala Express travel and be on time for your departures."
+      },
+      {
+        "image": "belltent2",
+        "borderColor": "blue",
+        "label": "Bell Tents",
+        "description": "As you may already know, because we bang on about it enough, over 90% of our remaining carbon footprint is made up of audience travel, and we're constantly looking for new ways to hammer that down… In 2022, you lot set a new record for arriving on public transport, with nearly a third of you rocking up on one of our coaches, by bicycle or by train and shuttle bus, saving carbon and also saving cash, as our coach and cycle packages are priced £20 cheaper than regular entry tickets. Huge big ups to every single one of you who chose to travel to Shambala sustainably."
+      },
+      {
+        "image": "airstream3",
+        "borderColor": "red",
+        "label": "Airstreams",
+        "description": "In 2023, we will once again be partnering with Red Fox Cycling, to offer guided bike rides from different cities to Shambala. Our bike rides run from Bristol, London, Sheffield and (new for 2023) Birmingham. Cyclist Tickets are priced £20 cheaper than regular entry tickets - as a thank you for choosing to travel so sustainably. What's more, a Red Fox guided tour costs half what you would expect for a regular cycling holiday, so this really is a bargain. Take the scenic route, stop at beautiful campsites along the way and arrive at Shambala with a host of new pals."
+      },
+      {
+        "image": "airstream2",
+        "borderColor": "yellow",
+        "label": "Airstreams",
+        "description": "We hope that you consider travelling to Highrise festival via some of the other options mentioned, but we understand this is not always possible. If you are driving we hope you consider car pooling and there is ample parking allocated for you on arrival. "
+      },
+      {
+        "image": "bwCamping",
+        "borderColor": "yellow",
+        "label": "Camping",
+        "description": "We hope that you consider travelling to Highrise festival via some of the other options mentioned, but we understand this is not always possible. If you are driving we hope you consider car pooling and there is ample parking allocated for you on arrival. "
+      }
+    ]
+  },
+  "faqData": [
+    {
+      "question": "What are the Covid safe entry requirements?",
+      "answer": "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results.  We also will be operating further measures to reduce the risk of COVID-19 including: • Increased ventilation through all tents/structures • Face masks for all “customer facing” staff on site • Increased hand washing and sanitisation points throughout the site Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023."
+    },
+    {
+      "question": "When does the festival start and end?",
+      "answer": "The main gates open at midday on 25th August. Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest."
+    },
+    {
+      "question": "Where can I get a festival site map?",
+      "answer": "Site maps will be emailed to all ticket holders in advance of the festival."
+    },
+    {
+      "question": "When can I get a full programme?",
+      "answer": "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site."
+    },
+    {
+      "question": "Will there be showers available for campers?",
+      "answer": "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!"
+    },
+    {
+      "question": "Will BBQs or campfires be permitted on campsites?",
+      "answer": "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls."
+    }
+  ]
+}

@@ -7,7 +7,12 @@ const HeroHome = ({ loading }) => {
   return (
     <>
       <div className="home-hero-box1">
-        <img src={cover} className="home-hero-img" onLoad={loading} />
+        <img
+          src={cover}
+          className="home-hero-img"
+          onLoad={loading}
+          loading="lazy"
+        />
       </div>
     </>
   );

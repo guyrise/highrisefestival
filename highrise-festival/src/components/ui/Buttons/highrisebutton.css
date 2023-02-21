@@ -1,0 +1,89 @@
+button.highrise-button {
+  cursor: pointer;
+  color: #e8e8e8;
+
+  letter-spacing: 2px;
+  font-family: var(--special-font);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  white-space: nowrap;
+  padding: 1.4rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--sky-color);
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translateZ(0px) translateX(5px) translateY(-2px);
+  -webkit-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+button.highrise-button > span {
+  position: relative;
+}
+
+button.highrise-button > span::before,
+button.highrise-button > span::after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+button.highrise-button > span::after {
+  color: #f0f;
+  z-index: -2;
+}
+button.highrise-button > span::before {
+  color: #0ff;
+  z-index: -1;
+}
+button.highrise-button:hover > span::before {
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+button.highrise-button:hover > span::after {
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+}
+
+button.highrise-button span {
+  font-family: var(--special-font);
+}
+
+button.highrise-button:hover,
+button.highrise-button:focus {
+  box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, 1);
+  transform: translateZ(0px) translateX(3px) translateY(0px);
+}
+
+button.highrise-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.4rem;
+  background-color: var(--primary-color);
+  z-index: -4;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.5s ease-in-out;
+}
+
+button.highrise-button:hover {
+  color: var(--secondary-color);
+}
+
+button.highrise-button:hover::before {
+  width: 100%;
+}
+
+.button-container {
+  transition: all 0.3s ease-in-out;
+}

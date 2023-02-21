@@ -1,4 +1,3 @@
-import React from "react";
 import PageFormat2 from "../../components/ui/PageFormat/PageFormat2";
 import PhotoGridHero from "../../components/ui/PhotoGrids/PhotoGridHero";
 import FAQScomp from "../FAQS/FAQScomp";

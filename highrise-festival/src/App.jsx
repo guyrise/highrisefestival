@@ -4,13 +4,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 
 // CONSTANTS
+import Page404 from "./pages/ErrorPages/Page404";
+
 import Navbar from "./components/ui/Navbar/Navbar";
 import Footer from "./components/ui/Footer/Footer";
-import Newsletter from "./components/form/Newsletter/Newsletter";
 import Newsletter2 from "./components/form/Newsletter/Newsletter2";
 
 // NAV PAGES
-import Page404 from "./pages/Page404/Page404";
 
 import Home from "./pages/Home/Home";
 import Programme from "./pages/Programme/Programme";
@@ -724,6 +724,7 @@ function App() {
     <div className="app-wrapper">
       <Navbar links={links} />
       <Routes>
+        <Route path="*" element={<Page404 />} />
         {/* {links.map(link, index) => {
 
         }} */}
