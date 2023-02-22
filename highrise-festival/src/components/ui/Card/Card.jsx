@@ -33,10 +33,10 @@ const Card = (props) => {
         tiltMaxAngleY={0.3}
       >
         <div
-          className={`card-wrapper lg:gap-12 xl:gap-12 my-36 lg:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
+          className={`card-wrapper lg:gap-12 xl:gap-12 my-36 xl:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
         >
           <div
-            className={`info page-content pt-8 pb-0  text-start
+            className={`info page-content pt-8 pb-0 text-start
           ${left ? "lg:text-end xl:pr-12" : "xl:pl-12"}`}
           >
             <h3

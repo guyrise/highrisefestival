@@ -11,31 +11,11 @@ import Navbar from "./components/ui/Navbar/Navbar";
 import Footer from "./components/ui/Footer/Footer";
 import Newsletter2 from "./components/form/Newsletter/Newsletter2";
 
-// NAV PAGES
-
-import Home from "./pages/Home/Home";
-import Programme from "./pages/Programme/Programme";
-import FAQS from "./pages/FAQS/FAQS";
-import Info from "./pages/Info/Info";
-import Ethos from "./pages/Ethos/Ethos";
-import GetInvolved from "./pages/Get-Involved/GetInvolved";
-// CHILD PAGES
-// programme
-import LineUp from "./pages/LineUp/LineUp";
-import Soundsystems from "./pages/Soundsystems/Soundsystems";
-import Venues from "./pages/Venues/Venues";
-import Wellness from "./pages/Wellness/Wellness";
-// info
-import Location from "./pages/Location/Location";
-import Accomodation from "./pages/Accomodation/Accomodation";
-import Travel from "./pages/Travel/Travel";
-import Accessibility from "./pages/Accessibility/Accessibility";
-
 // FOOTER LINKS
 import Privacy from "./pages/Privacy Statement/Privacy";
 
 // DATA
-import ProgrammePageData from "./data/ProgrammePage.json";
+
 import FAQData from "./data/FAQPage.json";
 
 // IMAGES
@@ -634,40 +614,39 @@ const getInvolvedData = {
   pageContent: {
     heading: "Get Involved",
     description: [
-      "There are tons of ways to get involved with Highrise Festival this year and we want as many of you as possible!",
+      "Welcome to the Get Involved section for our site!",
+      "We're so excited to launch, but we still need people like you to truly make our festival a success!",
       "Whether you want to volenteer, work, trade or participate in anyway, we would love to hear from you!",
-      "Please check out some of the information below and reach out to us via email.",
+      "Below, you'll find information on how you can get involved in different capacities:",
     ],
     cards: [
       {
         image: belltent1,
         borderColor: "red-500",
-        label: "Volenteering",
-        description: "",
+        label: "Volunteer at the Festival:",
+        description:
+          "Volunteering at our festival is a great opportunity to meet new people, gain experience, and contribute to a good cause. We need volunteers to help with various tasks such as assisting with the stages, checking tickets, directing guests, and cleaning up after the event. If you're interested in volunteering, please fill out the volunteer application form on our website, and we'll get in touch with you.",
       },
       {
         image: belltent2,
         borderColor: "blue",
         label: "Vendors",
-        description: "",
-      },
-      {
-        image: airstream3,
-        borderColor: "red",
-        label: "Art and Decoration",
-        description: "",
+        description:
+          "If you're a vendor interested in showcasing your food, drinks, or clothing at our festival, we'd love to hear from you! We're looking for unique and creative vendors who can bring something special to the event. Please complete the vendor application form on our website, and we'll review your application and get back to you.",
       },
       {
         image: airstream3,
         borderColor: "red",
         label: "Workshops",
-        description: "",
+        description:
+          "We're looking for individuals who are passionate about sharing their skills and knowledge to run workshops at our festival. Whether it's teaching yoga, painting, running talks, we're open to all ideas that will engage and inspire our attendees. If you have an idea for a workshop or would like to learn more about running a workshop, please email us at info@musicfestival.com.",
       },
       {
         image: airstream3,
         borderColor: "red",
         label: "Work with us",
-        description: "",
+        description:
+          "We have a range of roles available for those who want to work at our festival, from stage managers to sound technicians, and event coordinators. If you have experience in any of these areas or would like to learn more, please email us at jobs@musicfestival.com.",
       },
     ],
   },
@@ -731,7 +710,9 @@ function App() {
       <ProgressiveImage src={borderLeft} placeholder={borderLeftBlurred}>
         {(src, loading) => (
           <img
-            className={`app-wrapper-bg-left ${loading ? "loading" : "loaded"}`}
+            className={`app-wrapper-bg-left hidden lg:block ${
+              loading ? "loading" : "loaded"
+            }`}
             src={src}
             alt="app-border-image"
           />
@@ -740,7 +721,9 @@ function App() {
       <ProgressiveImage src={borderRight} placeholder={borderRightBlurred}>
         {(src, loading) => (
           <img
-            className={`app-wrapper-bg-right ${loading ? "loading" : "loaded"}`}
+            className={`app-wrapper-bg-right hidden lg:block ${
+              loading ? "loading" : "loaded"
+            }`}
             src={src}
             alt="app-border-image"
           />

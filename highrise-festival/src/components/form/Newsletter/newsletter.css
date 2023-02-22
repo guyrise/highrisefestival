@@ -17,6 +17,7 @@
   transform: translateY(240px);
   transition: all 0.3s ease;
   border: 0.7rem solid black;
+  z-index: 3;
 }
 
 .newsletter-wrapper.show-newsletter {
