@@ -1,6 +1,6 @@
 import React from "react";
 import FAQDropdown from "../../components/ui/FAQDropdown/FAQDropdown";
-
+import { motion } from "framer-motion";
 import "./FAQS.css";
 
 const FAQS = (props) => {
@@ -31,17 +31,20 @@ const FAQS = (props) => {
   };
 
   return (
-    <>
-      <div className="page-wrapper">
-        <div className="page">
-          <div className="faq-wrapper">
-            <h4 className="h4-title">FAQ's</h4>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
+      exit={{ opacity: 0 }}
+      className="page-wrapper"
+    >
+      <div className="page">
+        <div className="faq-wrapper">
+          <h4 className="h4-title">FAQ's</h4>
 
-            {getQuestions()}
-          </div>
+          {getQuestions()}
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

@@ -111,7 +111,6 @@ body {
   /* min-height: 100vh; */
   /* overflow: auto; this was fine until I put in mazeletter bg, with its overflow to hidden. */
   overflow-y: auto;
-  /* overflow-x: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -122,6 +121,8 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+
+  overscroll-behavior-y: none;
 }
 
 /* TEXT */
@@ -162,25 +163,31 @@ p {
 
 .app-wrapper {
   width: 100vw;
-  background-color: linear-gradient(to bottom, #a4e5eb, #62bfeb);
-  background: url(./assets/images/borders/highrise-borders-both.webp),
+  background: linear-gradient(to bottom, #a4e5eb, #62bfeb);
+  /* background: url(./assets/images/borders/highrise-borders-both.webp),
     linear-gradient(to bottom, #a4e5eb, #62bfeb);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
-.app-background {
-  height: auto;
-  width: 100vw;
+.app-wrapper-bg-left {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
   position: fixed;
   top: 0;
   left: 0;
 }
 
-.app-background img {
-  width: 25%;
+.app-wrapper-bg-right {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 /* WRAPPERS */

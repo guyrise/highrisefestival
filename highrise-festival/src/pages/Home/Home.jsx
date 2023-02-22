@@ -1,11 +1,11 @@
-import { Suspense, useState } from "react";
+import { useState } from "react";
+
+import { motion } from "framer-motion";
 
 import HeroHome from "../../components/ui/HeroHome/HeroHome.jsx";
-
-import { useInView } from "react-intersection-observer";
+import Paragraph from "./Paragraph.jsx";
 
 import "./home.css";
-import Paragraph from "./Paragraph.jsx";
 
 const Home = (props) => {
   const [loading, setLoading] = useState(true);
@@ -15,9 +15,13 @@ const Home = (props) => {
     return;
   };
 
-  console.log(loading);
   return (
-    <div className="page-wrapper">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
+      exit={{ opacity: 0 }}
+      className="page-wrapper"
+    >
       <HeroHome loading={imageLoad} />
 
       <hr className="divider"></hr>
@@ -34,7 +38,7 @@ const Home = (props) => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

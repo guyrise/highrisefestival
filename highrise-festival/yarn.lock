@@ -523,6 +523,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.5.tgz#d5c65626add4c3c185a89aa5bd38b1e42daec075"
   integrity sha512-my0Mycd+jruq/1lQuO5LBB6WTlL/e8DTCYWp44DfMTDcXz8DcTlgF0ISaLsGewt+ctHN+yA8xMq3q/N7uWJPug==
 
+"@researchgate/react-intersection-observer@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-observer/-/react-intersection-observer-1.3.5.tgz#0321d2dd609aaacdb9bace8004d99c72824fb142"
+  integrity sha512-aYlsex5Dd6BAHMJvJrUoFp8gzgMSL27xFvrxkVYW0bV1RMAapVsO+QeYLtTaSF/QCflktODodvv+wJm49oMnnQ==
+
 "@types/google.maps@3.50.5":
   version "3.50.5"
   resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.50.5.tgz#a0d12675b547205fc163c4b8d999db305ba3862a"
@@ -1197,6 +1202,13 @@ react-parallax-tilt@^1.7.93:
   version "1.7.93"
   resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.93.tgz#dfd0aaa13bcf4f01c02783b728dc618f58010c5c"
   integrity sha512-VtDRkLDFW8V/PFjN4lb3/hejADlGd6sjCdu8FyHScu2NIy9KaXHGjXp42BowILwAeh6/OdoT6ZUG3O7HXKHijA==
+
+react-progressive-graceful-image@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-progressive-graceful-image/-/react-progressive-graceful-image-0.7.0.tgz#e50197daada1e32bc9f87375bb22e6f51c21d8de"
+  integrity sha512-99uY2NmsYOcdMGVDSdbLWsRl+aVuRJyBIUYhR1ql4E8RJPoR2AZLvamdjnzSmAMFayCIx1cISF5AKqqQHhV/UQ==
+  dependencies:
+    "@researchgate/react-intersection-observer" "^1.3.5"
 
 react-refresh@^0.14.0:
   version "0.14.0"

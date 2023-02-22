@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 import "./index.css";
 
@@ -39,7 +40,11 @@ import FAQData from "./data/FAQPage.json";
 
 // IMAGES
 
-// BACKGROUND
+// BACKGROUND BORDERS
+import borderRight from "./assets/images/borders/highrise-border-right.webp";
+import borderLeft from "./assets/images/borders/highrise-border-left.webp";
+import borderRightBlurred from "./assets/images/borders/highrise-border-right-blurred.webp";
+import borderLeftBlurred from "./assets/images/borders/highrise-border-left-blurred.webp";
 
 // PROGRAMME PHOTOGRID IMAGES
 import beautifulForest1 from "./assets/images/deepAi festival images/beautiful-forest.jpeg";
@@ -93,6 +98,7 @@ import earth from "./assets/images/Highrise Festival Website/wellness-earth.jpg"
 import water from "./assets/images/Highrise Festival Website/wellness-water.jpg";
 import fire from "./assets/images/Highrise Festival Website/wellness-fire.jpg";
 import air from "./assets/images/Highrise Festival Website/wellness-air.jpg";
+import AnimatedRoutes from "./components/helpers/AnimatedRoutes/AnimatedRoutes";
 
 // LineUp Data
 const lineUpData = {
@@ -722,64 +728,43 @@ function App() {
 
   return (
     <div className="app-wrapper">
+      <ProgressiveImage src={borderLeft} placeholder={borderLeftBlurred}>
+        {(src, loading) => (
+          <img
+            className={`app-wrapper-bg-left ${loading ? "loading" : "loaded"}`}
+            src={src}
+            alt="app-border-image"
+          />
+        )}
+      </ProgressiveImage>
+      <ProgressiveImage src={borderRight} placeholder={borderRightBlurred}>
+        {(src, loading) => (
+          <img
+            className={`app-wrapper-bg-right ${loading ? "loading" : "loaded"}`}
+            src={src}
+            alt="app-border-image"
+          />
+        )}
+      </ProgressiveImage>
       <Navbar links={links} />
-      <Routes>
-        <Route path="*" element={<Page404 />} />
-        {/* {links.map(link, index) => {
-
-        }} */}
-        <Route path="/" element={<Home homeData={homeData} />} />
-        <Route
-          path="programme"
-          element={<Programme programmeData={programmeData} />}
-        />
-
-        <Route path="info" element={<Info infoData={infoData} />} />
-        <Route path="ethos" element={<Ethos ethosData={ethosData} />} />
-        <Route path="faqs" element={<FAQS faqData={faqData} />} />
-        <Route
-          path="get-involved"
-          element={<GetInvolved getInvolvedData={getInvolvedData} />}
-        />
-
-        {/* PROGRAMME SUB ROUTES */}
-        <Route
-          path="/programme/line-up"
-          element={<LineUp lineUpData={lineUpData} />}
-        />
-        <Route
-          path="/programme/venues"
-          element={<Venues venuesData={venuesData} />}
-        />
-        <Route
-          path="/programme/soundsystems"
-          element={<Soundsystems soundsystemData={soundsystemData} />}
-        />
-        <Route
-          path="/programme/wellness"
-          element={<Wellness wellnessData={wellnessData} />}
-        />
-
-        <Route
-          path="info/location"
-          element={<Location locationData={locationData} />}
-        />
-        <Route
-          path="info/accomodation"
-          element={<Accomodation accomodationData={accomodationData} />}
-        />
-        <Route
-          path="info/travel"
-          element={<Travel travelData={travelData} />}
-        />
-        <Route
-          path="info/accessibility"
-          element={<Accessibility accessibilityData={accessibilityData} />}
-          // <Route element={<Newsletter />} />
-        />
-        <Route path="privacy-policy" element={<Privacy />} />
-        <Route path="/*" element={<Page404 />} />
-      </Routes>
+      <AnimatedRoutes
+        data={{
+          homeData: homeData,
+          programmeData: programmeData,
+          infoData: infoData,
+          ethosData: ethosData,
+          faqData: faqData,
+          getInvolvedData: getInvolvedData,
+          lineUpData: lineUpData,
+          venuesData: venuesData,
+          soundsystemData: soundsystemData,
+          wellnessData: wellnessData,
+          locationData: locationData,
+          accomodationData: accomodationData,
+          travelData: travelData,
+          accessibilityData: accessibilityData,
+        }}
+      />
       {pathname !== "/programme" &&
         pathname !== "/info" &&
         pathname !== "/ethos" &&

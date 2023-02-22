@@ -1,15 +1,29 @@
 import React from "react";
 import lineup1 from "../../assets/images/highrise-lineup-1st.webp";
+import lineupBlurred from "../../assets/images/highrise-lineup-blurred.webp";
+import { motion } from "framer-motion";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 import "./lineup.css";
 
 const LineUp = (props) => {
   return (
-    <>
-      <div className="page-wrapper">
-        <img className="lineup-img" src={lineup1} />
-      </div>
-    </>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
+      exit={{ opacity: 0 }}
+      className="page-wrapper"
+    >
+      <ProgressiveImage src={lineup1} placeholder={lineupBlurred}>
+        {(src, loading) => (
+          <img
+            className={`lineup-img ${loading ? "loading" : "loaded"}`}
+            src={src}
+            alt="highrise-lineup"
+          />
+        )}
+      </ProgressiveImage>
+    </motion.div>
   );
 };
 

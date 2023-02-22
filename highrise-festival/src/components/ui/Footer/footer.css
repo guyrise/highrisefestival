@@ -3,8 +3,8 @@
 /* FOOTER */
 .footer-wrapper {
   position: relative;
-  bottom: 0;
-  left: 0;
+  /* bottom: 0;
+  left: 0; */
   width: 100%;
   z-index: 9995;
 }
@@ -14,7 +14,6 @@
 }
 
 .highrise-footer {
-  /* background-color:#26272b; */
   padding-bottom: 2rem;
   font-size: 14px;
   line-height: 24px;
@@ -89,7 +88,7 @@
 .highrise-footer .social-icons {
   text-align: center;
   padding-left: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   list-style: none;
 }
 
