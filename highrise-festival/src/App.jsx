@@ -751,7 +751,9 @@ function App() {
       {pathname !== "/programme" &&
         pathname !== "/info" &&
         pathname !== "/ethos" &&
-        pathname !== "/programme/line-up" && <Newsletter2 />}
+        pathname !== "/programme/line-up" &&
+        pathname !== "/credits" &&
+        pathname !== "/privacy" && <Newsletter2 />}
       <Footer />
     </div>
   );

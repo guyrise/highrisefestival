@@ -195,6 +195,7 @@ p {
 .page-wrapper {
   position: relative;
   padding-top: 5rem;
+  min-height: 80vh;
 }
 
 /* PAGES */

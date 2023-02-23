@@ -2,10 +2,14 @@ import React from "react";
 
 import "./highrisebutton.css";
 
-const HighriseButton = ({ label, fontSize, onClick }) => {
+const HighriseButton = ({ label, fontSize, onClick, type, padding }) => {
   return (
-    <div className="button-container h-full flex justify-center items-center p-12 mb-24">
-      <button className="highrise-button" onClick={onClick}>
+    <div className="button-container h-full flex justify-center items-center">
+      <button
+        type={type}
+        className={`highrise-button ${padding}`}
+        onClick={onClick}
+      >
         <span className={fontSize} data-glitch={label}>
           {label}
         </span>

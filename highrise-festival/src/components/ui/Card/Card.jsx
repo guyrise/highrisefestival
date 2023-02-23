@@ -11,7 +11,7 @@ const Card = (props) => {
     threshold: 0,
     rootMargin: "-150px",
     fallbackInView: true,
-    triggerOnce: true,
+    // triggerOnce: true,
   });
 
   const left = props.left;

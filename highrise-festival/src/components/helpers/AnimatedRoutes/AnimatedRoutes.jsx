@@ -25,6 +25,7 @@ import Accessibility from "../../../pages/Accessibility/Accessibility";
 import Privacy from "../../../pages/Privacy Statement/Privacy";
 
 import { AnimatePresence } from "framer-motion";
+import Credits from "../../../pages/Credits/Credits";
 
 const AnimatedRoutes = ({ data }) => {
   console.log(data);
@@ -80,7 +81,8 @@ const AnimatedRoutes = ({ data }) => {
           path="info/accessibility"
           element={<Accessibility accessibilityData={data.accessibilityData} />}
         />
-        <Route path="privacy-policy" element={<Privacy />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="credits" element={<Credits />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
     </AnimatePresence>

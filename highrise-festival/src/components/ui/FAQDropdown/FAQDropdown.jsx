@@ -8,7 +8,7 @@ const FAQDropdown = (props) => {
   const { ref: faqRef, inView: visible } = useInView({
     /* Optional options */
     threshold: 0,
-    triggerOnce: true,
+    // triggerOnce: true,
     rootMargin: "-30px",
     fallbackInView: true,
   });

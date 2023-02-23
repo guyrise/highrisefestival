@@ -11,6 +11,7 @@ import LoadingLogo from "../../helpers/LoadingLogo/LoadingLogo";
 import firebreather from "../../../assets/images/highrise-firebreather.jpeg";
 
 import "./newsletter.css";
+import HighriseButton from "../../ui/Buttons/HighriseButton";
 
 const Newsletter = () => {
   const form = useRef();
@@ -20,6 +21,7 @@ const Newsletter = () => {
     threshold: 0,
     rootMargin: "-150px",
     fallbackInView: true,
+    triggerOnce: true,
   });
 
   const [contacted, setContacted] = useState(false);
@@ -186,15 +188,21 @@ const Newsletter = () => {
                 </div>
                 <div className="submit-box col-span-8 lg:col-span-3 flex justify-center items-center ">
                   {!subscribed && (
-                    <>
-                      <button
-                        type="submit"
-                        value="submit"
-                        id="subscribe-button"
-                      >
-                        <span data-glitch={"Subscribe"}>Subscribe</span>
-                      </button>
-                    </>
+                    // <>
+                    //   <button
+                    //     type="submit"
+                    //     value="submit"
+                    //     id="subscribe-button"
+                    //   >
+                    //     <span data-glitch={"Subscribe"}>Subscribe</span>
+                    //   </button>
+                    // </>
+                    <HighriseButton
+                      label={"Subscribe"}
+                      fontSize={"text-2xl"}
+                      type={"submit"}
+                      padding={"px-4 py-2"}
+                    />
                   )}
                   {subscribed && (
                     <>
