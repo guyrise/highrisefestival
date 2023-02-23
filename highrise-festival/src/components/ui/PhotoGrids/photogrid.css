@@ -95,10 +95,9 @@
   transform: translate3d(-50%, -50%, 0);
   padding: 4px 25px 7px;
   width: auto;
-  background-color: var(--nav-background);
+  background: linear-gradient(#78c896, #549b6e);
   border-radius: 0.7rem;
   border: 2px solid black;
-  /* outline: 2px solid black; */
 
   white-space: nowrap;
   font-family: var(--special-font);

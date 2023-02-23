@@ -20,10 +20,10 @@ const FAQDropdown = (props) => {
       ref={faqRef}
       className={`${
         visible ? "show-faq" : ""
-      } accordion-group  border-rose-300 mb-1 rounded-2xl `}
+      } accordion-group  border-[#75C593] mb-1 rounded-2xl `}
     >
       <div
-        className={`accordion bg-rose-300 border-rose-300 ${
+        className={`accordion bg-[#75C593] border-[#75C593] ${
           isFAQOpen ? " border-b-2 " : ""
         }`}
       >
@@ -67,7 +67,7 @@ const FAQDropdown = (props) => {
               }
         }
       >
-        <div className="accordion-content bg-rose-200 p-6">
+        <div className="accordion-content bg-green-200 p-6">
           <motion.p
             animate={isFAQOpen ? { opacity: 1 } : { opacity: 0 }}
             transition={{ opacity: { duration: 1, ease: "easeInOut" } }}

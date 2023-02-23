@@ -18,7 +18,7 @@
 
 .card-wrapper {
   /* background: rgba(234, 109, 124, 1); */
-  background: var(--card-background);
+  /* background: var(--card-background); */
   /* background: #524e4ed4;
   background: #524e4e; */
   /* background: #76a3b0; */
@@ -33,6 +33,7 @@
 .img-wrapper {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 .img-fmt2-box {
   display: flex;
