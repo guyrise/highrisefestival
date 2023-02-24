@@ -1,6 +1,6 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, useLocation } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import ScrollToTop from "./components/helpers/ScrollToTop/ScrollToTop";
 import "./index.css";

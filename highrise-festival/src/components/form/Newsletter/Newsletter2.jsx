@@ -188,15 +188,6 @@ const Newsletter = () => {
                 </div>
                 <div className="submit-box col-span-8 lg:col-span-3 flex justify-center items-center ">
                   {!subscribed && (
-                    // <>
-                    //   <button
-                    //     type="submit"
-                    //     value="submit"
-                    //     id="subscribe-button"
-                    //   >
-                    //     <span data-glitch={"Subscribe"}>Subscribe</span>
-                    //   </button>
-                    // </>
                     <HighriseButton
                       label={"Subscribe"}
                       fontSize={"text-2xl"}
