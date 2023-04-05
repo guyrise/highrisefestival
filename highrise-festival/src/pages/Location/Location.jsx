@@ -23,15 +23,16 @@ const Location = (props) => {
           photoGrid={props.locationData.photoGrid}
           heading={props.locationData.pageContent.heading}
         />
+
         <PageFormat pageData={props.locationData} />
 
-        <div className="my-6 px-6">
+        <div className="mt-20">
           <h3 className="mb-8">Where to find us...</h3>
+
           {isLoaded ? <Map /> : <div>Loading...</div>}
-          <p className="p-12">
-            Located just a 10 minute drive from huntingdon station there are
-            plenty of ways to get here if you are travelling by train.
-          </p>
+          <h3 className="mt-6 text-center">
+            Grange Farm - Abbots Ripton, Huntingdon, PE28 2PH
+          </h3>
         </div>
       </div>
     </motion.div>

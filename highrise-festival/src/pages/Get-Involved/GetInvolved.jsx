@@ -1,6 +1,6 @@
 import PhotoGridHero from "../../components/ui/PhotoGrids/PhotoGridHero";
 import PageFormat from "../../components/ui/PageFormat/PageFormat";
-import PageFormat2 from "../../components/ui/PageFormat/PageFormat2";
+import PageFormat3 from "../../components/ui/PageFormat/PageFormat3";
 import { motion } from "framer-motion";
 
 const GetInvolved = (props) => {
@@ -19,7 +19,7 @@ const GetInvolved = (props) => {
         />
 
         <PageFormat pageData={props.getInvolvedData} />
-        <PageFormat2 pageData={props.getInvolvedData} />
+        {/* <PageFormat3 pageData={props.getInvolvedData} /> */}
       </div>
     </motion.div>
   );

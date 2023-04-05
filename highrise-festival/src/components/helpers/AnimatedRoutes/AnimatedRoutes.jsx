@@ -20,6 +20,9 @@ import Location from "../../../pages/Location/Location";
 import Accomodation from "../../../pages/Accomodation/Accomodation";
 import Travel from "../../../pages/Travel/Travel";
 import Accessibility from "../../../pages/Accessibility/Accessibility";
+// ethos
+import Vision from "../../../pages/Vision/Vision";
+import Environment from "../../../pages/Environment/Environment";
 
 // FOOTER LINKS
 import Privacy from "../../../pages/Privacy Statement/Privacy";
@@ -28,25 +31,16 @@ import { AnimatePresence } from "framer-motion";
 import Credits from "../../../pages/Credits/Credits";
 
 const AnimatedRoutes = ({ data }) => {
-  console.log(data);
   return (
     <AnimatePresence>
       <Routes>
         <Route path="*" element={<Page404 />} />
         <Route path="/" element={<Home homeData={data.homeData} />} />
+        {/* PROGRAMME */}
         <Route
           path="programme"
           element={<Programme programmeData={data.programmeData} />}
         />
-
-        <Route path="info" element={<Info infoData={data.infoData} />} />
-        <Route path="ethos" element={<Ethos ethosData={data.ethosData} />} />
-        <Route path="faqs" element={<FAQS faqData={data.faqData} />} />
-        <Route
-          path="get-involved"
-          element={<GetInvolved getInvolvedData={data.getInvolvedData} />}
-        />
-
         {/* PROGRAMME SUB ROUTES */}
         <Route
           path="/programme/line-up"
@@ -64,6 +58,8 @@ const AnimatedRoutes = ({ data }) => {
           path="/programme/wellness"
           element={<Wellness wellnessData={data.wellnessData} />}
         />
+        {/* INFO */}
+        <Route path="info" element={<Info infoData={data.infoData} />} />
         {/* INFO SUB ROUTERS */}
         <Route
           path="info/location"
@@ -81,6 +77,24 @@ const AnimatedRoutes = ({ data }) => {
           path="info/accessibility"
           element={<Accessibility accessibilityData={data.accessibilityData} />}
         />
+        {/* ETHOS */}
+        <Route path="ethos" element={<Ethos ethosData={data.ethosData} />} />
+        {/* ETHOS SUB ROUTES */}
+        <Route
+          path="ethos/our-vision"
+          element={<Vision visionData={data.visionData} />}
+        />
+        <Route
+          path="ethos/environment"
+          element={<Environment environmentData={data.environmentData} />}
+        />
+
+        <Route path="faqs" element={<FAQS faqData={data.faqData} />} />
+        <Route
+          path="get-involved"
+          element={<GetInvolved getInvolvedData={data.getInvolvedData} />}
+        />
+
         <Route path="privacy" element={<Privacy />} />
         <Route path="credits" element={<Credits />} />
         <Route path="/*" element={<Page404 />} />

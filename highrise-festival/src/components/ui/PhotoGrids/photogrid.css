@@ -8,7 +8,8 @@
   position: relative;
   border-top: 1rem solid black;
   border-bottom: 1rem solid black;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem;
+  /* max-height: 620px; */
 }
 
 .photogrid-wrapper-hero {
@@ -21,46 +22,45 @@
 .photo-btn-box {
   overflow: hidden;
   position: relative;
+  /* max-height: 300px; */
 }
 
 .photo-btn-box-HERO {
   overflow: hidden;
-
   position: relative;
 }
 
 .photo-btn {
   position: relative;
-  aspect-ratio: 2/1;
-  /* min-height: 25vh; */
+
+  /* if you change the min height in this clamp to 300px you get a smaller grid */
+  /* height: clamp(600px, 600px, 60vh); */
+  height: clamp(500px, 500px, 60vh);
+  width: clamp(500px, 500px, 60vw);
+
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 51%;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   /* filter: brightness(80%); */
-  justify-self: center;
 }
 
-@media (max-width: 767px) {
-  .photo-btn-box {
-    max-height: 40vh;
+@media (max-width: 967px) {
+  .photo-btn {
+    height: clamp(300px, 400px, 60vh);
   }
 }
 
 @media (max-width: 48.25em) {
-  .photo-btn-box {
-    max-height: 30vh;
-  }
-
   .photo-btn {
-    object-position: center bottom;
+    height: clamp(300px, 600px, 60vh);
   }
 }
 
 .photo-btn:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
 
   /* filter: brightness(100%); */
 }
@@ -72,10 +72,11 @@
   height: clamp(200px, 600px, 80vh);
 
   object-fit: cover;
+
   transition: all 3s ease;
 
   justify-self: center;
-  object-position: center bottom;
+  object-position: center 45%;
 }
 
 .photo-hero:hover {

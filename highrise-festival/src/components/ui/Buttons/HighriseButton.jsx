@@ -4,7 +4,7 @@ import "./highrisebutton.css";
 
 const HighriseButton = ({ label, fontSize, onClick, type, padding }) => {
   return (
-    <div className="button-container h-full flex justify-center items-center">
+    <div className="button-container h-full flex justify-center items-center mb-4">
       <button
         type={type}
         className={`highrise-button ${padding}`}

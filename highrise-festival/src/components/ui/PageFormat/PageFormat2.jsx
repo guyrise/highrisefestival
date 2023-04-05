@@ -5,11 +5,10 @@ import Card from "../Card/Card";
 import "./pageFormat.css";
 
 const PageFormat = (props) => {
-  const wellnessPage = props.pageData.wellnessPage;
   return (
-    <div className="page-format-wrapper mt-8 pt-8">
+    <div className="page-format-wrapper bg-[#ffffff50] rounded-xl">
       <div
-        className={`page-intro-wrapper ${
+        className={`page-intro-wrapper  ${
           props.pageData.pageContent.pageIntro
             ? "sm:px-6 lg:px-32 pt-16 pb-2"
             : ""
@@ -21,7 +20,7 @@ const PageFormat = (props) => {
         {props.pageData.pageContent.pageIntro && (
           <p
             className={`page-intro text-center ${
-              wellnessPage ? "sanctury" : ""
+              props.pageData.wellnessPage ? "sanctury" : ""
             }`}
           >
             {props.pageData.pageContent.pageIntro.map((line) => {
@@ -38,16 +37,14 @@ const PageFormat = (props) => {
       </div>
       {props.pageData.pageContent.cards &&
         props.pageData.pageContent.cards.map((item, index) => {
-          let left = false;
-          index % 2 !== 0 ? (left = true) : null;
           return (
             <>
               <Card
                 cardData={item}
                 key={"Card:" + index}
-                left={left}
+                left={index % 2 !== 0}
                 index={index}
-                isWellnessPage={wellnessPage}
+                isWellnessPage={props.pageData.wellnessPage}
               />
             </>
           );

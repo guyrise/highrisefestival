@@ -28,7 +28,7 @@ const Home = (props) => {
 
       {!loading && (
         <div id="about-section">
-          <h3 className="my-8 text-center">
+          <h3 className="mt-8 text-center">
             {props.homeData.pageContent.heading}
           </h3>
           <div className="page flex flex-col items-center justify-center">

@@ -76,7 +76,9 @@ const Newsletter = () => {
   return (
     <div
       ref={newsletterRef}
-      className={`${visible ? "show-newsletter" : ""} newsletter-wrapper`}
+      className={`${
+        visible ? "show-newsletter" : ""
+      } newsletter-wrapper border-black border-t-[12px] rounded-lg`}
     >
       <div className="newsletter-grid grid grid-cols-1 md:grid-cols-2">
         {!subscribed && (
@@ -163,7 +165,7 @@ const Newsletter = () => {
 
                 <input type="hidden" name="anticsrf" value="true" />
 
-                <div className="checkbox-box col-span-8 lg:col-span-5 flex justify-between items-center">
+                <div className="checkbox-box col-span-8 flex justify-between items-center">
                   <label
                     htmlFor="gdpr_check"
                     className="checkbox-label pr-32 md:pr-6 pl-2"
@@ -186,7 +188,7 @@ const Newsletter = () => {
                     required={true}
                   />
                 </div>
-                <div className="submit-box col-span-8 lg:col-span-3 flex justify-center items-center ">
+                <div className="submit-box col-span-8 flex justify-center items-center ">
                   {!subscribed && (
                     <HighriseButton
                       label={"Subscribe"}
