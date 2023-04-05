@@ -816,8 +816,9 @@ const accomodationData = {
         image: campervan1,
 
         label: "Campervans",
+        link: "https://fixr.co/event/highrise-festival-2023-tickets-811270693/tickets?",
         description: [
-          "If you are planning on sleeping in your campervan, please make sure you have purchased one of our campervan passes before hand which you can find here: ",
+          "If you are planning on sleeping in your campervan, please make sure you have purchased one of our campervan passes before hand which you can purchase through Fixr, where you purchase normal festival tickets.",
         ],
       },
     ],
