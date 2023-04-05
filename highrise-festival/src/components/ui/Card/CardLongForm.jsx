@@ -18,7 +18,6 @@ const Card = (props) => {
   const left = props.left;
   const color = props.cardData.color;
   const borderColor = props.cardData.borderColor;
-  console.log(props.cardData);
 
   return (
     <div

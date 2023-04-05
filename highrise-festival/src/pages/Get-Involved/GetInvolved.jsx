@@ -4,7 +4,6 @@ import PageFormat3 from "../../components/ui/PageFormat/PageFormat3";
 import { motion } from "framer-motion";
 
 const GetInvolved = (props) => {
-  console.log(props);
   return (
     <motion.div
       initial={{ opacity: 0 }}
