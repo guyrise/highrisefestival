@@ -642,38 +642,38 @@ const wellnessData = {
       },
     ],
   },
-  faqData: [
-    {
-      question: "What are the Covid safe entry requirements?",
-      answer:
-        "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
-    },
-    {
-      question: "When does the festival start and end?",
-      answer:
-        "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
-    },
-    {
-      question: "Where can I get a festival site map?",
-      answer:
-        "Site maps will be emailed to all ticket holders in advance of the festival.",
-    },
-    {
-      question: "When can I get a full programme?",
-      answer:
-        "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
-    },
-    {
-      question: "Will there be showers available for campers?",
-      answer:
-        "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
-    },
-    {
-      question: "Will BBQs or campfires be permitted on campsites?",
-      answer:
-        "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
-    },
-  ],
+  // faqData: [
+  //   {
+  //     question: "What are the Covid safe entry requirements?",
+  //     answer:
+  //       "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
+  //   },
+  //   {
+  //     question: "When does the festival start and end?",
+  //     answer:
+  //       "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
+  //   },
+  //   {
+  //     question: "Where can I get a festival site map?",
+  //     answer:
+  //       "Site maps will be emailed to all ticket holders in advance of the festival.",
+  //   },
+  //   {
+  //     question: "When can I get a full programme?",
+  //     answer:
+  //       "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
+  //   },
+  //   {
+  //     question: "Will there be showers available for campers?",
+  //     answer:
+  //       "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
+  //   },
+  //   {
+  //     question: "Will BBQs or campfires be permitted on campsites?",
+  //     answer:
+  //       "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
+  //   },
+  // ],
 };
 
 // Location Page
@@ -687,38 +687,38 @@ const locationData = {
       "The site comes with loads of permanent infrastructure, stages, bars, roads, power and water. It's a tried and tested festival location so we feel we're in safe hands to make sure you all have the best weekender ever!",
     ],
   },
-  faqData: [
-    {
-      question: "What are the Covid safe entry requirements?",
-      answer:
-        "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
-    },
-    {
-      question: "When does the festival start and end?",
-      answer:
-        "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
-    },
-    {
-      question: "Where can I get a festival site map?",
-      answer:
-        "Site maps will be emailed to all ticket holders in advance of the festival.",
-    },
-    {
-      question: "When can I get a full programme?",
-      answer:
-        "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
-    },
-    {
-      question: "Will there be showers available for campers?",
-      answer:
-        "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
-    },
-    {
-      question: "Will BBQs or campfires be permitted on campsites?",
-      answer:
-        "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
-    },
-  ],
+  // faqData: [
+  //   {
+  //     question: "What are the Covid safe entry requirements?",
+  //     answer:
+  //       "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
+  //   },
+  //   {
+  //     question: "When does the festival start and end?",
+  //     answer:
+  //       "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
+  //   },
+  //   {
+  //     question: "Where can I get a festival site map?",
+  //     answer:
+  //       "Site maps will be emailed to all ticket holders in advance of the festival.",
+  //   },
+  //   {
+  //     question: "When can I get a full programme?",
+  //     answer:
+  //       "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
+  //   },
+  //   {
+  //     question: "Will there be showers available for campers?",
+  //     answer:
+  //       "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
+  //   },
+  //   {
+  //     question: "Will BBQs or campfires be permitted on campsites?",
+  //     answer:
+  //       "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
+  //   },
+  // ],
 };
 
 // Travel Page
@@ -756,38 +756,38 @@ const travelData = {
       },
     ],
   },
-  faqData: [
-    {
-      question: "What are the Covid safe entry requirements?",
-      answer:
-        "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
-    },
-    {
-      question: "When does the festival start and end?",
-      answer:
-        "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
-    },
-    {
-      question: "Where can I get a festival site map?",
-      answer:
-        "Site maps will be emailed to all ticket holders in advance of the festival.",
-    },
-    {
-      question: "When can I get a full programme?",
-      answer:
-        "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
-    },
-    {
-      question: "Will there be showers available for campers?",
-      answer:
-        "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
-    },
-    {
-      question: "Will BBQs or campfires be permitted on campsites?",
-      answer:
-        "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
-    },
-  ],
+  // faqData: [
+  //   {
+  //     question: "What are the Covid safe entry requirements?",
+  //     answer:
+  //       "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
+  //   },
+  //   {
+  //     question: "When does the festival start and end?",
+  //     answer:
+  //       "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
+  //   },
+  //   {
+  //     question: "Where can I get a festival site map?",
+  //     answer:
+  //       "Site maps will be emailed to all ticket holders in advance of the festival.",
+  //   },
+  //   {
+  //     question: "When can I get a full programme?",
+  //     answer:
+  //       "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
+  //   },
+  //   {
+  //     question: "Will there be showers available for campers?",
+  //     answer:
+  //       "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
+  //   },
+  //   {
+  //     question: "Will BBQs or campfires be permitted on campsites?",
+  //     answer:
+  //       "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
+  //   },
+  // ],
 };
 
 // Accomodation Page
@@ -843,38 +843,38 @@ const accomodationData = {
       },
     ],
   },
-  faqData: [
-    {
-      question: "What are the Covid safe entry requirements?",
-      answer:
-        "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
-    },
-    {
-      question: "When does the festival start and end?",
-      answer:
-        "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
-    },
-    {
-      question: "Where can I get a festival site map?",
-      answer:
-        "Site maps will be emailed to all ticket holders in advance of the festival.",
-    },
-    {
-      question: "When can I get a full programme?",
-      answer:
-        "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
-    },
-    {
-      question: "Will there be showers available for campers?",
-      answer:
-        "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
-    },
-    {
-      question: "Will BBQs or campfires be permitted on campsites?",
-      answer:
-        "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
-    },
-  ],
+  // faqData: [
+  //   {
+  //     question: "What are the Covid safe entry requirements?",
+  //     answer:
+  //       "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
+  //   },
+  //   {
+  //     question: "When does the festival start and end?",
+  //     answer:
+  //       "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
+  //   },
+  //   {
+  //     question: "Where can I get a festival site map?",
+  //     answer:
+  //       "Site maps will be emailed to all ticket holders in advance of the festival.",
+  //   },
+  //   {
+  //     question: "When can I get a full programme?",
+  //     answer:
+  //       "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
+  //   },
+  //   {
+  //     question: "Will there be showers available for campers?",
+  //     answer:
+  //       "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
+  //   },
+  //   {
+  //     question: "Will BBQs or campfires be permitted on campsites?",
+  //     answer:
+  //       "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
+  //   },
+  // ],
 };
 
 // Accessibility Page
@@ -894,38 +894,38 @@ const accessibilityData = {
       "If you require any further information in advance of the festival, please reach out to us via email on info@highrise.com",
     ],
   },
-  faqData: [
-    {
-      question: "What are the Covid safe entry requirements?",
-      answer:
-        "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
-    },
-    {
-      question: "When does the festival start and end?",
-      answer:
-        "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
-    },
-    {
-      question: "Where can I get a festival site map?",
-      answer:
-        "Site maps will be emailed to all ticket holders in advance of the festival.",
-    },
-    {
-      question: "When can I get a full programme?",
-      answer:
-        "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
-    },
-    {
-      question: "Will there be showers available for campers?",
-      answer:
-        "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
-    },
-    {
-      question: "Will BBQs or campfires be permitted on campsites?",
-      answer:
-        "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
-    },
-  ],
+  // faqData: [
+  //   {
+  //     question: "What are the Covid safe entry requirements?",
+  //     answer:
+  //       "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023.",
+  //   },
+  //   {
+  //     question: "When does the festival start and end?",
+  //     answer:
+  //       "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest.",
+  //   },
+  //   {
+  //     question: "Where can I get a festival site map?",
+  //     answer:
+  //       "Site maps will be emailed to all ticket holders in advance of the festival.",
+  //   },
+  //   {
+  //     question: "When can I get a full programme?",
+  //     answer:
+  //       "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site.",
+  //   },
+  //   {
+  //     question: "Will there be showers available for campers?",
+  //     answer:
+  //       "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!",
+  //   },
+  //   {
+  //     question: "Will BBQs or campfires be permitted on campsites?",
+  //     answer:
+  //       "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls.",
+  //   },
+  // ],
 };
 
 // get involved Page
