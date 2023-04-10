@@ -19,9 +19,9 @@ const Accessibility = (props) => {
         />
 
         <PageFormat pageData={props.accessibilityData} />
-        <div className="page-faqs section mt-8">
+        {/* <div className="page-faqs section mt-8">
           <FAQScomp faqData={props.accessibilityData.faqData} />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

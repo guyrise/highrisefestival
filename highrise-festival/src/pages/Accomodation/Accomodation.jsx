@@ -17,9 +17,9 @@ const Accomodation = (props) => {
           heading={props.accomodationData.pageContent.heading}
         />
         <PageFormat2 pageData={props.accomodationData} />
-        <div className="page-faqs section">
+        {/* <div className="page-faqs section">
           <FAQScomp faqData={props.accomodationData.faqData} />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

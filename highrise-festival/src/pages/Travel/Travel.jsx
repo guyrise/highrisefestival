@@ -17,9 +17,9 @@ const Travel = (props) => {
           heading={props.travelData.pageContent.heading}
         />
         <PageFormat2 pageData={props.travelData} />
-        <div className="page-faqs section">
+        {/* <div className="page-faqs section">
           <FAQScomp faqData={props.travelData.faqData} />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
