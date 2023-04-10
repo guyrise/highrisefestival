@@ -76,7 +76,7 @@ import Channel1 from "./assets/images/Programme/Soundsystems/ChannelOne.webp";
 
 // VENUES IMAGES
 import BunkBeds from "./assets/images/Programme/Venues/BunkBeds.webp";
-import Dubtendo from "./assets/images/Programme/Venues/Dubtendo.webp";
+import Dubtendo from "./assets/images/Programme/Venues/dubtendo.webp";
 import Woodland from "./assets/images/Programme/Venues/WoodlandStage.webp";
 import Woodland2 from "./assets/images/Programme/Venues/WoodlandStage2.webp";
 import Sublab from "./assets/images/Programme/Venues/Sublab.webp";
