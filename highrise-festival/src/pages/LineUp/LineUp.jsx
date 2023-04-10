@@ -1,6 +1,4 @@
-import React from "react";
-
-import LineupMain from "../../assets/images/Programme/Lineup/LineupMain.png";
+import LineupMain from "../../assets/images/Programme/Lineup/LineupMain.webp";
 
 import lineupBlurred from "../../assets/images/highrise-lineup-blurred.webp";
 import { motion } from "framer-motion";

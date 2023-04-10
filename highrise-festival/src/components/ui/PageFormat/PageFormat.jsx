@@ -1,4 +1,3 @@
-import React from "react";
 import HighriseButton from "../Buttons/HighriseButton";
 
 import "./pageFormat.css";

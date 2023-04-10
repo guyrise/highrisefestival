@@ -1,4 +1,3 @@
-import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IconContext } from "react-icons";
 

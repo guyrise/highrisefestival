@@ -68,13 +68,27 @@ const FAQDropdown = (props) => {
         }
       >
         <div className="accordion-content bg-green-200 p-6">
-          <motion.p
+          {props.answer.map((sentence, index, answers) => {
+            return (
+              <motion.p
+                animate={isFAQOpen ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ opacity: { duration: 1, ease: "easeInOut" } }}
+                className={
+                  "content " + (isFAQOpen ? " faq-open" : " faq-closed")
+                }
+              >
+                {sentence}
+              </motion.p>
+            );
+          })}
+          {/* <motion.p
             animate={isFAQOpen ? { opacity: 1 } : { opacity: 0 }}
             transition={{ opacity: { duration: 1, ease: "easeInOut" } }}
             className={"content " + (isFAQOpen ? " faq-open" : " faq-closed")}
-          >
-            {props.answer}
-          </motion.p>
+          > */}
+          {/* {props.answer} */}
+
+          {/* </motion.p> */}
         </div>
       </motion.div>
     </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./highrisebutton.css";
 
 const HighriseButton = ({ label, fontSize, onClick, type, padding }) => {

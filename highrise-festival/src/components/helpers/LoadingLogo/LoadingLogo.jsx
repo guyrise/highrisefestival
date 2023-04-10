@@ -1,5 +1,4 @@
-import React from "react";
-import Logo from "../../../assets/images/HighriseLogoCropped.webp";
+import Logo from "../../../assets/images/Navbar/HighriseLogoCropped.webp";
 
 const LoadingLogo = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import FAQDropdown from "../../components/ui/FAQDropdown/FAQDropdown";
 
 import "./FAQS.css";

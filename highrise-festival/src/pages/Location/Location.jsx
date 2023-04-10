@@ -1,4 +1,3 @@
-import React from "react";
 import Map from "../../components/ui/Map/Map";
 import PageFormat from "../../components/ui/PageFormat/PageFormat";
 import { useLoadScript } from "@react-google-maps/api";

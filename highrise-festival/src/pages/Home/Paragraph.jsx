@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useInView, observe } from "react-intersection-observer";
 
 import "./home.css";

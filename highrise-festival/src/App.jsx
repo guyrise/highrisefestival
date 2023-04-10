@@ -27,77 +27,67 @@ import borderRightBlurred from "./assets/images/borders/highrise-border-right-bl
 import borderLeftBlurred from "./assets/images/borders/highrise-border-left-blurred.webp";
 
 // PROGRAMME PHOTOGRID IMAGES
-import LineupTile from "./assets/images/Programme/Lineup/LineupTile.png";
-import ChaiWallahTile from "./assets/images/Programme/Venues/ChaiWallahTile.png";
-import SinaiTile from "./assets/images/Programme/Soundsystems/SinaiTile.jpg";
+import LineupTile from "./assets/images/Programme/Lineup/LineupTile.webp";
+import ChaiWallahTile from "./assets/images/Programme/Venues/ChaiWallahTile.webp";
+import SinaiTile from "./assets/images/Programme/Soundsystems/SinaiTile.webp";
 // hottub
 
 // INFO PHOTOGRID IMAGES
 
-import lake from "./assets/images/Info/highrise-lake1.jpeg";
-import AccomTile from "./assets/images/Info/Lotus-interior.jpeg";
+import lake from "./assets/images/Info/highrise-lake1.webp";
+import AccomTile from "./assets/images/Info/Lotus-interior.webp";
 
 // TRAVEL IMAGES
-import campervan1 from "./assets/images/Highrise Festival Website/campervan.jpg";
-import bike from "./assets/images/Highrise Festival Website/bike.jpg";
-import coach from "./assets/images/Highrise Festival Website/coach.jpg";
-import train from "./assets/images/Highrise Festival Website/train.jpg";
-import cargirls from "./assets/images/Highrise Festival Website/car-girls.jpg";
+import campervan1 from "./assets/images/Info/Accomodation/highrise-campervan.webp";
+import coach from "./assets/images/Info/Travel/coach.webp";
+import train from "./assets/images/Info/Travel/train.webp";
+import cargirls from "./assets/images/Info/Travel/car-girls.webp";
 
 // ACCOMODATION IMAGES
-import girlCamping from "./assets/images/Highrise Festival Website/girl-camping.jpg";
-import Belltent from "./assets/images/Info/Accomodation/highrise-bell-tent.png";
-import Lotus from "./assets/images/Info/Accomodation/highrise-lotus-tent.png";
-import Emperor2 from "./assets/images/Info/Accomodation/highrise-emperor-tent2.png";
-
-// OLD ACCOM IMAGES
-// import belltent1 from "./assets/images/Highrise Festival Website/bell-tent-night.jpg";
-// import belltent2 from "./assets/images/Highrise Festival Website/bell-tent1.webp";
-// import airstream1 from "./assets/images/Highrise Festival Website/airstream1.webp";
-// import airstream2 from "./assets/images/Highrise Festival Website/airstream2.webp";
-// import airstream3 from "./assets/images/Highrise Festival Website/airstream3.webp";
-// import bwCamping from "./assets/images/Highrise Festival Website/bw-camping.webp";
+import girlCamping from "./assets/images/Info/Accomodation/girl-camping.webp";
+import Belltent from "./assets/images/Info/Accomodation/highrise-bell-tent.webp";
+import Lotus from "./assets/images/Info/Accomodation/highrise-lotus-tent.webp";
+import Emperor2 from "./assets/images/Info/Accomodation/highrise-emperor-tent2.webp";
 
 // ETHOS IMAGES
-import GoodVibes from "./assets/images/Ethos/good-vibes.jpg";
-import EnvironmentTile from "./assets/images/Ethos/environment-trees.jpg";
+import GoodVibes from "./assets/images/Ethos/good-vibes.webp";
+import EnvironmentTile from "./assets/images/Ethos/environment-trees.webp";
 import ReuseCups from "./assets/images/Ethos/reuse-plastic.jpg";
 // GET INVOLVED IMAGES
-import hands from "./assets/images/Highrise Festival Website/hands.jpg";
+import hands from "./assets/images/GetInvolved/hands.webp";
 
 // ACCESSIBILITY IMAGES
-import mcFats from "./assets/images/Highrise Festival Website/mcFats.jpeg";
+import mcFats from "./assets/images/Info/Accessibility/mcFats.webp";
 
 // SOUNDSYSTEM IMAGES
 
-import AbaShanti from "./assets/images/Programme/Soundsystems/AbaShanti.jpg";
-import Danley from "./assets/images/Programme/Soundsystems/Danley.jpeg";
-import Felt from "./assets/images/Programme/Soundsystems/Felt.jpg";
-import RCASound from "./assets/images/Programme/Soundsystems/RCA.jpg";
-import ScotlandYard from "./assets/images/Programme/Soundsystems/ScotlandYardSound.jpeg";
-import Void from "./assets/images/Programme/Soundsystems/Void.jpeg";
-import WashingMachine from "./assets/images/Programme/Soundsystems/WashingMachine.jpg";
-import Electrikal from "./assets/images/Highrise Festival Website/ELECTRIKAL.jpg";
-import Iration from "./assets/images/Highrise Festival Website/IRATION-STEPPAS.jpg";
-import FirmlyRooted1 from "./assets/images/Highrise Festival Website/firmly-rooted-soundsystem1.webp";
-import FirmlyRooted from "./assets/images/Highrise Festival Website/FirmlyRooted.jpg";
-import Sinai from "./assets/images/Highrise Festival Website/sinai-soundsystem-crew.webp";
-import Channel1 from "./assets/images/Highrise Festival Website/ChannelOne.webp";
+import AbaShanti from "./assets/images/Programme/Soundsystems/AbaShanti.webp";
+import Danley from "./assets/images/Programme/Soundsystems/Danley.webp";
+import Felt from "./assets/images/Programme/Soundsystems/Felt.webp";
+import RCASound from "./assets/images/Programme/Soundsystems/RCA.webp";
+import ScotlandYard from "./assets/images/Programme/Soundsystems/ScotlandYardSound.webp";
+import Void from "./assets/images/Programme/Soundsystems/Void.webp";
+import WashingMachine from "./assets/images/Programme/Soundsystems/WashingMachine.webp";
+import Electrikal from "./assets/images/Programme/Soundsystems/ELECTRIKAL.webp";
+import Iration from "./assets/images/Programme/Soundsystems/IRATION-STEPPAS.webp";
+import FirmlyRooted from "./assets/images/Programme/Soundsystems/FirmlyRooted.webp";
+import Sinai from "./assets/images/Programme/Soundsystems/sinai-soundsystem-crew.webp";
+import Channel1 from "./assets/images/Programme/Soundsystems/ChannelOne.webp";
 
 // VENUES IMAGES
-import BunkBeds from "./assets/images/Programme/Venues/BunkBeds.jpg";
-import Dubtendo from "./assets/images/Programme/Venues/Dubtendo.jpeg";
-import Woodland from "./assets/images/Programme/Venues/WoodlandStage.png";
-import Woodland2 from "./assets/images/Programme/Venues/WoodlandStage2.png";
-import Sublab from "./assets/images/Programme/Venues/Sublab.jpg";
-import SmokeyTenticles from "./assets/images/Programme/Venues/smokey-tenticles.png";
+import BunkBeds from "./assets/images/Programme/Venues/BunkBeds.webp";
+import Dubtendo from "./assets/images/Programme/Venues/Dubtendo.webp";
+import Woodland from "./assets/images/Programme/Venues/WoodlandStage.webp";
+import Woodland2 from "./assets/images/Programme/Venues/WoodlandStage2.webp";
+import Sublab from "./assets/images/Programme/Venues/Sublab.webp";
+import SmokeyTenticles from "./assets/images/Programme/Venues/smokey-tenticles.webp";
 
 // WELLNESS IMAGES
-import hottub from "./assets/images/Highrise Festival Website/hot-tub.jpg";
-import earth from "./assets/images/Highrise Festival Website/wellness-earth.jpg";
-import water from "./assets/images/Highrise Festival Website/wellness-water.jpg";
-import fire from "./assets/images/Highrise Festival Website/wellness-fire.jpg";
-import air from "./assets/images/Highrise Festival Website/wellness-air.jpg";
+import hottub from "./assets/images/Programme/Wellness/hot-tub.webp";
+import earth from "./assets/images/Programme/Wellness/wellness-earth.webp";
+import water from "./assets/images/Programme/Wellness/wellness-water.webp";
+import fire from "./assets/images/Programme/Wellness/wellness-fire.webp";
+import air from "./assets/images/Programme/Wellness/wellness-air.webp";
 import AnimatedRoutes from "./components/helpers/AnimatedRoutes/AnimatedRoutes";
 
 // LineUp Data
@@ -183,6 +173,7 @@ const soundsystemData = {
         image: AbaShanti,
         color: "",
         label: "Aba Shanti-I",
+        alt: "Aba Shanti-I Soundsystem",
         description: [
           "With over 30 years experience there is nothing quite like an Aba Shanti session, come and experience the sound of Jah Thunder & Lighting at the Teachings In Dub Arena on Friday.",
         ],
@@ -191,6 +182,7 @@ const soundsystemData = {
         image: Channel1,
         color: "",
         label: "Channel One Soundsystem",
+        alt: "Channel One Soundsystem stack set up at notting hill carnival",
         description: [
           "The legendary Channel One Sound System is one of the best known and most loved reggae sound systems in the UK. Find them at the Teachings In Dub Arena on Sunday.",
         ],
@@ -199,6 +191,7 @@ const soundsystemData = {
         image: Danley,
         color: "",
         label: "Danley",
+        alt: "Music festival stage with Danley Audio Soundsystem",
         description: [
           "Provided by Reproduction in Bristol were hosting a range of Danley Sound Labs speakers which is some of the most cutting edge audio equipment on the globe right now.",
         ],
@@ -207,6 +200,7 @@ const soundsystemData = {
         image: Electrikal,
         color: "",
         label: "Elektrical Soundsystem",
+        alt: "Electrical Soundstem",
         description: [
           "From Edinburgh, Scotland Electrikal Sound System is one of the UK's leading of bass music sound systems.",
         ],
@@ -215,6 +209,7 @@ const soundsystemData = {
         image: Felt,
         color: "",
         label: "Felt Soundsystem",
+        alt: "Felt Soundsystem set up in a forest.",
         description: [
           "A hand built sound system out of London, celebrating world music and sound system culture Felt will power our latin stage Candela Viva.",
         ],
@@ -223,6 +218,7 @@ const soundsystemData = {
         image: FirmlyRooted,
         color: "",
         label: "Firmly Rooted Soundsystem",
+        alt: "Firmly Rooted Soundsystem set up at a music festival",
         description: [
           "Hailing from Bristol, Firmly Rooted has been making huge waves in the 140 and Roots community, they are powering the woodland stage as Firmly Rooted and also Sublab, the festivals dedicated 140 venue.",
         ],
@@ -231,6 +227,7 @@ const soundsystemData = {
         image: Iration,
         color: "",
         label: "Iration Steppas Soundsystem",
+        alt: "Mark Iration and Dennis Rootical stood in front of Iration Steppas Soundsystem",
         description: [
           "The vanguard of Dub! Hailing from Leeds the Iration Steppas crew will be playing dubs in a year 300 style at the Teachings In Dub Arena on Saturday.",
         ],
@@ -239,6 +236,7 @@ const soundsystemData = {
         image: RCASound,
         color: "",
         label: "RCA Sound",
+        alt: "RCA Soundsystem set up in a warehouse",
         description: [
           "Built by RC1 this active sound system will be powering the legendary Bunk Beds from HighRise Hub all the way to HighRise Festival. ",
         ],
@@ -247,6 +245,7 @@ const soundsystemData = {
         image: ScotlandYard,
         color: "",
         label: "Scotland Yard",
+        alt: "Scotland Yard Soundsystem set up with a dog lying down in foreground.",
         description: [
           "From Scotland to Bristol this DIY sound system is fast becoming one of the most respected sounds in the UK scene and will be powering our Jungle Of Eden stage.",
         ],
@@ -255,6 +254,7 @@ const soundsystemData = {
         image: Sinai,
         color: "",
         label: "Sinai Soundsystem",
+        alt: "Full Sinai Soundsystem set up in a warehouse with 5 members of the Sinai Team stood in front of it.",
         description: [
           "From Sheffield the mighty Sinai Sound System is one of the UK's most respected sounds. Powering their own stage with takeovers from Croydub, Deep Medi & a jungle showcase.",
         ],
@@ -263,6 +263,7 @@ const soundsystemData = {
         image: Void,
         color: "",
         label: "Void Acoustics",
+        alt: "Void Acoustics Soundsystem set up with 2 subs and 2 red air motion loudspeakers in front of wall of graffiti",
         description: [
           "One of the best speaker manufactures in the world, were teaming up with NSL Productions for a range of Void Acoustics speakers across the site.",
         ],
@@ -271,6 +272,7 @@ const soundsystemData = {
         image: WashingMachine,
         color: "",
         label: "Washing Machine Soundsystem",
+        alt: "Washing Machine Soundsytem",
         description: [
           "From Bristol UK, the washing Machine sound system will be powering our new Laundrette stage.",
         ],
@@ -294,6 +296,7 @@ const venuesData = {
         image: Electrikal,
         color: "",
         label: "Elektrical Soundsystem",
+        alt: "",
         description: [
           "A bass music orientated stage with daily takeovers from some of the UK's finest brands TBA.",
         ],
@@ -302,6 +305,7 @@ const venuesData = {
         image: Woodland,
         color: "",
         label: "Labyrinth",
+        alt: "",
         description: [
           "Deep in the woods you can find the finest Jungle & Drum & Bass powered by Danley Sound Labs.",
         ],
@@ -310,6 +314,7 @@ const venuesData = {
         image: Sublab,
         color: "",
         label: "Sub-Lab",
+        alt: "",
         description: [
           "A late-night venue specialising in all things 140, Dubstep and bass powered by the mighty Firmly Rooted sound system.",
         ],
@@ -318,6 +323,7 @@ const venuesData = {
         image: Dubtendo,
         color: "",
         label: "Dubtendo Arcane",
+        alt: "",
         description: [
           "Retro games meets 8 bit rave, an immersive micro venue from the Dubtendo crew.",
         ],
@@ -326,6 +332,7 @@ const venuesData = {
         image: BunkBeds,
         color: "",
         label: "Bunk Beds",
+        alt: "",
         description: [
           "The legendary silly & sweaty room from HighRise Hub makes it way across the country.",
         ],
@@ -334,6 +341,7 @@ const venuesData = {
         image: Woodland2,
         color: "",
         label: "Firmly Rooted",
+        alt: "",
         description: [
           "A woodland stage playing the finest in roots inspired music from across the world, from the inspiration to this generation.",
         ],
@@ -342,6 +350,7 @@ const venuesData = {
         image: SinaiTile,
         color: "",
         label: "Mount Sinai",
+        alt: "",
         description: [
           "An ancient temple set high on a mountain top, this bass music oriented stage will host Croydub, Deep Media and a Jungle showcase.",
         ],
@@ -350,6 +359,7 @@ const venuesData = {
         image: ChaiWallahTile,
         color: "",
         label: "Chai Wallah Soundsystem",
+        alt: "",
         description: [
           "Award winning touring venue Chai Wallahs will be hosting our full live bands. From Jazz to Afrobeat and Hip Hop to Reggae, these bands will keep you dancing.",
         ],
@@ -358,6 +368,7 @@ const venuesData = {
         image: SmokeyTenticles,
         color: "",
         label: "Smokey Tentacles",
+        alt: "",
         description: [
           "The UK festival circuits favourite chill-out lounge, cafe and shisha bar.",
         ],
@@ -366,6 +377,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Teachings In Dub Arena",
+        alt: "",
         description: [
           "An authentic sound system experience from the UK's leading Dub sounds.",
         ],
@@ -374,6 +386,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "The Void",
+        alt: "",
         description: [
           "A showcase of the finest brands from around the UK with daily takeovers from Hit & Run, Gutter Funk & Lively Up.",
         ],
@@ -382,6 +395,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Global Gully",
+        alt: "",
         description: [
           "Where tropical grooves from around the world meets future dance music, programmed by Ru Robinson.",
         ],
@@ -390,6 +404,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Fungi Tavern",
+        alt: "",
         description: [
           "Enter a world of wonder with a collective of genres from the finest of UK Hip Hip to chuggy house bangers.",
         ],
@@ -398,6 +413,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Jungle Of Eden",
+        alt: "",
         description: [
           "An overgrown ancient ruin hosting the finest Jungle & DnB through the mighty Scotland Yard Sound System! ",
         ],
@@ -406,6 +422,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Candela Viva",
+        alt: "",
         description: [
           "A celebration of Latin American sounds, roots and culture powered by Felt Sound System.",
         ],
@@ -414,6 +431,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "The Laundrette",
+        alt: "",
         description: [
           "A secret stage spinning the finest UKG, RnB and house party heaters. Come and rinse out with the Washing Machine Sound System crew.",
         ],
@@ -422,6 +440,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Tunnel Vision",
+        alt: "",
         description: ["An abandoned munitions factory "],
       },
       {
@@ -436,6 +455,7 @@ const venuesData = {
         image: "",
         color: "",
         label: "Jungle Of Eden",
+        alt: "",
         description: [
           "An overgrown ancient ruin hosting the finest Jungle & DnB through the mighty Scotland Yard Sound System! ",
         ],

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { GoogleMap, MarkerF } from "@react-google-maps/api";
-import highriseLogo from "../../../assets/images/HighriseLogoCropped.webp";
+import highriseLogo from "../../../assets/images/Navbar/HighriseLogoCropped.webp";
 
 import "./map.css";
 

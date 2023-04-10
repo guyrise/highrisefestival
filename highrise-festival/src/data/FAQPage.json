@@ -1,50 +1,192 @@
 [
   {
-    "question": "What are the Covid safe entry requirements?",
-    "answer": "To gain access to Highrise Festival this year we will ask ALL customers, staff and artists to take an at-home lateral flow test (irrespective of vaccination status) no more than 24 hours before arriving on site to the festival, verifying that the test shows negative results. \n  We also will be operating further measures to reduce the risk of COVID-19 including: \n • Increased ventilation through all tents/structures \n • Face masks for all “customer facing” staff on site \n • Increased hand washing and sanitisation points throughout the site \n Any ticket holders who test positive in a pre-event lateral flow and who cannot attend will be able to roll their ticket over to 2023."
+    "question": "Does my ticket including camping?",
+    "answer": [
+      "Yes, this is a camping festival and all tickets include access to our public campsite and facilities please bring a tent and more importantly take it home with you!"
+    ]
   },
   {
-    "question": "When does the festival start and end?",
-    "answer": "The main gates open at midday on 25th August. \n Once in, you are free to leave the site at any time, but you will only be allowed back in between 10:00 and 22:00 each day. \n The festival ends on 27th August and we ask that all festival-goers leave site by 12:00 latest."
+    "question": "Do you sell day tickets?",
+    "answer": [
+      "No unfortuantely, we don't.",
+      "We have 4 days of incredible music, arts and activities come and enjoy the full weekend at HighRise Festival.",
+      "Tickets are very affordable so we hope you come and have the full experience."
+    ]
   },
   {
     "question": "Where can I get a festival site map?",
-    "answer": "Site maps will be emailed to all ticket holders in advance of the festival."
+    "answer": [
+      "Site maps will be emailed to all ticket holders in advance of the festival."
+    ]
   },
   {
-    "question": "When can I get a full programme?",
-    "answer": "There will be an app with set times available to festival goers at the start of August. A full programme will be available on site."
+    "question": "Where is the nearest train station?",
+    "answer": [
+      "The closest station is Huntingdon.",
+      "There will be shuttle buses running from the station to the site.",
+      "If you are going to drive please make sure you fill your car."
+    ]
   },
   {
-    "question": "Will there be showers available for campers?",
-    "answer": "Yes, there will be showers available in the campsites for all festival goers. Remember your own towels and toiletries!"
+    "question": "Do I need to pay for car parking?",
+    "answer": [
+      "Yes you must buy a car parking pass on-top of your ticket if you are planning on driving, they are £20 from Fixr.",
+      "If you choose to drive please make sure you fill your car so there are not any wasted seats. Let's keep our emissions down."
+    ]
   },
   {
-    "question": "Will BBQs or campfires be permitted on campsites?",
-    "answer": "Unfortunately not. Any open fires or naked flames are prohibited at Highrise Festival for safety reasons. There will be no shortage of great hot food over the weekend from our on site stalls."
+    "question": "When can I arrive?",
+    "answer": [
+      "Our public gates open on Thursday 7th September at midday.",
+      "They are open:",
+      "Thursday 7th September midday - 9pm",
+      "Friday 8th September 9am-9pm",
+      "Saturday 9th September 9am - midday."
+    ]
   },
   {
     "question": "Is it ok to bring my own sound system?",
-    "answer": "No, please think about your fellow campers and keep noise to a minimum. There will be plenty of music over the weekend!"
+    "answer": [
+      "No, please think about your fellow campers and keep noise to a minimum.",
+      "There will be plenty of music over the weekend!"
+    ]
   },
   {
-    "question": "Can I stay in the local area and commute each day?",
-    "answer": "Yes, festival goers can leave the site at any time but you will only be allowed back in between 10:00 and 22:00 each day."
-  },
-  {
-    "question": "What food & drink will be available on site?",
-    "answer": "Highrise Festival is proud to offer a range of street food stalls celebrating great flavours of the world. With plenty of vegan and gluten free options there is something for everyone."
+    "question": "What kind of food will be available on-site?",
+    "answer": [
+      "We have a huge amount of amazing food traders on site with primarily veggie & vegan menus. There will be vendors selling meat dishes too."
+    ]
   },
   {
     "question": "Can I take cash out anywhere at the festival?",
-    "answer": "There will be ATMs on the site but we would recommend festival goers to still bring cash for the weekend to avoid queueing."
-  },
-  {
-    "question": "Can I bring my own bike?",
-    "answer": "There is a bike lock up point situated onsite, although security are stationed within the vicinity. Bikes are left at owners risk, please bring double locks for your bikes, just as you would elsewhere."
+    "answer": [
+      "There will be ATMs on the site but we would recommend festival goers to still bring cash for the weekend to avoid queueing."
+    ]
   },
   {
     "question": "Can I bring alcohol into the festival?",
-    "answer": "Upon first entry to site, you can bring your own alcohol (for consumption on the campsite) up to the personal allowance of EITHER: \n 12 cans of beer/lager/cider 2 plastic bottles of wine per person. \n No spirits are allowed. \n Once you have been wristbanded, you will not be able to bring in any additional alcohol. \n All drinks have to be sealed on entry to the festival.There is no set limit on soft drinks or food."
+    "answer": [
+      "As we are a small independent festival we really need our bar take to ensure we can cover our costs, pay for all of our infrastructure and pay all our staff fairly.",
+      "To ensure this festival works we must limit the alcohol that comes in, each person can bring 8 cans or 2 bottles of wine. NO SPIRITS & NO GLASS.",
+      "There are lots of bars around the site which have really affordable, cold drinks on offer including draft larger, Guinness, IPA, Cider, spirits and mixers, cocktails, wines ect.",
+      "We're keeping our bar prices low so you won't want any warm drinks from your tent anyway."
+    ]
+  },
+  {
+    "question": "Are there pre-pitched tents available?",
+    "answer": [
+      "Yes! In our Boutique Camping field you can rent a fully furnished bell tents, lout tent or emperor bell from the team at the Woodville Project. We choose them as they offer the most affordable option for you all.",
+      "You can get a 4 person fully furnished bell tent with real mattresses, bedding and furniture for £400, that's only £25 a night per person."
+    ]
+  },
+  {
+    "question": "Can I bring a camper van / live in vehicle?",
+    "answer": [
+      "Yes you can! You will need one of our camper van passes available from the Fixr website."
+    ]
+  },
+  {
+    "question": "What facilities do the campsites have?",
+    "answer": [
+      "Our campsites have a campsite hub, lighting, water taps, compost toilets, showers (for a donation) and some food traders.",
+      "Please help us keep our campsites clean and take everything home with you."
+    ]
+  },
+  {
+    "question": "Can I pay with Cash or Card?",
+    "answer": [
+      "You can use both cash or card to buy from our food traders.",
+      "Our bars are mainly card payment, however each bar will have a till you can pay cash.",
+      "We do not want to become a cashless festival and want to continue to support the freedom and privacy that comes with cash."
+    ]
+  },
+  {
+    "question": "What should I wear?",
+    "answer": [
+      "The site is grass and woodlands so wear suitable shoes or boots. We do not recommend any high heels or platforms as we don't want any of you twisting your ankles.",
+      "For clothes please pack for all weather conditions; if it is wet you will need waterproofs as not all of our stages are covered. If its hot then please bring light layers and suncream if you need it. It will get cold at night so always bring enough layers.",
+      "If you're using a weather forecast we recommend the Met Office, but please be prepared for anything."
+    ]
+  },
+  {
+    "question": "Is there anything I can't bring to the festival?",
+    "answer": [
+      "Please do not bring any of the following items to HighRise Festival:",
+      "Barbecues, Glass, Weapons, Fireworks, Chinese Lanterns, Nitrous oxide, Your own sound system (small portable speakers are permitted).",
+      "If you attempt to bring any of these items, they will be confiscated on arrival and you may be refused entry to festival."
+    ]
+  },
+  {
+    "question": "Should I dress up?",
+    "answer": [
+      "Fancy dress and costumes are highly encouraged, come get involved in the festivities!"
+    ]
+  },
+  {
+    "question": "Can you swim in the lakes?",
+    "answer": [
+      "Yes we have multiple lakes on-site that you can swim in.",
+      "Bring your swimming costume and towels and great ready for some nature swimming.",
+      "Life guards will be watching out for you while on our lakes but please take care of yourself and be sensible."
+    ]
+  },
+  {
+    "question": "What daytime activities are there?",
+    "answer": [
+      "We have lots to do during the day that isn't music.",
+      "We have a wellness and healing area with a huge range of classes, workshops, talks all for free and open to anyone. We also offer spa treatments like massages but these come at a cost."
+    ]
+  },
+  {
+    "question": "Can I bring my dog / cat or pet?",
+    "answer": [
+      "No we cannot have any animals on-site.",
+      "Please leave your furry friend at home. The only exception to this rule is for guide dogs."
+    ]
+  },
+  {
+    "question": "What is the age limit? Is it 18+?",
+    "answer": [
+      "No this is a family friendly festival. You can get a kids ticket for under 12's for free.",
+      "There are teen tickets available for 13-17 year olds. All teens must be accompanied by someone over 21.",
+      "Please remember there will be some small children around so please be responsible and respectful.",
+      "We think festival should be for everyone and want to see another generation of festival kids come through to lead the way."
+    ]
+  },
+  {
+    "question": "I have a disability, is it possible to bring my carer?",
+    "answer": [
+      "Yes! You can buy a disability ticket which comes with a free ticket for your carer. Please let us know more information about how we can help you when you purchase your ticket."
+    ]
+  },
+  {
+    "question": "Will the site be wheelchair accessible?",
+    "answer": [
+      "Yes! We have worked hard to make sure wheelchairs can access almost all parts of the site and stages.",
+      "There are disabled viewing platforms at some stages. There are also disabled toilets around the site.",
+      "Please purchase a disability ticket on Fixr and you can bring a caterer for free to help you get around. When you arrive at accreditation you can request any further assistance if required"
+    ]
+  },
+  {
+    "question": "What toilets will there be?",
+    "answer": [
+      "We are using compost toilets only as they are much more environmentally friendly and comfortable than portaloos. There will also be urinals and disabled toilets."
+    ]
+  },
+
+  {
+    "question": "Will there be any medical facilities?",
+    "answer": [
+      "Yes, we have an amazing medical team on-site medical to deal with any incident that occurs.",
+      "They can treat you on-site or take you to hospital in the on-site ambulance if needed. Please try and look after yourself so they can have a relaxed weekend.",
+      "We also have the amazing psy-care team on-site who look after people who are not in medical danger but need some TLC."
+    ]
+  },
+  {
+    "question": "Can I have a BBQ / fire?",
+    "answer": [
+      "We cannot allow any BBQ's or fires in the campsites.",
+      "There are a few fire pits dotted around the site with seating so you can all enjoy a wood fire during your stay with us."
+    ]
   }
 ]

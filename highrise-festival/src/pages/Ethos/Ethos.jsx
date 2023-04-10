@@ -1,4 +1,3 @@
-import React from "react";
 import PhotoGrid from "../../components/ui/PhotoGrids/PhotoGrid";
 import { motion } from "framer-motion";
 

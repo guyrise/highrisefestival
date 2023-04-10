@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import ProgressiveImage from "react-progressive-graceful-image";
-import cover from "../../../assets/images/festival-logo-comp.webp";
-import coverBlurred from "../../../assets/images/festival-logo-comp-blurred.webp";
+import cover from "../../../assets/images/Home/festival-logo-comp.webp";
+import coverBlurred from "../../../assets/images/Home/festival-logo-comp-blurred.webp";
 
 import "./HeroHome.css";
 

@@ -100,7 +100,7 @@ const Card = (props) => {
                       ? props.cardData.image
                       : "https://via.placeholder.com/1200x1600/000000/FFFFFF.png?text=image+currently+unavailable"
                   }
-                  alt=""
+                  alt={props.cardData.alt}
                 />
                 <h3 className="h3-card-overlay visible lg:invisible">
                   {props.cardData.label}
