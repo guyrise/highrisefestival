@@ -28,17 +28,27 @@ import borderLeftBlurred from "./assets/images/borders/highrise-border-left-blur
 
 // PROGRAMME PHOTOGRID IMAGES
 import LineupTile from "./assets/images/Programme/Lineup/LineupTile.webp";
+import LineupTileBlur from "./assets/images/Programme/Lineup/LineupTileBlur.webp";
 import ChaiWallahTile from "./assets/images/Programme/Venues/ChaiWallahTile.webp";
-import SinaiTile from "./assets/images/Programme/Soundsystems/SinaiTile.webp";
+import ChaiWallahTileBlur from "./assets/images/Programme/Venues/ChaiWallahBlur.webp";
+import Sinai from "./assets/images/Programme/Soundsystems/sinai-soundsystem-crew.webp";
+import SinaiBlur from "./assets/images/Programme/Soundsystems/sinai-soundsystem-blur.webp";
+import water from "./assets/images/Programme/Wellness/wellness-water.webp";
+import waterBlur from "./assets/images/Programme/Wellness/water-blur.webp";
 // hottub
 
 // INFO PHOTOGRID IMAGES
 
 import lake from "./assets/images/Info/highrise-lake1.webp";
+import lakeBlur from "./assets/images/Info/lakeBlur.webp";
 import AccomTile from "./assets/images/Info/Lotus-interior.webp";
+import AccomTileBlur from "./assets/images/Info/lotusInteriorBlur.webp";
+import campervan1 from "./assets/images/Info/Accomodation/highrise-campervan.webp";
+import campervan1Blur from "./assets/images/Info/campervanBlur.webp";
+import mcFats from "./assets/images/Info/Accessibility/mcFats.webp";
+import mcFatsBlur from "./assets/images/Info/fatsBlur.webp";
 
 // TRAVEL IMAGES
-import campervan1 from "./assets/images/Info/Accomodation/highrise-campervan.webp";
 import coach from "./assets/images/Info/Travel/coach.webp";
 import train from "./assets/images/Info/Travel/train.webp";
 import cargirls from "./assets/images/Info/Travel/car-girls.webp";
@@ -51,13 +61,15 @@ import Emperor2 from "./assets/images/Info/Accomodation/highrise-emperor-tent2.w
 
 // ETHOS IMAGES
 import GoodVibes from "./assets/images/Ethos/good-vibes.webp";
+import GoodVibesBlur from "./assets/images/Ethos/goodVibesBlur.webp";
 import EnvironmentTile from "./assets/images/Ethos/environment-trees.webp";
+import EnvironmentTileBlur from "./assets/images/Ethos/forestBlur.webp";
 import ReuseCups from "./assets/images/Ethos/reuse-plastic.jpg";
 // GET INVOLVED IMAGES
 import hands from "./assets/images/GetInvolved/hands.webp";
+import handsBlur from "./assets/images/GetInvolved/handsBlur.webp";
 
 // ACCESSIBILITY IMAGES
-import mcFats from "./assets/images/Info/Accessibility/mcFats.webp";
 
 // SOUNDSYSTEM IMAGES
 
@@ -71,7 +83,6 @@ import WashingMachine from "./assets/images/Programme/Soundsystems/WashingMachin
 import Electrikal from "./assets/images/Programme/Soundsystems/ELECTRIKAL.webp";
 import Iration from "./assets/images/Programme/Soundsystems/IRATION-STEPPAS.webp";
 import FirmlyRooted from "./assets/images/Programme/Soundsystems/FirmlyRooted.webp";
-import Sinai from "./assets/images/Programme/Soundsystems/sinai-soundsystem-crew.webp";
 import Channel1 from "./assets/images/Programme/Soundsystems/ChannelOne.webp";
 
 // VENUES IMAGES
@@ -80,83 +91,44 @@ import Dubtendo from "./assets/images/Programme/Venues/dubtendo.webp";
 import Woodland from "./assets/images/Programme/Venues/WoodlandStage.webp";
 import Woodland2 from "./assets/images/Programme/Venues/WoodlandStage2.webp";
 import Sublab from "./assets/images/Programme/Venues/Sublab.webp";
+import SinaiTile from "./assets/images/Programme/Soundsystems/SinaiTile.webp";
 import SmokeyTenticles from "./assets/images/Programme/Venues/smokey-tenticles.webp";
 
 // WELLNESS IMAGES
 import hottub from "./assets/images/Programme/Wellness/hot-tub.webp";
+import hottubBlur from "./assets/images/Programme/Wellness/hottubBlur.webp";
 import earth from "./assets/images/Programme/Wellness/wellness-earth.webp";
-import water from "./assets/images/Programme/Wellness/wellness-water.webp";
 import fire from "./assets/images/Programme/Wellness/wellness-fire.webp";
 import air from "./assets/images/Programme/Wellness/wellness-air.webp";
 import AnimatedRoutes from "./components/helpers/AnimatedRoutes/AnimatedRoutes";
 
-// LineUp Data
-const lineUpData = {
-  lineup: [
-    "ABA SHANTI-I",
-    "AFRIQUOI",
-    "BOKO! BOKO!",
-    "MINA",
-    "TASH LC",
-    "JUBA",
-    "BREAK",
-    "BREAKAGE",
-    "BRIGHTER DAYS",
-    "BRYAN GEE",
-    "CHAINSKA BRASSIKA",
-    "CHANNEL ONE",
-    "CHOPSTICK DUBPLATE",
-    "CLASSIC WONDER VETERANS & SOLO BANTON",
-    "COCO BRYCE",
-    "DOUBLE O",
-    "DUB PRINCESS & HOTSTEPPAS",
-    "DUBKASM DWARDE",
-    "EL-B",
-    "EVA LAZARUS",
-    "FACTA & K-LONE",
-    "GARDNA",
-    "GUTS",
-    "HAMDI",
-    "HOLD TIGHT RECORDS - IRATION STEPPAS",
-    "IZCO",
-    "J:KENZO",
-    "JUBEI",
-    "KOG",
-    "KYRIST",
-    "LIAM BAILEY",
-    "LTJ BUKEN",
-    "MANTRA MUNGO'S HI FI ",
-    "NEFFA-T",
-    "NUBIYAN TWIST",
-    "OBF & CHARLIE P",
-    "ONIPA",
-    "PAPA NUGS",
-    "RIZ LA TEEF",
-    "SASHA STEPPA",
-    "SCAR DUGGY",
-    "SGT POKES",
-    "SKEPTICAL",
-    "SNAZZBACK",
-    "SP:MC",
-    "STAND HIGH PATROL DJ SET FT JOE YORKE",
-    "SULLY",
-    "THE BUSY TWIST",
-    "TIM REAPER",
-    "TROPICAL TEA PARTY",
-    "VISAGES",
-    "V.I.V.E.K",
-    "WATCH THE RIDE",
-    "ZION TRAIN",
-  ],
-};
-
 // Programme Page
 const programmeData = {
   photoGrid: [
-    { image: LineupTile, label: "Line Up" },
-    { image: ChaiWallahTile, label: "Venues" },
-    { image: Sinai, label: "Soundsystems" },
-    { image: hottub, label: "Wellness" },
+    {
+      image: LineupTile,
+      label: "Line Up",
+      alt: "Highrise Festival Lineup instagram tile version",
+      blur: LineupTileBlur,
+    },
+    {
+      image: ChaiWallahTile,
+      label: "Venues",
+      alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
+      blur: ChaiWallahTileBlur,
+    },
+    {
+      image: Sinai,
+      label: "Soundsystems",
+      alt: "Sinai Soundsystem with the sinai crew members stood in front of full soundsystem in a warehouse.",
+      blur: SinaiBlur,
+    },
+    {
+      image: water,
+      label: "Wellness",
+      alt: "a girl sat on a jetty, looking out over a lake as the sun sets.",
+      blur: waterBlur,
+    },
   ],
 };
 
@@ -296,7 +268,7 @@ const venuesData = {
         image: Electrikal,
         color: "",
         label: "Elektrical Soundsystem",
-        alt: "",
+        alt: "One full speaker stack of Elektrical Soundsystem on a sunny day with 2 crew members doing their final checks",
         description: [
           "A bass music orientated stage with daily takeovers from some of the UK's finest brands TBA.",
         ],
@@ -305,7 +277,7 @@ const venuesData = {
         image: Woodland,
         color: "",
         label: "Labyrinth",
-        alt: "",
+        alt: "Labyrinth Stage at HighRise Festival in the wood, without any equipment or lighting",
         description: [
           "Deep in the woods you can find the finest Jungle & Drum & Bass powered by Danley Sound Labs.",
         ],
@@ -314,7 +286,7 @@ const venuesData = {
         image: Sublab,
         color: "",
         label: "Sub-Lab",
-        alt: "",
+        alt: "The entrance to Sub-lab stage at a festival at night",
         description: [
           "A late-night venue specialising in all things 140, Dubstep and bass powered by the mighty Firmly Rooted sound system.",
         ],
@@ -323,7 +295,7 @@ const venuesData = {
         image: Dubtendo,
         color: "",
         label: "Dubtendo Arcane",
-        alt: "",
+        alt: "large crowd dancing to Dubtendo music stage at a festival",
         description: [
           "Retro games meets 8 bit rave, an immersive micro venue from the Dubtendo crew.",
         ],
@@ -332,7 +304,7 @@ const venuesData = {
         image: BunkBeds,
         color: "",
         label: "Bunk Beds",
-        alt: "",
+        alt: "Dj Bubz playing to a crowd in the bunk bed room at HighRise Hub",
         description: [
           "The legendary silly & sweaty room from HighRise Hub makes it way across the country.",
         ],
@@ -341,7 +313,7 @@ const venuesData = {
         image: Woodland2,
         color: "",
         label: "Firmly Rooted",
-        alt: "",
+        alt: "a large empty music stage in the grange farm woodland",
         description: [
           "A woodland stage playing the finest in roots inspired music from across the world, from the inspiration to this generation.",
         ],
@@ -350,7 +322,7 @@ const venuesData = {
         image: SinaiTile,
         color: "",
         label: "Mount Sinai",
-        alt: "",
+        alt: "a man sat on top of a large stack of speakers making up part of the sinai soundsystem, with a poster on the wall saying 'respect the sound system'",
         description: [
           "An ancient temple set high on a mountain top, this bass music oriented stage will host Croydub, Deep Media and a Jungle showcase.",
         ],
@@ -359,7 +331,7 @@ const venuesData = {
         image: ChaiWallahTile,
         color: "",
         label: "Chai Wallah Soundsystem",
-        alt: "",
+        alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
         description: [
           "Award winning touring venue Chai Wallahs will be hosting our full live bands. From Jazz to Afrobeat and Hip Hop to Reggae, these bands will keep you dancing.",
         ],
@@ -368,7 +340,7 @@ const venuesData = {
         image: SmokeyTenticles,
         color: "",
         label: "Smokey Tentacles",
-        alt: "",
+        alt: "a luxurious looking red tent with gold trim, with many people sat inside on cushions smoking shisha and people being served at a bar",
         description: [
           "The UK festival circuits favourite chill-out lounge, cafe and shisha bar.",
         ],
@@ -468,10 +440,30 @@ const venuesData = {
 const infoData = {
   title: "Festival Information",
   photoGrid: [
-    { image: lake, label: "Location" },
-    { image: campervan1, label: "Travel" },
-    { image: AccomTile, label: "Accomodation" },
-    { image: mcFats, label: "Accessibility" },
+    {
+      image: lake,
+      label: "Location",
+      alt: "swimming lake at grange farm festival site",
+      blur: lakeBlur,
+    },
+    {
+      image: campervan1,
+      label: "Travel",
+      alt: "volkswagen campervan driving up a country lane",
+      blur: campervan1Blur,
+    },
+    {
+      image: AccomTile,
+      label: "Accomodation",
+      alt: "interior of woodville project lotus bell tent, funished with beds and bedding",
+      blur: AccomTileBlur,
+    },
+    {
+      image: mcFats,
+      label: "Accessibility",
+      alt: "MC Fats performing on stage at a HighRise event in Leeds",
+      blur: mcFatsBlur,
+    },
   ],
 };
 
@@ -479,13 +471,30 @@ const infoData = {
 const ethosData = {
   title: "Ethos",
   photoGrid: [
-    { image: GoodVibes, label: "Our Vision" },
-    { image: EnvironmentTile, label: "Environment" },
+    {
+      image: GoodVibes,
+      label: "Our Vision",
+      alt: "a black sign on the pavement with white writing saying 'Good Vibes Only'",
+      blur: GoodVibesBlur,
+    },
+    {
+      image: EnvironmentTile,
+      label: "Environment",
+      alt: "sunlight shinning through a forest of pine trees",
+      blur: EnvironmentTileBlur,
+    },
   ],
 };
 
 const visionData = {
-  photoGrid: [{ image: GoodVibes, label: "" }],
+  photoGrid: [
+    {
+      image: GoodVibes,
+      label: "",
+      alt: "a black sign on the pavement with white writing saying 'Good Vibes Only'",
+      blur: GoodVibesBlur,
+    },
+  ],
   pageContent: {
     heading: "Our Vision",
     pageIntro: [
@@ -537,7 +546,14 @@ const visionData = {
 };
 
 const environmentData = {
-  photoGrid: [{ image: EnvironmentTile, label: "" }],
+  photoGrid: [
+    {
+      image: EnvironmentTile,
+      label: "",
+      alt: "sunlight shinning through a forest of pine trees",
+      blur: EnvironmentTileBlur,
+    },
+  ],
   pageContent: {
     heading: "Environment",
     pageIntro: [
@@ -594,7 +610,14 @@ const environmentData = {
 // Wellness Page
 const wellnessData = {
   wellnessPage: true,
-  photoGrid: [{ image: hottub, label: "" }],
+  photoGrid: [
+    {
+      image: hottub,
+      label: "",
+      alt: "steaming hottub on top of a hill at sunset overlooking a forest",
+      blur: hottubBlur,
+    },
+  ],
   pageContent: {
     heading: "Wellness",
     pageIntro: [
@@ -609,6 +632,7 @@ const wellnessData = {
         image: fire,
         borderColor: "border-[#F88D5D]",
         label: "Fire Garden",
+        alt: "a fire illuminating the night with embers floating into the air",
         description: [
           "Explore the warmth of flame and human connection within our Fire Garden. Gather among likeminded spirits, forging strong and sincere bonds around our communal fire pit. Temper the days teachings into permanence as you lose your conscious self to enchanting flames and incensing smoke, rising anew from the ashes with your innermost burdens stripped away.",
         ],
@@ -618,15 +642,16 @@ const wellnessData = {
 
         borderColor: "border-blue-300",
         label: "Water Garden",
+        alt: "a girl sat on a jetty, looking out over a lake as the sun sets.",
         description: [
           "Discover the aquatic delights of our Water Garden on the western shore, a shimmering pool of clarity and focus. Float in suspended balance atop the sun-soaked surface as you stretch towards the summer skies. Clear your mind and cleanse your soul while gazing into the depths, in reflection of what has been, and what may come to pass on the infinite paths before you.",
         ],
       },
       {
         image: air,
-
         borderColor: "border-yellow-200",
         label: "Air Garden",
+        alt: "a girl performing a standing yoga pose overlooking a forest",
         description: [
           "Flowing in from the east, our Air Garden is your centre for movement and vibration. Release tensions and anxieties through an opulence of accredited yoga instructors, drifting like clouds as you aspire to weightless ascension. Relax into powerful meditation as peaceful sounds and scents lift you to higher celestial plains, and rejuvenate in the rhythms of dance and bodily motion.",
         ],
@@ -634,8 +659,9 @@ const wellnessData = {
       {
         image: earth,
 
-        borderColor: "border-green-500",
+        borderColor: "border-[#73C290]",
         label: "Earth Garden",
+        alt: "several people's hands touching a tree trunk",
         description: [
           `Gather in the grounds of our Earth Garden, among a myriad of experienced practitioners presenting thought-provoking talks, wide-ranging wellness workshops, and illuminating masterclasses. Open your mind to inspiring and diverse topics, share meaningful conversations with fellow participants, and restore the foundations of your practises with professional guidance.`,
         ],
@@ -723,7 +749,14 @@ const locationData = {
 
 // Travel Page
 const travelData = {
-  photoGrid: [{ image: campervan1, label: "" }],
+  photoGrid: [
+    {
+      image: campervan1,
+      label: "",
+      alt: "volkswagen campervan driving up a country lane",
+      blur: campervan1Blur,
+    },
+  ],
   pageContent: {
     heading: "Travel",
     pageIntro: [
@@ -732,7 +765,6 @@ const travelData = {
     cards: [
       {
         image: coach,
-
         label: "Coach",
         description: [
           "Our official coach partner is National Express. They offer weekend return coach services from most major cities. Most coaches arrive on Thursday in-time to pick the perfect camping spot. Some arrive on Friday morning from London. Coaches return on Monday morning so you can rest the whole way back.",
@@ -879,7 +911,14 @@ const accomodationData = {
 
 // Accessibility Page
 const accessibilityData = {
-  photoGrid: [{ image: mcFats, label: "" }],
+  photoGrid: [
+    {
+      image: mcFats,
+      label: "",
+      alt: "MC Fats performing on stage at a HighRise event in Leeds",
+      blur: mcFatsBlur,
+    },
+  ],
   pageContent: {
     heading: "Accessibility",
     description: [
@@ -930,7 +969,14 @@ const accessibilityData = {
 
 // get involved Page
 const getInvolvedData = {
-  photoGrid: [{ image: hands, label: "" }],
+  photoGrid: [
+    {
+      image: hands,
+      label: "",
+      alt: "8 people in a circle, each putting one hand on top of another's, in a display of teamwork",
+      blur: handsBlur,
+    },
+  ],
   pageContent: {
     heading: "Get Involved",
     pageIntro: [
@@ -1019,7 +1065,7 @@ function App() {
               loading ? "loading" : "loaded"
             }`}
             src={src}
-            alt="app-border-image"
+            alt="HighRise right border artwork with soundsystem speakers and musical instruments weaved into flowers and plants"
           />
         )}
       </ProgressiveImage>
@@ -1030,7 +1076,7 @@ function App() {
               loading ? "loading" : "loaded"
             }`}
             src={src}
-            alt="app-border-image"
+            alt="HighRise left border artwork with soundsystem speakers and musical instruments weaved into flowers and plants"
           />
         )}
       </ProgressiveImage>
@@ -1045,7 +1091,7 @@ function App() {
           environmentData: environmentData,
           faqData: faqData,
           getInvolvedData: getInvolvedData,
-          lineUpData: lineUpData,
+          // lineUpData: lineUpData,
           venuesData: venuesData,
           soundsystemData: soundsystemData,
           wellnessData: wellnessData,

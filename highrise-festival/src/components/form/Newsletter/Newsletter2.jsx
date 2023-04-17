@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import LoadingLogo from "../../helpers/LoadingLogo/LoadingLogo";
 
 // images
-import firebreather from "../../../assets/images/Newsletter/highrise-firebreather.jpeg";
+import firebreather from "../../../assets/images/Newsletter/highrise-firebreather.webp";
 
 import "./newsletter.css";
 import HighriseButton from "../../ui/Buttons/HighriseButton";
@@ -78,7 +78,7 @@ const Newsletter = () => {
       ref={newsletterRef}
       className={`${
         visible ? "show-newsletter" : ""
-      } newsletter-wrapper border-black border-t-[12px] rounded-lg`}
+      } newsletter-wrapper border-black border-t-[12px] lg:border-x-[12px] rounded-xl`}
     >
       <div className="newsletter-grid grid grid-cols-1 md:grid-cols-2">
         {!subscribed && (

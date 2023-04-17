@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+import ProgressiveImage from "react-progressive-graceful-image";
 
 import { Link, useLocation } from "react-router-dom";
 
@@ -44,7 +46,17 @@ const PhotoGrid = (props) => {
                     .toLowerCase()
                     .replace(" ", "-")}`}
                 >
-                  <img className="photo-btn " src={`${data.image}`}></img>
+                  <ProgressiveImage src={data.image} placeholder={data.blur}>
+                    {(src, loading) => (
+                      <img
+                        className={`photo-btn ${
+                          loading ? "loading" : "loaded"
+                        }`}
+                        src={src}
+                        alt={data.alt}
+                      />
+                    )}
+                  </ProgressiveImage>
                   <h3 className="h3-overlay">{data.label}</h3>
                 </Link>
               </div>

@@ -14,7 +14,7 @@ const HeroHome = (props) => {
             <img
               className={`home-hero-img ${loading ? "loading" : "loaded"}`}
               src={src}
-              alt="highrise-lineup"
+              alt="highrise festival lineup"
               onLoad={props.loading}
             />
           )}

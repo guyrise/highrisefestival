@@ -151,6 +151,11 @@ h4 {
   line-height: 1.1;
 }
 
+h5 {
+  font-size: clamp(25px, 2.8rem, 2.5em);
+  line-height: 2.8rem;
+}
+
 p {
   font-family: var(--primary-font);
   text-transform: uppercase;
