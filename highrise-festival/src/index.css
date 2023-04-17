@@ -236,3 +236,18 @@ p {
   position: relative;
   height: 100%;
 } */
+
+.privacy-title {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 5px 0 black;
+  padding: 4px 25px 7px;
+  width: clamp(280px, 50%, 60%);
+  margin: 0 auto;
+  background-color: #549b6e;
+  border: 2px solid black;
+  border-radius: 0.7rem;
+  white-space: nowrap;
+  font-family: var(--special-font);
+  text-align: center;
+}

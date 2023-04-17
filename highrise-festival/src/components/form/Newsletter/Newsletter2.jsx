@@ -7,9 +7,6 @@ import { useInView } from "react-intersection-observer";
 
 import LoadingLogo from "../../helpers/LoadingLogo/LoadingLogo";
 
-// images
-import firebreather from "../../../assets/images/Newsletter/highrise-firebreather.webp";
-
 import "./newsletter.css";
 import HighriseButton from "../../ui/Buttons/HighriseButton";
 
@@ -51,8 +48,7 @@ const Newsletter = () => {
     e.preventDefault();
     const data = new FormData(form.current);
 
-    const url =
-      "https://assets.mailerlite.com/jsonp/322060/forms/79631453669819520/subscribe";
+    const url = import.meta.env.VITE_MAILERLITE_MAILING_LIST_URL;
     axios({
       method: "post",
       url: url,
@@ -60,11 +56,24 @@ const Newsletter = () => {
       headers: { "Content-Type": "multipart/form-data" },
     })
       .then((response) => {
+        console.log(response);
         //handle success
         if (response.status == 200 && response.data.success) {
           setSubscribed(true);
         } else if (response.status == 200 && !response.data.success) {
-          setError(true);
+          setError(
+            "An error occurred while subscribing. Please try again later."
+          );
+        } else if (response.status === 400) {
+          setError(
+            "Invalid input. Please check your information and try again."
+          );
+        } else if (response.status === 500) {
+          setError("Server error. Please try again later.");
+        } else {
+          setError(
+            "An error occurred while subscribing. Please try again later."
+          );
         }
       })
       .catch((error) => {
@@ -172,7 +181,7 @@ const Newsletter = () => {
                   >
                     I agree to receive the latest updates from Highrise Festival
                     and have read our{" "}
-                    <Link to="/privacy-policy" className="privacy-policy-link">
+                    <Link to="/privacy" className="privacy-policy-link">
                       Privacy Policy
                     </Link>
                   </label>
@@ -187,6 +196,9 @@ const Newsletter = () => {
                     onChange={() => setContacted(!contacted)}
                     required={true}
                   />
+                </div>
+                <div>
+                  <p className="text-red-500">{error}</p>
                 </div>
                 <div className="submit-box col-span-8 flex justify-center items-center ">
                   {!subscribed && (

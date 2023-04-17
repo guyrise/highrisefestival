@@ -8,7 +8,7 @@ const PageFormat = (props) => {
       <div
         className={`page-intro-wrapper ${
           props.pageData.pageContent.pageIntro
-            ? "sm:px-6 lg:px-32 pt-16 pb-2"
+            ? "sm:px-6 lg:px-32 pt-24 pb-2"
             : ""
         }`}
       >

@@ -3,7 +3,11 @@ const Privacy = () => {
     <div className="page-wrapper">
       <div className="page">
         <div className="bg-[#ffffff50] border-b-[12px] rounded-md border-black">
-          <h1 className="section-heading text-center">PRIVACY POLICY</h1>
+          {/* <h1 className="section-heading text-center pt-8">PRIVACY POLICY</h1> */}
+          <div className="pt-8">
+            <h4 className="privacy-title">PRIVACY POLICY</h4>
+          </div>
+
           <p className="page-description px-6 md:px-24 py-8 text-center">
             At HighRise Music Festival, we are committed to protecting the
             privacy of our attendees. This privacy policy outlines how we
