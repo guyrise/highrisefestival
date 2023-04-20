@@ -23,7 +23,7 @@ const Home = (props) => {
       className="page-wrapper"
     >
       <HeroHome loading={imageLoad} />
-
+      <h1 className="invisible">HIGHRISE FESTIVAL</h1>
       <hr className="divider"></hr>
 
       {!loading && (

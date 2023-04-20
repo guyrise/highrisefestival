@@ -1,38 +1,15 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
 /* lancelot */
 @import url("https://fonts.googleapis.com/css2?family=Lancelot&display=swap");
 
 /* cooper black adobe */
 @import url("https://use.typekit.net/blc5uza.css");
 
+/* nove */
 @font-face {
   font-family: "nove";
   src: url(./fonts/Nove.ttf);
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Headlined";
-  src: url(./fonts/Headlined.otf);
-}
-
-@font-face {
-  font-family: "Mazeletter.ttf";
-  src: url(./fonts/Mazeletter-Utopia/mazeletter-utopia.eot)
-      /* IE9 Compat Modes */
-      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.woff2),
-    /* Super Modern Browsers woff2 */
-      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.woff) format("woff"),
-    /* Pretty Modern Browsers */
-      url(./fonts/Mazeletter-Utopia/mazeletter-utopia.ttf) format("truetype"); /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: "Roboto Mono.ttf";
-  src: url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
 }
 
 @tailwind base;
