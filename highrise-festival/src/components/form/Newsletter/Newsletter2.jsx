@@ -48,7 +48,7 @@ const Newsletter = () => {
     e.preventDefault();
     const data = new FormData(form.current);
 
-    const url = import.meta.env.VITE_MAILERLITE_MAILING_LIST_URL;
+    const url = import.meta.env.VITE_MAILERLITE_MAILING_LIST_URL_HIGHRISE;
     axios({
       method: "post",
       url: url,
@@ -56,8 +56,6 @@ const Newsletter = () => {
       headers: { "Content-Type": "multipart/form-data" },
     })
       .then((response) => {
-        console.log(response);
-        //handle success
         if (response.status == 200 && response.data.success) {
           setSubscribed(true);
         } else if (response.status == 200 && !response.data.success) {
@@ -92,7 +90,7 @@ const Newsletter = () => {
       <div className="newsletter-grid grid grid-cols-1 md:grid-cols-2">
         {!subscribed && (
           <div className="newsletter-content pt-12 pb-32 xl:px-12">
-            <h4>Join our mailing list!</h4>
+            <h4 className="text-white">Join our mailing list!</h4>
             <p>
               Keep up to speed with the latest announcements, news and ticket
               information straight to your inbox!
@@ -109,7 +107,7 @@ const Newsletter = () => {
                 id="newsletter-form"
                 onSubmit={submitForm}
                 className="grid grid-cols-8 gap-4 mt-6"
-                data-code=""
+                data-code="s4v7p4"
                 target="ifrm1"
               >
                 <div className="input-box col-span-4">
@@ -171,7 +169,6 @@ const Newsletter = () => {
                     {mobileLabel}
                   </label>
                 </div>
-
                 <input type="hidden" name="anticsrf" value="true" />
 
                 <div className="checkbox-box col-span-8 flex justify-between items-center">
@@ -197,7 +194,7 @@ const Newsletter = () => {
                     required={true}
                   />
                 </div>
-                <div>
+                <div className="col-span-8">
                   <p className="text-red-500">{error}</p>
                 </div>
                 <div className="submit-box col-span-8 flex justify-center items-center ">
@@ -227,12 +224,16 @@ const Newsletter = () => {
           </div>
         )}
         {subscribed && (
-          <div className="subscribe-confirmation h-full flex justify-center items-center p-12 mb-24">
-            <h3>
+          <div className="subscribe-confirmation h-full flex flex-col justify-evenly items-center p-12 mb-24">
+            <h3 className="text-center mb-6 text-4xl text-white">
               <span data-glitch={"Thank you for subscribing!"}>
                 Thank you for subscribing!
               </span>
             </h3>
+            <p className="text-center text-2xl text-white">
+              Please check your inbox for our confirmation email to complete
+              your subscription to our newsletter!
+            </p>
           </div>
         )}
         <div className="newsletter-image-box hidden md:block"></div>

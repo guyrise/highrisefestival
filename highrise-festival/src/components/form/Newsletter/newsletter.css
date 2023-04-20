@@ -8,7 +8,7 @@
   position: relative;
 
   background-color: var(--tertiary-color);
-  /* transform: translateY(120px); */
+
   margin-top: -120px;
 
   min-height: 70vh;
@@ -16,11 +16,7 @@
   opacity: 0;
   transform: translateY(240px);
   transition: all 0.3s ease;
-  /* border-radius: 1rem; */
-  /* border-top: 12px solid black; */
-  /*  
-  border-left: 1rem solid black;
-  border-right: 1rem solid black; */
+
   z-index: 3;
 }
 
@@ -40,9 +36,12 @@
 .newsletter-content h4 {
   /* margin: 0 6% 0 6%; */
   font-size: 3rem;
+  font-family: var(--special-font);
   text-align: center;
 
   margin-bottom: 1rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
   /* line-height: 42px; */
 }
 
@@ -254,4 +253,14 @@ button#subscribe-button:hover::before {
 
 .subscribe-confirmation {
   transition: all 0.3s ease-in-out;
+}
+.subscribe-confirmation h3 {
+  font-family: var(--special-font);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 5px 0 #000;
+}
+
+.subscribe-confirmation p {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 2px 0 black;
 }
