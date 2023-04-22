@@ -44,7 +44,6 @@
 
 .img-fmt2-box img {
   transition: transform 1.5s ease-in-out;
-  aspect-ratio: 1.4/1;
   min-height: 400px;
   min-width: 380px;
   object-fit: cover;
@@ -60,10 +59,11 @@
 .h3-card-overlay {
   position: absolute;
   color: white;
-  top: 40px;
+  top: 13%;
   left: 50%;
+  width: 80%;
   font-family: var(--special-font);
-  font-size: 3rem;
+  font-size: clamp(3rem, 3.5rem, 4rem);
   line-height: 3.3rem;
   text-align: center;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
@@ -71,11 +71,26 @@
   transform: translate(-50%, 0%);
 }
 
+.h3-missing-photo-overlay {
+  position: absolute;
+  color: white;
+  top: 53%;
+  left: 50%;
+  width: 70%;
+  font-family: var(--special-font);
+  font-size: clamp(3rem, 3.5rem, 4rem);
+  line-height: 3.3rem;
+  text-align: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 5px 0 black;
+  transform: translate(-50%, -50%);
+}
+
 .info-card-overlay {
   position: absolute;
-  width: 100%;
+  width: 80%;
   color: white;
-  bottom: 0px;
+  bottom: 15%;
   left: 50%;
 
   /* font-family: var(--special-font);
@@ -85,10 +100,11 @@
 }
 
 .info-card-overlay p {
-  line-height: 1.2rem;
+  line-height: 1.3rem;
+  font-size: 18px;
   text-align: center;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 2px 0 black;
+    1px 1px 0 black;
   text-transform: none;
 }
 

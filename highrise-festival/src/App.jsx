@@ -86,6 +86,9 @@ import FirmlyRooted from "./assets/images/Programme/Soundsystems/FirmlyRooted.we
 import Channel1 from "./assets/images/Programme/Soundsystems/ChannelOne.webp";
 
 // VENUES IMAGES
+import TeachingsInDub from "./assets/images/Programme/Venues/ChannelOne01.webp";
+import PrizeCock from "./assets/images/Programme/Venues/PrizeCock.webp";
+import GSpot from "./assets/images/Programme/Venues/GSpot.webp";
 import BunkBeds from "./assets/images/Programme/Venues/BunkBeds.webp";
 import Dubtendo from "./assets/images/Programme/Venues/dubtendo.webp";
 import Woodland from "./assets/images/Programme/Venues/WoodlandStage.webp";
@@ -265,30 +268,30 @@ const venuesData = {
     ],
     cards: [
       {
-        image: Electrikal,
+        image: BunkBeds,
         color: "",
-        label: "Elektrical Soundsystem",
-        alt: "One full speaker stack of Elektrical Soundsystem on a sunny day with 2 crew members doing their final checks",
+        label: "Bunk Beds",
+        alt: "Dj Bubz playing to a crowd in the bunk bed room at HighRise Hub",
         description: [
-          "A bass music orientated stage with daily takeovers from some of the UK's finest brands TBA.",
+          "The legendary silly & sweaty room from HighRise Hub makes it way across the country.",
         ],
       },
       {
-        image: Woodland,
+        image: "",
         color: "",
-        label: "Labyrinth",
-        alt: "Labyrinth Stage at HighRise Festival in the wood, without any equipment or lighting",
+        label: "Candela Viva",
+        alt: "",
         description: [
-          "Deep in the woods you can find the finest Jungle & Drum & Bass powered by Danley Sound Labs.",
+          "A celebration of Latin American sounds, roots and culture powered by Felt Sound System.",
         ],
       },
       {
-        image: Sublab,
+        image: ChaiWallahTile,
         color: "",
-        label: "Sub-Lab",
-        alt: "The entrance to Sub-lab stage at a festival at night",
+        label: "Chai Wallah",
+        alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
         description: [
-          "A late-night venue specialising in all things 140, Dubstep and bass powered by the mighty Firmly Rooted sound system.",
+          "Award winning touring venue Chai Wallahs will be hosting our full live bands. From Jazz to Afrobeat and Hip Hop to Reggae, these bands will keep you dancing.",
         ],
       },
       {
@@ -301,12 +304,12 @@ const venuesData = {
         ],
       },
       {
-        image: BunkBeds,
+        image: Electrikal,
         color: "",
-        label: "Bunk Beds",
-        alt: "Dj Bubz playing to a crowd in the bunk bed room at HighRise Hub",
+        label: "Elektrical Soundsystem",
+        alt: "One full speaker stack of Elektrical Soundsystem on a sunny day with 2 crew members doing their final checks",
         description: [
-          "The legendary silly & sweaty room from HighRise Hub makes it way across the country.",
+          "A bass music orientated stage with daily takeovers from some of the UK's finest brands TBA.",
         ],
       },
       {
@@ -319,48 +322,20 @@ const venuesData = {
         ],
       },
       {
-        image: SinaiTile,
+        image: PrizeCock,
         color: "",
-        label: "Mount Sinai",
-        alt: "a man sat on top of a large stack of speakers making up part of the sinai soundsystem, with a poster on the wall saying 'respect the sound system'",
-        description: [
-          "An ancient temple set high on a mountain top, this bass music oriented stage will host Croydub, Deep Media and a Jungle showcase.",
-        ],
-      },
-      {
-        image: ChaiWallahTile,
-        color: "",
-        label: "Chai Wallah Soundsystem",
-        alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
-        description: [
-          "Award winning touring venue Chai Wallahs will be hosting our full live bands. From Jazz to Afrobeat and Hip Hop to Reggae, these bands will keep you dancing.",
-        ],
-      },
-      {
-        image: SmokeyTenticles,
-        color: "",
-        label: "Smokey Tentacles",
-        alt: "a luxurious looking red tent with gold trim, with many people sat inside on cushions smoking shisha and people being served at a bar",
-        description: [
-          "The UK festival circuits favourite chill-out lounge, cafe and shisha bar.",
-        ],
-      },
-      {
-        image: "",
-        color: "",
-        label: "Teachings In Dub Arena",
+        label: "Fungi Tavern",
         alt: "",
         description: [
-          "An authentic sound system experience from the UK's leading Dub sounds.",
+          "Enter a world of wonder with a collective of genres from the finest of UK Hip Hip to chuggy house bangers.",
         ],
       },
       {
-        image: "",
+        image: GSpot,
         color: "",
-        label: "The Void",
-        alt: "",
+        label: "G Spot",
         description: [
-          "A showcase of the finest brands from around the UK with daily takeovers from Hit & Run, Gutter Funk & Lively Up.",
+          "A hidden pleasure spot and micro venue playing the finest UKG & House.",
         ],
       },
       {
@@ -375,15 +350,6 @@ const venuesData = {
       {
         image: "",
         color: "",
-        label: "Fungi Tavern",
-        alt: "",
-        description: [
-          "Enter a world of wonder with a collective of genres from the finest of UK Hip Hip to chuggy house bangers.",
-        ],
-      },
-      {
-        image: "",
-        color: "",
         label: "Jungle Of Eden",
         alt: "",
         description: [
@@ -391,12 +357,49 @@ const venuesData = {
         ],
       },
       {
-        image: "",
+        image: Woodland,
         color: "",
-        label: "Candela Viva",
+        label: "Labyrinth",
+        alt: "Labyrinth Stage at HighRise Festival in the wood, without any equipment or lighting",
+        description: [
+          "Deep in the woods you can find the finest Jungle & Drum & Bass powered by Danley Sound Labs.",
+        ],
+      },
+      {
+        image: SinaiTile,
+        color: "",
+        label: "Mount Sinai",
+        alt: "a man sat on top of a large stack of speakers making up part of the sinai soundsystem, with a poster on the wall saying 'respect the sound system'",
+        description: [
+          "An ancient temple set high on a mountain top, this bass music oriented stage will host Croydub, Deep Media and a Jungle showcase.",
+        ],
+      },
+      {
+        image: SmokeyTenticles,
+        color: "",
+        label: "Smoky Tentacles",
+        alt: "a luxurious looking red tent with gold trim, with many people sat inside on cushions smoking shisha and people being served at a bar",
+        description: [
+          "The UK festival circuits favourite chill-out lounge, cafe and shisha bar.",
+        ],
+      },
+
+      {
+        image: Sublab,
+        color: "",
+        label: "Sub-Lab",
+        alt: "The entrance to Sub-lab stage at a festival at night",
+        description: [
+          "A late-night venue specialising in all things 140, Dubstep and bass powered by the mighty Firmly Rooted sound system.",
+        ],
+      },
+      {
+        image: TeachingsInDub,
+        color: "",
+        label: "Teachings In Dub Arena",
         alt: "",
         description: [
-          "A celebration of Latin American sounds, roots and culture powered by Felt Sound System.",
+          "An authentic sound system experience from the UK's leading Dub sounds.",
         ],
       },
       {
@@ -411,26 +414,18 @@ const venuesData = {
       {
         image: "",
         color: "",
+        label: "The Void",
+        alt: "",
+        description: [
+          "A showcase of the finest brands from around the UK with daily takeovers from Hit & Run, Gutter Funk & Lively Up.",
+        ],
+      },
+      {
+        image: "",
+        color: "",
         label: "Tunnel Vision",
         alt: "",
         description: ["An abandoned munitions factory "],
-      },
-      {
-        image: "",
-        color: "",
-        label: "G Spot",
-        description: [
-          "A hidden pleasure spot and micro venue playing the finest UKG & House.",
-        ],
-      },
-      {
-        image: "",
-        color: "",
-        label: "Jungle Of Eden",
-        alt: "",
-        description: [
-          "An overgrown ancient ruin hosting the finest Jungle & DnB through the mighty Scotland Yard Sound System! ",
-        ],
       },
     ],
   },
@@ -522,15 +517,15 @@ const visionData = {
         heading: "Wellness & Healing",
         description: [
           "We really want you all to leave HighRise Festival feeling inspired & rejuvenated and ready to go back to the outside world feeling refreshed.",
-          "To make sure you all are as healthy as possible not only are we Erving lots of delicious veggie & vegan food we are also offering a huge range of wellness and healing.",
+          "To make sure you all are as healthy as possible not only are we serving lots of delicious veggie & vegan food we are also offering a huge range of wellness and healing.",
           "Please see the Wellness & Healing page in the programme for more info.",
         ],
       },
       {
         heading: "Welfare & Safety",
         description: [
-          "It means the world to use that you are consindering coming to party with us in September and for those that attend we want to make sure you have the best possible experience while here.",
-          "A huge part of that is creating a environment where everyone can enjoy themselves and feel safe, so to ensure this happens we have partnered with our favourite security firm, Green Security, who we have worked with for many years and feel have the best track record in handling situations the right way.",
+          "It means the world to us that you are consindering coming to party with us in September and for those that attend we want to make sure you have the best possible experience while here.",
+          "A huge part of that is creating a environment where everyone can enjoy themselves and feel safe, so to ensure this happens we have partnered with our favourite security firm, Green Security, which feel have the best track record in handling situations the right way.",
           "We have also teamed up with the wonderful people at PsyCare, who will be on-site all weekend to provide a safe space for you to go if required.",
         ],
       },
@@ -577,7 +572,7 @@ const environmentData = {
           "We are very conscious of the huge problem mankind faces when it comes to plastic. This oil product is being produced and distributed on a terrifying scale. It takes far too long to break down and is clogging our seas & soil.",
           "We want to set some realistic targets for how we can reduce our plastic use.",
           "1.) All of our bars will be using re-usable cups.",
-          "2.) Our trades will only be serving biodegradable packaging.",
+          "2.) Our trades will only be using biodegradable packaging.",
           "3.) Our build & break crew will be using re-usable cable.",
         ],
       },

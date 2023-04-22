@@ -1,5 +1,6 @@
-import { forwardRef } from "react";
 import Tilt from "react-parallax-tilt";
+import newVenue from "../../../assets/images/new-venue-placeholder.webp";
+import highriseTile from "../../../assets/images/HighriseTile.webp";
 
 import { useInView } from "react-intersection-observer";
 
@@ -94,17 +95,20 @@ const Card = (props) => {
                 } lg:shadow-[-60px_-70px_0px_-40px_#9a9a9a,60px_70px_0_-40px_#1c1c1c] rounded-lg`}
               >
                 <img
-                  className="img-fmt2"
+                  className="img-fmt2 aspect-square lg:aspect-[1.4/1]"
                   src={
-                    props.cardData.image
-                      ? props.cardData.image
-                      : "https://via.placeholder.com/1200x1600/000000/FFFFFF.png?text=image+currently+unavailable"
+                    props.cardData.image ? props.cardData.image : highriseTile
                   }
                   alt={props.cardData.alt}
                 />
                 <h3 className="h3-card-overlay visible lg:invisible">
                   {props.cardData.label}
                 </h3>
+                {!props.cardData.image ? (
+                  <h3 className="h3-missing-photo-overlay lg:visible">
+                    NEW VENUE FOR 2023
+                  </h3>
+                ) : null}
                 <div className="info-card-overlay visible lg:invisible">
                   {props.cardData
                     ? props.cardData.description.map((sentence) => {
