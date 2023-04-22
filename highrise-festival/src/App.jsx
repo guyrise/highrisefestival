@@ -117,7 +117,7 @@ const programmeData = {
     {
       image: ChaiWallahTile,
       label: "Venues",
-      alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
+      alt: "Performers on Chai Wallahs stage performing at a festival to a packed crowd.",
       blur: ChaiWallahTileBlur,
     },
     {
@@ -288,8 +288,8 @@ const venuesData = {
       {
         image: ChaiWallahTile,
         color: "",
-        label: "Chai Wallah",
-        alt: "Performers on Chai Wallah stage performing at a festival to a packed crowd.",
+        label: "Chai Wallahs",
+        alt: "Performers on Chai Wallahs stage performing at a festival to a packed crowd.",
         description: [
           "Award winning touring venue Chai Wallahs will be hosting our full live bands. From Jazz to Afrobeat and Hip Hop to Reggae, these bands will keep you dancing.",
         ],
@@ -322,7 +322,7 @@ const venuesData = {
         ],
       },
       {
-        image: PrizeCock,
+        image: "",
         color: "",
         label: "Fungi Tavern",
         alt: "",
@@ -366,12 +366,30 @@ const venuesData = {
         ],
       },
       {
+        image: "",
+        color: "",
+        label: "Master Chai",
+        alt: "a colourful tent with a chai bar and stage with fabric in bright patterns hanging from the ceiling",
+        description: [
+          "A vibey chai cafe playing soothing roots reggae music day & night.",
+        ],
+      },
+      {
         image: SinaiTile,
         color: "",
         label: "Mount Sinai",
         alt: "a man sat on top of a large stack of speakers making up part of the sinai soundsystem, with a poster on the wall saying 'respect the sound system'",
         description: [
           "An ancient temple set high on a mountain top, this bass music oriented stage will host Croydub, Deep Media and a Jungle showcase.",
+        ],
+      },
+      {
+        image: "",
+        color: "",
+        label: "Mr Whompy",
+        alt: "A yellow ice cream van with decks inside and 2 speaker stacks either side of it with a dancefloor in front.",
+        description: [
+          "A mobile rave blasting the coldest tunes from an ice cream van.",
         ],
       },
       {
@@ -394,7 +412,7 @@ const venuesData = {
         ],
       },
       {
-        image: TeachingsInDub,
+        image: Channel1,
         color: "",
         label: "Teachings In Dub Arena",
         alt: "",
@@ -412,6 +430,13 @@ const venuesData = {
         ],
       },
       {
+        image: PrizeCock,
+        color: "",
+        label: "The Prize Cock",
+        alt: "A traditional pub with a flower meadow garden",
+        description: ["A traditional pub with a flower meadow garden."],
+      },
+      {
         image: "",
         color: "",
         label: "The Void",
@@ -425,7 +450,9 @@ const venuesData = {
         color: "",
         label: "Tunnel Vision",
         alt: "",
-        description: ["An abandoned munitions factory "],
+        description: [
+          "A hidden tunnel rave in 2 underground shipping containers.",
+        ],
       },
     ],
   },
