@@ -600,7 +600,7 @@ const environmentData = {
           "We want to set some realistic targets for how we can reduce our plastic use.",
           "1.) All of our bars will be using re-usable cups.",
           "2.) Our trades will only be using biodegradable packaging.",
-          "3.) Our build & break crew will be using re-usable cable.",
+          "3.) Our build & break crew will be using re-usable cable ties.",
         ],
       },
       {
@@ -645,9 +645,10 @@ const wellnessData = {
     pageIntro: [
       "Welcome to The Sanctuary...",
       "Your lakeside oasis and spiritual home at Highrise Festival.",
-      "Immerse, empower and enlighten yourself within our garden walls, a safe and peaceful setting for rebalancing your mind, body and energies.",
-      "Journey deep into your senses with our carefully curated programme of wellness workshops, treatments and talks; inspired by both the practises and remedies of ancient cultures, and the experimental healing techniques of the modern day.",
-      "Your elemental haven awaits...",
+      "Immerse, empower and enlighten yourself within our walls; a safe and peaceful setting for grounding and rebalance.",
+      "Journey deep into your senses with our carefully curated programme of wellness workshops, treatments and offerings.",
+      "The Zen Projects will be running the 'Zen Den' where you can get involved in all kinds of classes throughout the festival.",
+      "There you can expect to see anything from movement workshops, wild food cookery classes, reiki, mens and womens circles, yoga of all kinds and oh so much more!",
     ],
     cards: [
       {
@@ -789,8 +790,9 @@ const travelData = {
         image: coach,
         label: "Coach",
         description: [
-          "Our official coach partner is National Express. They offer weekend return coach services from most major cities. Most coaches arrive on Thursday in-time to pick the perfect camping spot. Some arrive on Friday morning from London. Coaches return on Monday morning so you can rest the whole way back.",
+          "Our official travel partner is Tuned in Travel. They offer weekend return coach services from most major cities. Most coaches arrive on Thursday in-time to pick the perfect camping spot. Some arrive on Friday morning from London. Coaches return on Monday morning so you can rest the whole way back.",
         ],
+        link: "https://www.tunedintravel.com",
       },
       {
         image: train,

@@ -39,11 +39,11 @@ const Card = (props) => {
           className={`card-wrapper mb-36 xl:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
         >
           <div
-            className={`hidden lg:block info xl:px-4 page-content pb-8 text-start
+            className={`info xl:px-4 page-content pb-8 text-start
           ${left ? "lg:text-end xl:pl-12" : "xl:pr-12"}`}
           >
             <h3
-              className={`mb-3 pt-8 text-center hidden lg:block lg:px-6 xl:px-0 ${
+              className={`mb-3 pt-8 text-center lg:px-6 xl:px-0 ${
                 color ? color : "text-black"
               } ${left ? "lg:text-end" : "lg:text-start "} `}
             >
@@ -82,62 +82,25 @@ const Card = (props) => {
               left ? "order-first lg:order-first" : "order-first lg:order-last"
             }`}
           >
-            <Tilt
-              tiltReverse="true"
-              perspective={300}
-              transitionEasing="cubic-bezier(.03,.98,.52,.99)"
-              tiltMaxAngleX={0.5}
-              tiltMaxAngleY={0.5}
+            <div
+              className={`img-fmt2-box border-[0.5rem] ${
+                borderColor ? borderColor : "border-black"
+              } lg:shadow-[-60px_-70px_0px_-40px_#9a9a9a,60px_70px_0_-40px_#1c1c1c] rounded-lg`}
             >
-              <div
-                className={`img-fmt2-box border-[0.5rem] ${
-                  borderColor ? borderColor : "border-black"
-                } lg:shadow-[-60px_-70px_0px_-40px_#9a9a9a,60px_70px_0_-40px_#1c1c1c] rounded-lg`}
-              >
-                <img
-                  className="img-fmt2 aspect-square lg:aspect-[1.4/1]"
-                  src={
-                    props.cardData.image ? props.cardData.image : highriseTile
-                  }
-                  alt={props.cardData.alt}
-                />
-                <h3 className="h3-card-overlay visible lg:invisible">
-                  {props.cardData.label}
+              <img
+                className="img-fmt2 aspect-square lg:aspect-[1.4/1]"
+                src={props.cardData.image ? props.cardData.image : highriseTile}
+                alt={props.cardData.alt}
+              />
+              {/* <h3 className="h3-card-overlay visible lg:invisible">
+                {props.cardData.label}
+              </h3> */}
+              {!props.cardData.image ? (
+                <h3 className="h3-missing-photo-overlay lg:visible">
+                  NEW VENUE FOR 2023
                 </h3>
-                {!props.cardData.image ? (
-                  <h3 className="h3-missing-photo-overlay lg:visible">
-                    NEW VENUE FOR 2023
-                  </h3>
-                ) : null}
-                <div className="info-card-overlay visible lg:invisible">
-                  {props.cardData
-                    ? props.cardData.description.map((sentence) => {
-                        return (
-                          <p
-                            className={`pt-6 px-6 xl:px-0 ${
-                              color ? color : "text-white"
-                            } ${props.isWellnessPage ? "sanctury" : ""}`}
-                          >
-                            {sentence}
-                          </p>
-                        );
-                      })
-                    : ""}
-                  <div className="mt-6">
-                    {props.cardData.link ? (
-                      <a href={props.cardData.link} target="_blank">
-                        <HighriseButton
-                          label={"Book Now"}
-                          fontSize={"text-2xl"}
-                          type={"submit"}
-                          padding={"px-4 py-2"}
-                        />
-                      </a>
-                    ) : null}
-                  </div>
-                </div>
-              </div>
-            </Tilt>
+              ) : null}
+            </div>
           </div>
         </div>
       </Tilt>

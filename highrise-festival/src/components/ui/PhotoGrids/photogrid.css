@@ -67,8 +67,6 @@
 
 .photo-hero {
   position: relative;
-  aspect-ratio: 2/1;
-
   /* height: clamp(200px, 600px, 80vh); */
   object-fit: cover;
   transition: transform 2s ease-in-out, filter 0.3s ease !important;
@@ -104,6 +102,8 @@
 .h3-overlay {
   position: absolute;
   color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 5px 0 black;
   bottom: 0;
   left: 50%;
 

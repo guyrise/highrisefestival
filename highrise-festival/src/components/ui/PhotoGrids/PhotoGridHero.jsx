@@ -17,7 +17,9 @@ const PhotoGrid = (props) => {
                 <ProgressiveImage src={data.image} placeholder={data.blur}>
                   {(src, loading) => (
                     <img
-                      className={`photo-hero ${loading ? "loading" : "loaded"}`}
+                      className={`photo-hero aspect-square md:aspect-[1.5/1] lg:aspect-[2/1] ${
+                        loading ? "loading" : "loaded"
+                      }`}
                       src={src}
                       alt={data.alt}
                     />
