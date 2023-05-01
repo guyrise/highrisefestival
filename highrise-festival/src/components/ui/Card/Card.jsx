@@ -98,9 +98,11 @@ const Card = (props) => {
                 {props.cardData.label}
               </h3> */}
               {!props.cardData.image ? (
-                <h3 className="h3-missing-photo-overlay lg:visible">
-                  NEW VENUE FOR 2023
-                </h3>
+                <div className="flex items-center justify-center">
+                  <h3 className="h3-missing-photo-overlay lg:visible">
+                    NEW VENUE FOR 2023
+                  </h3>
+                </div>
               ) : null}
             </div>
           </div>
