@@ -1,5 +1,6 @@
 .page-format-wrapper {
   position: relative;
+  max-width: 100vw;
 }
 .page-intro-wrapper {
   border-radius: 0.5rem;

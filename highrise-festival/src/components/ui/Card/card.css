@@ -141,6 +141,6 @@
 @media (max-width: 768px) {
   .h3-missing-photo-overlay {
     top: 30%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, 0%);
   }
 }
