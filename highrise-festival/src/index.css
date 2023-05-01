@@ -75,11 +75,19 @@ html {
   /* height: 100%; */
   /* min-height: 100vh; */
   scroll-behavior: smooth;
+  overflow-x: hidden;
   /* width: 100vw;
     height: 260vh; */
 }
 
 body {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+
+  /* rest of body css */
   margin: 0;
   /* display: flex; */
   min-width: 320px;
@@ -92,15 +100,6 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
 }
 
 /* TEXT */
