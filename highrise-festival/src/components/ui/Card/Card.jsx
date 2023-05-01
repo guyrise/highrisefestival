@@ -97,9 +97,13 @@ const Card = (props) => {
               {/* <h3 className="h3-card-overlay visible lg:invisible">
                 {props.cardData.label}
               </h3> */}
-              {!props.cardData.image ? (
-                <h3 className="h3-missing-photo-overlay">NEW VENUE FOR 2023</h3>
-              ) : null}
+              <div className="text-overlay-wrapper">
+                {!props.cardData.image ? (
+                  <h3 className="h3-missing-photo-overlay">
+                    NEW VENUE FOR 2023
+                  </h3>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>
