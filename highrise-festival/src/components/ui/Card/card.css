@@ -6,17 +6,14 @@
 }
 .left {
   transform: translateX(-100px);
-  display: none;
 }
 
 .right {
   transform: translateX(100px);
-  display: none;
 }
 .card-observer.show-card {
   opacity: 1;
   transform: translateX(0);
-  display: block;
 }
 
 .card-wrapper {
