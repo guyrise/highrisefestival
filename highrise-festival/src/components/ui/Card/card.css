@@ -17,16 +17,7 @@
 }
 
 .card-wrapper {
-  /* background: rgba(234, 109, 124, 1); */
-  /* background: var(--card-background); */
-  /* background: #524e4ed4;
-  background: #524e4e; */
-  /* background: #76a3b0; */
-  /* background: rgb(252, 161, 172); */
-
   z-index: -99;
-  /* border-top: 0.5rem solid black;
-  border-bottom: 0.5rem solid black; */
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
@@ -147,7 +138,7 @@
   line-height: 1.8rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .h3-missing-photo-overlay {
     top: 30%;
   }

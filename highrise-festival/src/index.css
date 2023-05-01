@@ -101,6 +101,7 @@ body {
   scrollbar-width: none; /* Firefox */
 
   overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 /* TEXT */
