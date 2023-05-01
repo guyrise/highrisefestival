@@ -1,22 +1,19 @@
 /* FORMAT 2 */
 .card-observer {
   opacity: 0;
-
   transition: all 1s ease;
+  overflow-x: hidden;
 }
 .left {
   transform: translateX(-100px);
-  width: 1px;
 }
 
 .right {
   transform: translateX(100px);
-  width: 1px;
 }
 .card-observer.show-card {
   opacity: 1;
   transform: translateX(0);
-  width: 100%;
 }
 
 .card-wrapper {
@@ -143,7 +140,7 @@
 
 @media (max-width: 768px) {
   .h3-missing-photo-overlay {
-    top: 20%;
-    transform: translate(-50%, 60%);
+    top: 0%;
+    transform: translate(-50%, 0%);
   }
 }
