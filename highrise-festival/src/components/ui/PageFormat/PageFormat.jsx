@@ -13,7 +13,7 @@ const PageFormat = (props) => {
         }`}
       >
         {props.pageData.title && (
-          <h4 className="h4-title2">{props.pageData.title}</h4>
+          <h1 className="h4-title2">{props.pageData.title}</h1>
         )}
         {props.pageData.pageContent.pageIntro && (
           <p

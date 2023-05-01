@@ -1,5 +1,6 @@
 import LineupMain from "../../assets/images/Programme/Lineup/LineupMain.webp";
-
+import FinalLineUp from "../../assets/images/Programme/Lineup/FinalLineUp.webp";
+import FinalLineUpBlur from "../../assets/images/Programme/LineUp/FinalLineUpBlur.webp";
 import lineupBlurred from "../../assets/images/highrise-lineup-blurred.webp";
 import { motion } from "framer-motion";
 import ProgressiveImage from "react-progressive-graceful-image";
@@ -14,7 +15,7 @@ const LineUp = (props) => {
       exit={{ opacity: 0 }}
       className="page-wrapper"
     >
-      <ProgressiveImage src={LineupMain} placeholder={lineupBlurred}>
+      <ProgressiveImage src={FinalLineUp} placeholder={FinalLineUpBlur}>
         {(src, loading) => (
           <img
             className={`lineup-img ${loading ? "loading" : "loaded"}`}

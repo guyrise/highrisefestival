@@ -4,9 +4,6 @@ import emailjs from "@emailjs/browser";
 
 import LoadingLogo from "../../helpers/LoadingLogo/LoadingLogo";
 
-// images
-import firebreather from "../../../assets/images/highrise-firebreather.jpeg";
-
 import "./newsletter.css";
 
 const Newsletter = () => {

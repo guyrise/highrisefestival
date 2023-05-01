@@ -10,7 +10,7 @@ const PhotoGrid = (props) => {
     <>
       <div className="photo-btn-container ">
         <div className="photogrid-wrapper-hero grid md:grid-cols-1">
-          <h4 className="h4-title">{props.heading}</h4>
+          <h1 className="h4-title">{props.heading}</h1>
           {photoGrid.map((data, index) => {
             return (
               <div className="photo-btn-box-HERO">

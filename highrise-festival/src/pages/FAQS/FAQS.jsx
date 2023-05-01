@@ -12,7 +12,7 @@ const FAQS = (props) => {
     >
       <div className="page">
         <div className="faq-wrapper">
-          <h4 className="h4-title">FAQ's</h4>
+          <h1 className="h4-title">FAQ's</h1>
 
           {props.faqData &&
             props.faqData.map((obj, index) => {

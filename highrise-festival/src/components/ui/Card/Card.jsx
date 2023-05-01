@@ -13,7 +13,7 @@ const Card = (props) => {
     threshold: 0,
     rootMargin: "0px",
     fallbackInView: true,
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   const left = props.left;
@@ -36,7 +36,9 @@ const Card = (props) => {
         tiltMaxAngleY={0.3}
       >
         <div
-          className={`card-wrapper mb-36 xl:px-12 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none`}
+          className={`card-wrapper xl:px-12 pb-24 grid lg:grid-cols-2 grid-flow-dense outline outline-2 lg:outline-none ${
+            props.last ? "mb-12" : "mb-36"
+          }`}
         >
           <div
             className={`info xl:px-4 page-content pb-8 text-start

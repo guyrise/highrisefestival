@@ -6,7 +6,7 @@ import "./pageFormat.css";
 
 const PageFormat = (props) => {
   return (
-    <div className="page-format-wrapper bg-[#ffffff50] rounded-xl">
+    <div className="page-format-wrapper bg-[#ffffff50] border-b-[12px] border-black rounded-xl">
       <div
         className={`page-intro-wrapper  ${
           props.pageData.pageContent.pageIntro
@@ -15,7 +15,7 @@ const PageFormat = (props) => {
         }`}
       >
         {props.pageData.title && (
-          <h4 className="h4-title2">{props.pageData.title}</h4>
+          <h1 className="h4-title2">{props.pageData.title}</h1>
         )}
         {props.pageData.pageContent.pageIntro && (
           <p
@@ -36,14 +36,15 @@ const PageFormat = (props) => {
         )}
       </div>
       {props.pageData.pageContent.cards &&
-        props.pageData.pageContent.cards.map((item, index) => {
+        props.pageData.pageContent.cards.map((item, index, arr) => {
+          const last = index === arr.length - 1 ? true : false;
           return (
             <>
               <Card
                 cardData={item}
                 key={"Card:" + index}
                 left={index % 2 !== 0}
-                index={index}
+                last={last}
                 isWellnessPage={props.pageData.wellnessPage}
               />
             </>

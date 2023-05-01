@@ -33,7 +33,7 @@ const PhotoGrid = (props) => {
               : "md:grid-cols-2"
           }`}
         >
-          <h4 className="h4-title">{props.heading}</h4>
+          <h1 className="h4-title">{props.heading}</h1>
           {photoGrid.map((data, index, grid) => {
             let last = "";
             if (index === grid.length - 1 && divBy2 == 1) {

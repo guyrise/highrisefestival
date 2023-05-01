@@ -5,14 +5,12 @@ import ProgressiveImage from "react-progressive-graceful-image";
 import "./index.css";
 
 // CONSTANTS
-import Page404 from "./pages/ErrorPages/Page404";
 
 import Navbar from "./components/ui/Navbar/Navbar";
 import Footer from "./components/ui/Footer/Footer";
 import Newsletter2 from "./components/form/Newsletter/Newsletter2";
 
 // FOOTER LINKS
-import Privacy from "./pages/Privacy Statement/Privacy";
 
 // DATA
 
@@ -86,7 +84,9 @@ import FirmlyRooted from "./assets/images/Programme/Soundsystems/FirmlyRooted.we
 import Channel1 from "./assets/images/Programme/Soundsystems/ChannelOne.webp";
 
 // VENUES IMAGES
-import TeachingsInDub from "./assets/images/Programme/Venues/ChannelOne01.webp";
+import MasterChai from "./assets/images/Programme/Venues/MasterChai.webp";
+import MrWhompy from "./assets/images/Programme/Venues/MrWhompy.webp";
+import VoidStage from "./assets/images/Programme/Venues/VoidStage.webp";
 import PrizeCock from "./assets/images/Programme/Venues/PrizeCock.webp";
 import GSpot from "./assets/images/Programme/Venues/GSpot.webp";
 import BunkBeds from "./assets/images/Programme/Venues/BunkBeds.webp";
@@ -98,6 +98,7 @@ import SinaiTile from "./assets/images/Programme/Soundsystems/SinaiTile.webp";
 import SmokeyTenticles from "./assets/images/Programme/Venues/smokey-tenticles.webp";
 
 // WELLNESS IMAGES
+import YogaSurf from "./assets/images/Programme/Wellness/YogaSurf.webp";
 import hottub from "./assets/images/Programme/Wellness/hot-tub.webp";
 import hottubBlur from "./assets/images/Programme/Wellness/hottubBlur.webp";
 import earth from "./assets/images/Programme/Wellness/wellness-earth.webp";
@@ -366,7 +367,7 @@ const venuesData = {
         ],
       },
       {
-        image: "",
+        image: MasterChai,
         color: "",
         label: "Master Chai",
         alt: "a colourful tent with a chai bar and stage with fabric in bright patterns hanging from the ceiling",
@@ -384,7 +385,7 @@ const venuesData = {
         ],
       },
       {
-        image: "",
+        image: MrWhompy,
         color: "",
         label: "Mr Whompy",
         alt: "A yellow ice cream van with decks inside and 2 speaker stacks either side of it with a dancefloor in front.",
@@ -437,7 +438,7 @@ const venuesData = {
         description: ["A traditional pub with a flower meadow garden."],
       },
       {
-        image: "",
+        image: VoidStage,
         color: "",
         label: "The Void",
         alt: "",
@@ -634,7 +635,7 @@ const wellnessData = {
   wellnessPage: true,
   photoGrid: [
     {
-      image: hottub,
+      image: water,
       label: "",
       alt: "steaming hottub on top of a hill at sunset overlooking a forest",
       blur: hottubBlur,
@@ -650,46 +651,46 @@ const wellnessData = {
       "The Zen Projects will be running the 'Zen Den' where you can get involved in all kinds of classes throughout the festival.",
       "There you can expect to see anything from movement workshops, wild food cookery classes, reiki, mens and womens circles, yoga of all kinds and oh so much more!",
     ],
-    cards: [
-      {
-        image: fire,
-        borderColor: "border-[#F88D5D]",
-        label: "Fire Garden",
-        alt: "a fire illuminating the night with embers floating into the air",
-        description: [
-          "Explore the warmth of flame and human connection within our Fire Garden. Gather among likeminded spirits, forging strong and sincere bonds around our communal fire pit. Temper the days teachings into permanence as you lose your conscious self to enchanting flames and incensing smoke, rising anew from the ashes with your innermost burdens stripped away.",
-        ],
-      },
-      {
-        image: water,
+    // cards: [
+    //   {
+    //     image: fire,
+    //     borderColor: "border-[#F88D5D]",
+    //     label: "Fire Garden",
+    //     alt: "a fire illuminating the night with embers floating into the air",
+    //     description: [
+    //       "Explore the warmth of flame and human connection within our Fire Garden. Gather among likeminded spirits, forging strong and sincere bonds around our communal fire pit. Temper the days teachings into permanence as you lose your conscious self to enchanting flames and incensing smoke, rising anew from the ashes with your innermost burdens stripped away.",
+    //     ],
+    //   },
+    //   {
+    //     image: water,
 
-        borderColor: "border-blue-300",
-        label: "Water Garden",
-        alt: "a girl sat on a jetty, looking out over a lake as the sun sets.",
-        description: [
-          "Discover the aquatic delights of our Water Garden on the western shore, a shimmering pool of clarity and focus. Float in suspended balance atop the sun-soaked surface as you stretch towards the summer skies. Clear your mind and cleanse your soul while gazing into the depths, in reflection of what has been, and what may come to pass on the infinite paths before you.",
-        ],
-      },
-      {
-        image: air,
-        borderColor: "border-yellow-200",
-        label: "Air Garden",
-        alt: "a girl performing a standing yoga pose overlooking a forest",
-        description: [
-          "Flowing in from the east, our Air Garden is your centre for movement and vibration. Release tensions and anxieties through an opulence of accredited yoga instructors, drifting like clouds as you aspire to weightless ascension. Relax into powerful meditation as peaceful sounds and scents lift you to higher celestial plains, and rejuvenate in the rhythms of dance and bodily motion.",
-        ],
-      },
-      {
-        image: earth,
+    //     borderColor: "border-blue-300",
+    //     label: "Water Garden",
+    //     alt: "a girl sat on a jetty, looking out over a lake as the sun sets.",
+    //     description: [
+    //       "Discover the aquatic delights of our Water Garden on the western shore, a shimmering pool of clarity and focus. Float in suspended balance atop the sun-soaked surface as you stretch towards the summer skies. Clear your mind and cleanse your soul while gazing into the depths, in reflection of what has been, and what may come to pass on the infinite paths before you.",
+    //     ],
+    //   },
+    //   {
+    //     image: air,
+    //     borderColor: "border-yellow-200",
+    //     label: "Air Garden",
+    //     alt: "a girl performing a standing yoga pose overlooking a forest",
+    //     description: [
+    //       "Flowing in from the east, our Air Garden is your centre for movement and vibration. Release tensions and anxieties through an opulence of accredited yoga instructors, drifting like clouds as you aspire to weightless ascension. Relax into powerful meditation as peaceful sounds and scents lift you to higher celestial plains, and rejuvenate in the rhythms of dance and bodily motion.",
+    //     ],
+    //   },
+    //   {
+    //     image: earth,
 
-        borderColor: "border-[#73C290]",
-        label: "Earth Garden",
-        alt: "several people's hands touching a tree trunk",
-        description: [
-          `Gather in the grounds of our Earth Garden, among a myriad of experienced practitioners presenting thought-provoking talks, wide-ranging wellness workshops, and illuminating masterclasses. Open your mind to inspiring and diverse topics, share meaningful conversations with fellow participants, and restore the foundations of your practises with professional guidance.`,
-        ],
-      },
-    ],
+    //     borderColor: "border-[#73C290]",
+    //     label: "Earth Garden",
+    //     alt: "several people's hands touching a tree trunk",
+    //     description: [
+    //       `Gather in the grounds of our Earth Garden, among a myriad of experienced practitioners presenting thought-provoking talks, wide-ranging wellness workshops, and illuminating masterclasses. Open your mind to inspiring and diverse topics, share meaningful conversations with fellow participants, and restore the foundations of your practises with professional guidance.`,
+    //     ],
+    //   },
+    // ],
   },
   // faqData: [
   //   {
@@ -1063,7 +1064,7 @@ const getInvolvedData = {
 
 const homeData = {
   pageContent: {
-    heading: "About",
+    heading: "About Us",
     description: [
       "After 10 years running multi-genre events across the country and opening our own club in Bristol, we are ready to take our next step into the festival world.",
       "Our festival will be set within the woodlands, fields and lakes of the legendary Secret Garden Party site. We are proud to be a fully independent and grassroots festival which is environmentally conscious and sustainability focused. We are a predominately vegetarian and vegan festival with all of our food & drink being locally sourced. There will be no single use plastic on-site and the majority of our power will come directly from the sun.",
@@ -1131,9 +1132,9 @@ function App() {
           pathname !== "/ethos" &&
           pathname !== "/programme/line-up" &&
           pathname !== "/credits" &&
-          pathname !== "/privacy" && <Newsletter2 />}
+          pathname !== "/privacy" &&
+          pathname !== "/terms-and-conditions" && <Newsletter2 />}
       </div>
-
       <Footer />
     </div>
   );
