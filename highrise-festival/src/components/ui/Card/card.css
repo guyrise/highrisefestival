@@ -6,14 +6,17 @@
 }
 .left {
   transform: translateX(-100px);
+  width: 1px;
 }
 
 .right {
   transform: translateX(100px);
+  width: 1px;
 }
 .card-observer.show-card {
   opacity: 1;
   transform: translateX(0);
+  width: 100%;
 }
 
 .card-wrapper {
@@ -66,7 +69,7 @@
 .h3-missing-photo-overlay {
   position: absolute;
   color: white;
-  top: 50%;
+  top: 20%;
   left: 50%;
   width: 70%;
   font-family: var(--special-font);
@@ -75,7 +78,7 @@
   text-align: center;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 5px 0 black;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
 }
 
 .info-card-overlay {
