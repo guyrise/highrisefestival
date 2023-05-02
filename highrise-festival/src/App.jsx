@@ -175,8 +175,8 @@ const soundsystemData = {
       {
         image: Electrikal,
         color: "",
-        label: "Elektrical Soundsystem",
-        alt: "Electrical Soundstem",
+        label: "Elektrikal Soundsystem",
+        alt: "Electrikal Soundstem",
         description: [
           "From Edinburgh, Scotland Electrikal Sound System is one of the UK's leading of bass music sound systems.",
         ],
@@ -307,8 +307,8 @@ const venuesData = {
       {
         image: Electrikal,
         color: "",
-        label: "Elektrical Soundsystem",
-        alt: "One full speaker stack of Elektrical Soundsystem on a sunny day with 2 crew members doing their final checks",
+        label: "Elektrikal",
+        alt: "One full speaker stack of Elektrikal Soundsystem on a sunny day with 2 crew members doing their final checks",
         description: [
           "A bass music orientated stage with daily takeovers from some of the UK's finest brands TBA.",
         ],
